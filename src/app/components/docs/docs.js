@@ -7,7 +7,21 @@ export default class Home extends Component {
   render() {
     return (
       <div className="row">
-        <div className="col col-9">
+        <div className="col col-md-3 p-2 mt-2">
+          <ul className="list-unstyled">
+            <li>
+              <Link to="/docs" className="text-lead">Docs</Link>
+              <p>
+                We are busy writing documentation for the boilerplate. Till then please visit our <a href="https://github.com/Atyantik/react-pwa/wiki" rel="noFollow" target="_blank">wiki</a> for limited examples.
+              </p>
+              <div className="alert alert-warning mt-2">We are looking for contributors and queries to create useful documentation. Please contribute.</div>
+              {/*<ul>
+                <li><Link to="/docs/getting-started">Getting started</Link></li>
+              </ul>*/}
+            </li>
+          </ul>
+        </div>
+        <div className="col col-md-9">
           <h1 className="mt-4">Features</h1>
           <p>We have worked on many features. Checkout the list below:</p>
   
@@ -203,20 +217,6 @@ export default class Home extends Component {
           </div>
           
           <div className="alert alert-warning mt-5">We are looking for contributors and queries to create useful documentation. Please contribute.</div>
-        </div>
-        <div className="col col-3 p-2 mt-2">
-          <ul className="list-unstyled">
-            <li>
-              <Link to="/docs" className="text-lead">Docs</Link>
-              <p>
-                We are busy writing documentation for the boilerplate. Till then please visit our <a href="https://github.com/Atyantik/react-pwa/wiki" rel="noFollow" target="_blank">wiki</a> for limited examples.
-              </p>
-              <div className="alert alert-warning mt-2">We are looking for contributors and queries to create useful documentation. Please contribute.</div>
-              {/*<ul>
-                <li><Link to="/docs/getting-started">Getting started</Link></li>
-              </ul>*/}
-            </li>
-          </ul>
         </div>
       </div>
     );
