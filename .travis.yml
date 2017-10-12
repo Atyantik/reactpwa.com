@@ -1,4 +1,6 @@
 language: node_js
+node_js:
+- stable
 addons:
   ssh_known_hosts: $ATYANTIK_SERVER
 before_deploy:
@@ -6,14 +8,16 @@ before_deploy:
 - eval "$(ssh-agent -s)"
 - chmod 600 /tmp/deploy_rsa
 - ssh-add /tmp/deploy_rsa
-node_js:
-- stable
 deploy:
   provider: script
   skip_cleanup: true
   script:
   - yarn test
   - yarn build
-  - rsync -r --delete-after --quiet $TRAVIS_BUILD_DIR/dist tirthbodawala@$ATYANTIK_SERVER:/var/www/reactpwa.com
+  - cd dist && tar cvfz ../dist.tar.gz . && cd ..
+  - sftp $ATYANTIK_USER@$ATYANTIK_SERVER <<< $'put -r ./dist.tar.gz /var/www/reactpwa.com/'
+  - ssh $ATYANTIK_USER@$ATYANTIK_SERVER 'cd /var/www/reactpwa.com/ && tar xvzf dist.tar.gz --overwrite'
+  - ssh $ATYANTIK_USER@$ATYANTIK_SERVER 'cd /var/www/reactpwa.com/ && rm -rf dist.tar.gz'
+  - ssh $ATYANTIK_USER@$ATYANTIK_SERVER '(which pm2 && ((pm2 restart reactpwa --update-env) || (cd /var/www/reactpwa.com && pm2 start server.js --name="reactpwa" -i 3 --watch))) &> /dev/null || echo "OK"'
   on:
     branch: master
