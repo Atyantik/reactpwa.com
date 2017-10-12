@@ -126,6 +126,11 @@ export default {
       compress: true,
       comments: false,
       sourceMap: false,
+      parallel: {
+        cache: true,
+        workers: 3
+      },
+      warnings: false
     }),
     
     // Create common chunk of data
