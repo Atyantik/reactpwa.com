@@ -46,26 +46,21 @@ import config from "../../config";
 
 /**
  * Set current dir for better computation
+ * @type {String}
  */
+let currentDir = __dirname;
 
-const getCurrentDir = () => {
-  let currentDir = __dirname;
-  // Set appropriate currentDir when build and run in production mode
-  const filename = _.find(process.argv, arg => {
-    return arg.indexOf("server.js") !== -1;
-  });
-  if (filename) {
-    currentDir = path.dirname(filename);
-  }
-  return currentDir;
-};
-
-
+// Set appropriate currentDir when build and run in production mode
+const filename = _.find(process.argv, arg => {
+  return arg.indexOf("/server.js") !== -1;
+});
+if (filename) {
+  currentDir = path.dirname(filename);
+}
 
 // Get everything inside public path
 let allAssets = [];
 const getAllAssets = () => {
-  const currentDir = getCurrentDir();
   if (_.isEmpty(allAssets)) {
     allAssets = glob.sync(path.join(currentDir, "public") + "/**/*");
     allAssets = _.filter(
@@ -123,7 +118,7 @@ if (hstsSettings.enabled) {
 }
 
 const cacheTime = 86400000*30;     // 30 days;
-app.use("/public", express.static(path.join(getCurrentDir(), "public"), {
+app.use("/public", express.static(path.join(currentDir, "public"), {
   maxAge: cacheTime
 }));
 
@@ -149,7 +144,7 @@ let cachedswResponseText = null;
 const getServiceWorkerContent = () => {
   if (cachedswResponseText) return cachedswResponseText;
   // Get contents of service worker
-  const serviceWorkerContents = fs.readFileSync(path.resolve(path.join(getCurrentDir(), "service-worker.js")), "utf-8");
+  const serviceWorkerContents = fs.readFileSync(path.resolve(path.join(currentDir, "service-worker.js")), "utf-8");
   
   // Create a response text without Version number
   let swResponseText = `
@@ -204,7 +199,7 @@ app.get("/manifest.json", infiniteCache(), (req, res) => {
  * Try to get the public dir
  */
 try {
-  const faviconPath = path.join(getCurrentDir(), publicDirName, "favicon.ico");
+  const faviconPath = path.join(currentDir, publicDirName, "favicon.ico");
   if (path.resolve(faviconPath)) {
     app.use(serveFavicon(faviconPath));
   }
