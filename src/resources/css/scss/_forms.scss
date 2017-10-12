@@ -10,7 +10,7 @@
   // // Make inputs at least the height of their button counterpart (base line-height + padding + border)
   // height: $input-height;
   padding: $input-btn-padding-y $input-btn-padding-x;
-  font-size: $font-size-sm;
+  font-size: $font-size-base;
   line-height: $input-btn-line-height;
   color: $input-color;
   background-color: $input-bg;
@@ -28,7 +28,7 @@
     border-radius: 0;
   }
 
-  // @include box-shadow($input-box-shadow);
+  @include box-shadow($input-box-shadow);
   @include transition($input-transition);
 
   // Unstyle the caret on `<select>`s in IE10+.

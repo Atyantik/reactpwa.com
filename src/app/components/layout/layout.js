@@ -6,7 +6,7 @@ export default class Layout extends Component {
   render() {
     return (
       <div>
-        <Header url={this.props.match.url} />
+        <Header />
         <main className="container">
           {this.props.children}
         </main>

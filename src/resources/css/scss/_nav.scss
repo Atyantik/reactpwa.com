@@ -103,13 +103,7 @@
   }
 }
 
-.nav-item{
-  .nav-link{
-    &.active{
-      color: $gray-800;
-    }
-  }
-}
+
 // Tabbable tabs
 //
 // Hide tabbable panes to start, show them when `.active`

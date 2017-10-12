@@ -14,7 +14,6 @@
   border: $input-btn-border-width solid transparent;
   @include button-size($input-btn-padding-y, $input-btn-padding-x, $font-size-base, $input-btn-line-height, $btn-border-radius);
   @include transition($btn-transition);
-  cursor: pointer;
 
   // Share hover and focus styles
   @include hover-focus {
@@ -23,7 +22,7 @@
   &:focus,
   &.focus {
     outline: 0;
-    // box-shadow: $btn-focus-box-shadow;
+    box-shadow: $btn-focus-box-shadow;
   }
 
   // Disabled comes first so active can properly restyle
@@ -139,60 +138,4 @@ input[type="button"] {
   &.btn-block {
     width: 100%;
   }
-}
-
-//add  triangle icon in button
-.triangle {
-    position: relative;
-    text-align: left;
-    margin-top: -4px;
-    border-top-right-radius: 30%;
-    &:before,
-    &:after {
-        border-top-right-radius: 30%;
-        content: '';
-        position: absolute;
-        background-color: inherit;
-    }
-    &:before {
-        @include transform(rotate(-135deg) skewX(-45deg) scale(1.414, .707) translate(0, -50%));
-    }
-    &:after {
-        @include transform(rotate(135deg) skewY(-45deg) scale(.707, 1.414) translate(50%));
-    }
-}
-.triangle-down {
-    @include triangle(down, .5rem, $white);
-}
-
-.triangle-up {
-    @include triangle(up, .5rem, $white);
-}
-
-.triangle-right {
-    @include triangle(right, .5rem, $white);
-}
-
-.triangle-left {
-    @include triangle(left, .5rem, $white);
-}
-.btn-hover {
-    &:hover {
-        .triangle-down,
-        .triangle-up,
-        .triangle-right,
-        .triangle-left {
-            background-color: $white !important;
-        }
-    }
-}
-.has-icon {
-    padding: .6875rem;
-    .icon {
-        font-size: 1.5em;
-        width: 1em;
-        line-height: 0;
-        display: inline-block;
-        vertical-align: middle;
-    }
 }

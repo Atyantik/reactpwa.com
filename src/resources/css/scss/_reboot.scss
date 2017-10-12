@@ -479,9 +479,3 @@ template {
 [hidden] {
   display: none !important;
 }
-
-@media(max-width:$screen-size-sm) {
-  html{
-    font-size: 14px;
-  }
-}

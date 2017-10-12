@@ -1,46 +1,94 @@
 import React, { Component } from "react";
-import Fold from "../../../core/components/fold" ;
-import ReactLogo from "../../../resources/images/reactjs.svg";
-import SmallImage from "../../../resources/images/mario-large.png?sizes=100w+200w+400w+800w&placeholder";
-import Picture from "../../../core/components/picture/picture";
+import { Link } from "react-router-dom";
+import Fold from "../../../core/components/fold";
+import Prism from "../prism";
+
+
+const supportsServiceWorker = function() {
+  if (typeof window === "undefined") return false;
+  return "serviceWorker" in window.navigator;
+};
 
 export default class Home extends Component {
+  
   render() {
     return (
       <div className="mt-4">
-        <img style={{ maxWidth: "150px" }} className="img-fluid mx-auto d-block" src={ReactLogo} alt="ReactJS"/>
-        <h1 className="h2 text-center mt-3">React PWA</h1>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-          Mauris bibendum enim quis ligula congue consequat. Maecenas
-          a neque ac diam elementum sollicitudin. Praesent a libero sit
-          amet justo viverra mattis vitae ac nulla. Aenean eget tincidunt
-          urna. Suspendisse quis iaculis ex. Proin nec ante eros. Donec
-          eu eros vitae nunc auctor imperdiet. Praesent nec tortor eget
-          magna gravida posuere. Sed at velit at est dictum mollis. Pellentesque
-          ullamcorper dapibus nulla, efficitur pharetra nisi sodales ut.
-        </p>
-        <Fold placeholder={() => <div className="text-center mt-3 mb-3">Loading folded content.. Please wait..</div>}>
+        <a
+          className="d-none d-sm-block"
+          href="https://github.com/Atyantik/react-pwa"
+          target="_blank"
+        >
+          <img style={{position: "absolute", top: "46px", right: 0, border: 0}} src="https://camo.githubusercontent.com/365986a132ccd6a44c23a9169022c0b5c890c387/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f7265645f6161303030302e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png" />
+        </a>
+        <div className="text-center">
+          <h1 className="h2 mt-5">Your Progressive Framework!</h1>
           <p>
-            Cras at elementum magna. Proin sed vulputate erat. Quisque magna nibh,
-            posuere in mattis id, consectetur non nunc. Sed sodales diam risus,
-            non facilisis augue cursus id. Nulla non magna at tellus tempor
-            efficitur id nec ex. Vestibulum a ex a dolor dapibus vulputate.
-            Etiam ac diam vestibulum, commodo lacus nec, feugiat diam. Mauris
-            sollicitudin pellentesque pretium. Suspendisse at tempus lectus.
-            Vivamus euismod velit quis tincidunt pulvinar. In posuere, libero sed
-            condimentum fringilla, tortor mi maximus dolor, eget aliquam turpis
-            libero at sem. Ut pulvinar, odio a vestibulum pretium, ante leo volutpat
-            massa, in suscipit diam tortor id odio. Nunc convallis vitae felis eget aliquet.
+            A highly scalable, Progressive Web Application foundation with the best Developer Experience.
           </p>
-          <p>Image sample converted to webp, uploaded/coded as jpg</p>
-          <Picture
-            pictureClassName="d-inline-block my-4"
-            image={SmallImage}
-            alt="Small Image"
-            imgClassName="mw-100"
-          />
-        </Fold>
+          <a
+            className="btn btn-outline-primary mr-2"
+            href="https://github.com/Atyantik/react-pwa/archive/master.zip"
+            target="_blank"
+          >
+            Download and get started
+          </a>
+        </div>
+        <p className="mt-5">
+          <span className="h4">Lets get started with 3 simple steps:</span>
+        </p>
+        <p>
+          We work with&nbsp;
+          <a
+            href="https://yarnpkg.com"
+            rel="nofollow"
+            target="_blank"
+          >
+            yarn
+          </a> so all the examples are covered using yarn. If you would like to migrate to yarn please visit the link:
+        </p>
+        <p>
+          <a
+            href="https://yarnpkg.com/lang/en/docs/migrating-from-npm/"
+            rel="nofollow"
+            target="_blank"
+            style={{wordWrap: "break-word"}}
+          >
+            https://yarnpkg.com/lang/en/docs/migrating-from-npm/
+          </a>
+        </p>
+        <div className="mt-5">
+          <strong>1) Cloning the repository: </strong>
+          <small className="text-muted">The command below will create a folder "react-pwa" relative to your current directory</small>
+          <Prism code={"git clone https://github.com/Atyantik/react-pwa.git"} language="bash" />
+        </div>
+        <div className="mt-3">
+          <strong>2) Moving to the repository & installing dependencies: &nbsp;</strong>
+          <Prism code={"cd react-pwa && yarn"} language="bash" />
+        </div>
+        <div className="mt-3">
+          <strong>3) Running the boilerplate: &nbsp;</strong>
+          <Prism code={"yarn start"} language="bash" />
+        </div>
+        <p className="text-center">
+          Visit <a href="http://localhost:3003" rel="noFollow" target="_blank">http://localhost:3003</a> to see the boilerplate in action!
+        </p>
+        <p className="mt-4">
+          <i>For more detailed instruction please visit <Link to="/docs">docs</Link></i>
+        </p>
+        {supportsServiceWorker() && (
+          <Fold>
+            <div className="card text-white bg-info mb-3">
+              <div className="card-header"><small>This is a </small> Progressive Web Application!</div>
+              <div className="card-body">
+                <h4 className="card-title">Add us to "Home screen"</h4>
+                <p className="card-text">You might be interested to learn that current site is build using ReactPWA.
+                  Why don't you add us to your Home Screen when prompted.
+                  We are sure you will love the experience.</p>
+              </div>
+            </div>
+          </Fold>
+        )}
       </div>
     );
   }

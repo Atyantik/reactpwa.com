@@ -11,8 +11,8 @@ export default {
     preload: false,
   },
   pwa: {
-    "name": "React Redux PWA Seo-ed",
-    "short_name": "RRPS",
+    "name": "React PWA",
+    "short_name": "ReactPWA",
     // Possible values ltr(left to right)/rtl(right to left)
     "dir": "ltr",
     
@@ -26,12 +26,12 @@ export default {
     "background_color": "#fff",
     "theme_color": "#fff",
     "display": "standalone",
-    "description": "Boilerplate for react, redux with server-side rendering for SEO and support for progressive web application"
+    "description": "A highly scalable, Progressive Web Application foundation with the best Developer Experience."
   },
   seo: {
-    title: "Common Title",
-    site_name: "My Site Name",
-    description: "This is some temporary description, used if no other description is found",
+    title: "ReactPWA | Progressive web application with ReactJS",
+    site_name: "ReactPWA",
+    description: "A highly scalable, Progressive Web Application foundation with the best Developer Experience.",
     twitter: {
       site: "@atyantik_tech",
       creator: "@tirthbodawala"
@@ -45,7 +45,7 @@ export default {
     meta: [
       {
         name:"viewport",
-        content: "width=device-width, initial-scale=1"
+        content: "width=device-width, initial-scale=1, shrink-to-fit=no"
       },
       {
         name:"theme-color",
