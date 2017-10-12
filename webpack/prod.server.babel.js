@@ -69,8 +69,8 @@ export default [{
   },
   
   node: {
-    __filename: true,
-    __dirname: true
+    __filename: false,
+    __dirname: false
   },
   target: "node",
   devtool: false,
