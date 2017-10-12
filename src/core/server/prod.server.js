@@ -52,7 +52,7 @@ let currentDir = __dirname;
 
 // Set appropriate currentDir when build and run in production mode
 const filename = _.find(process.argv, arg => {
-  return arg.indexOf("/server.js") !== -1;
+  return arg.indexOf("server.js") !== -1;
 });
 if (filename) {
   currentDir = path.dirname(filename);
@@ -144,6 +144,8 @@ let cachedswResponseText = null;
 const getServiceWorkerContent = () => {
   if (cachedswResponseText) return cachedswResponseText;
   // Get contents of service worker
+  // eslint-disable-next-line
+  console.log(currentDir, path.join(currentDir, "service-worker.js"));
   const serviceWorkerContents = fs.readFileSync(path.resolve(path.join(currentDir, "service-worker.js")), "utf-8");
   
   // Create a response text without Version number
