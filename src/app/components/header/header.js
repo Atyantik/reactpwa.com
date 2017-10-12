@@ -10,7 +10,9 @@ export default class Header extends Component {
         <div className="row p-2">
           <div className="col text-white h3 mb-0">
             <div className="d-inline-block" style={{ width: "32px" }}>
-              <Picture image={WhiteLogo} alt="ReactPWA" imgClassName="mw-100"/>
+              <Link to="/">
+                <Picture image={WhiteLogo} alt="ReactPWA" imgClassName="mw-100"/>
+              </Link>
             </div>
             <Link to="/" className="d-none d-sm-inline text-white ml-2 align-bottom" style={{ textDecoration: "none"}}>React PWA</Link>
           </div>
