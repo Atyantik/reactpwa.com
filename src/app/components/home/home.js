@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import Fold from "../../../core/components/fold";
 import Prism from "../prism";
+import Logo from "../../../resources/images/logo.svg";
 
 
 const supportsServiceWorker = function() {
@@ -19,10 +20,14 @@ export default class Home extends Component {
           href="https://github.com/Atyantik/react-pwa"
           target="_blank"
         >
-          <img style={{position: "absolute", top: "46px", right: 0, border: 0}} src="https://camo.githubusercontent.com/365986a132ccd6a44c23a9169022c0b5c890c387/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f7265645f6161303030302e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png" />
+          <img style={{position: "absolute", top: "48px", right: 0, border: 0}} src="https://camo.githubusercontent.com/365986a132ccd6a44c23a9169022c0b5c890c387/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f7265645f6161303030302e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png" />
         </a>
         <div className="text-center">
-          <h1 className="h2 mt-5">Your Progressive Framework!</h1>
+          <div className="mt-5">
+            <h1 className="d-sm-none">React PWA</h1>
+            <h2 className="h3">Your Progressive Framework!</h2>
+          </div>
+          <img className="mt-3 mb-2" src={Logo} alt="ReactPWA Logo" style={{ maxWidth: "100px" }}/>
           <p>
             A highly scalable, Progressive Web Application foundation with the best Developer Experience.
           </p>

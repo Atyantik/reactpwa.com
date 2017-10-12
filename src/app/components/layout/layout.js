@@ -5,7 +5,7 @@ import Footer from "../footer";
 export default class Layout extends Component {
   render() {
     return (
-      <div>
+      <div style={{ backgroundColor: "#f6f6f6"}}>
         <Header />
         <main className="container">
           {this.props.children}

@@ -23,8 +23,8 @@ export default {
     // any, natural, landscape, landscape-primary, landscape-secondary, portrait, portrait-primary, portrait-secondary
     "orientation": "any",
     "start_url": "/",
-    "background_color": "#fff",
-    "theme_color": "#fff",
+    "background_color": "#f6f6f6",
+    "theme_color": "#f6f6f6",
     "display": "standalone",
     "description": "A highly scalable, Progressive Web Application foundation with the best Developer Experience."
   },
@@ -49,7 +49,7 @@ export default {
       },
       {
         name:"theme-color",
-        content: "#fff"
+        content: "#f6f6f6"
       },
       {
         charSet: "utf-8",
