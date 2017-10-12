@@ -73,17 +73,6 @@ export default class Home extends Component {
               </p>
             </div>
           </div>
-
-          <div className="card mt-4">
-            <div className="card-body">
-              <h4 className="card-title">Next Generation JavaScript</h4>
-              <h6 className="card-subtitle mb-2 text-muted">ES6/7 Compatible</h6>
-              <p className="card-text">
-                Using babel we support the next generation JavaScript syntax including Object/Array destructuring,
-                arrow functions, JSX syntax and more...
-              </p>
-            </div>
-          </div>
   
           <div className="card mt-4">
             <div className="card-body">
