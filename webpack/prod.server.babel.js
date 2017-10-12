@@ -167,6 +167,11 @@ export default [{
       compress: true,
       comments: false,
       sourceMap: false,
+      parallel: {
+        cache: true,
+        workers: 3
+      },
+      warnings: false
     }),
     new webpack.DefinePlugin({
       "process.env.NODE_ENV": JSON.stringify(process.env.NODE_ENV || "production"),
