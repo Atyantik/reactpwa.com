@@ -1,5 +1,4 @@
 #!/usr/bin/env bash
-yarn test
 yarn build
 cd dist && tar cvfz ../dist.tar.gz . && cd ..
 scp dist.tar.gz $ATYANTIK_USER@$ATYANTIK_SERVER:$DEPLOY_PATH
