@@ -3,6 +3,8 @@ node_js:
 - stable
 addons:
   ssh_known_hosts: $ATYANTIK_SERVER
+before_script:
+  - echo -e "Host $ATYANTIK_SERVER\n\tStrictHostKeyChecking no\n" >> ~/.ssh/config
 before_deploy:
 - openssl aes-256-cbc -K $encrypted_20dc80a8cf25_key -iv $encrypted_20dc80a8cf25_iv -in deploy_rsa.enc -out /tmp/deploy_rsa -d
 - eval "$(ssh-agent -s)"
