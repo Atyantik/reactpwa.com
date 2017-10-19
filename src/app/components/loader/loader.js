@@ -17,7 +17,7 @@ export default class Loader extends Component {
       <div style={{ backgroundColor: "#f6f6f6"}}>
         <Header />
         {
-          this.props.screenState !== SCREEN_STATE_LOADING &&
+          this.props.screenState === SCREEN_STATE_LOADING &&
           (
             <div className={styles["whole-page"]}>
               <div className={styles["escapingBall"]}>
