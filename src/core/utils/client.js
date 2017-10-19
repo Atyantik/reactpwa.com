@@ -19,7 +19,13 @@ import {
 } from "./renderer";
 
 import { generateMeta } from "./seo";
-import { screenLoading, screenLoaded, SCREEN_STATE_LOADED } from "../components/loader/action";
+import {
+  screenLoading,
+  screenLoaded,
+  SCREEN_STATE_LOADED,
+  screenPageEnter,
+  screenPageExit
+} from "../components/screen/action";
 
 // We require this cause we display screen loader as soon as there is
 // url change, but if the loader function is completed in 100 milli-second then there is
@@ -51,6 +57,23 @@ export const hideScreenLoader = (store) => {
   store.dispatch(screenLoaded());
 };
 
+const ANIMATION_TIMEOUT = 400;
+export const animateFadeIn = (global) => {
+  return new Promise(resolve => {
+    if (global.isInitialLoad) return resolve();
+    global.store.dispatch(screenPageEnter());
+    setTimeout(resolve, ANIMATION_TIMEOUT/2);
+  });
+};
+export const animateFadeOut = (global) => {
+  return new Promise(resolve => {
+    if (global.isInitialLoad) return resolve();
+    global.store.dispatch(screenPageExit());
+    setTimeout(resolve, ANIMATION_TIMEOUT/2);
+  });
+};
+
+
 /**
  * Scroll to top for the specified route
  * @param currentRoutes
@@ -72,14 +95,12 @@ export const scrollToTop = (currentRoutes = []) => {
 
 /**
  * Update meta-data for the specified url
- * @param url
+ * @param routes
  */
-const updateHtmlMeta = url => {
-  
-  const currentRoutes = getRouteFromPath(url);
+const updateHtmlMeta = routes => {
   
   let seoData = {};
-  _.each(currentRoutes, r => {
+  _.each(routes, r => {
     seoData = _.defaults({}, _.get(r, "seo", {}), seoData);
   });
   
@@ -157,12 +178,13 @@ export const renderRoutes = async ({
     storage,
     api,
     store,
-    url: window.location.href.replace(window.location.origin, "")
+    url: window.location.href.replace(window.location.origin, ""),
+    host: `${window.location.protocol}//${window.location.host}`
   });
   
   try {
     await Promise.all(promises);
-    updateHtmlMeta(url);
+    updateHtmlMeta(currentRoutes);
     renderRoutesByUrl({
       routes: currentRoutes,
       history,
@@ -297,4 +319,3 @@ export const smoothScroll = (eID, padding = 0, speedMultiplier = 1) => {
     leapY -= step; if (leapY < stopY) leapY = stopY; timer++;
   }
 };
-

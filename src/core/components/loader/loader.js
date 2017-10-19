@@ -1,14 +1,17 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
-import { SCREEN_STATE_LOADING } from "./action";
+import { SCREEN_STATE_LOADING } from "../screen/action";
 import * as styles from "./loader.scss";
 
 @connect( state => {
   return {
-    screenState: state.screen.state
+    screenState: state.screen.state,
   };
 })
 export default class Loader extends Component {
+  constructor(props) {
+    super(props);
+  }
   render() {
     return (
       <div>
