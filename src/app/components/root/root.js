@@ -2,7 +2,7 @@ import { Component } from "react";
 import _ from "lodash";
 import { connect } from "react-redux";
 import { loadStyle } from "../../../core/utils";
-import { screenLoaded } from "../loader/action";
+import { screenLoaded } from "../../../core/components/screen/action";
 
 @connect (state => {
   return {
