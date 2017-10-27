@@ -178,7 +178,7 @@ export default class Home extends Component {
               <h4 className="card-title">WebP Supported</h4>
               <p className="card-text">
                 Make your application super fast with WebP support. Read more about it at
-                <a href="https://developers.google.com/speed/webp/" target="_blank" rel="noFollow">https://developers.google.com/speed/webp/</a>
+                <a href="https://developers.google.com/speed/webp/" target="_blank" rel="nofollow noopener">https://developers.google.com/speed/webp/</a>
               </p>
             </div>
           </div>

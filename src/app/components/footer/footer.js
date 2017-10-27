@@ -25,7 +25,7 @@ export default class Header extends Component {
               href="https://www.browserstack.com"
               target="_blank"
               className="text-black d-inline-block v-middle"
-              rel="nofollow"
+              rel="nofollow noopener"
             >
               <Picture imgClassName={styles["supporter-img"]} image={BrowserStackLogo} alt={"Browser Stack Logo"}/>
             </a>
