@@ -27,10 +27,10 @@ import {
   srcPublicDir,
   distPublicDir,
   buildDir,
-  buildPublicPath,
+  buildPath,
 } from "../directories";
 
-import rules from "./prod.rules";
+import rules, { stats } from "./prod.rules";
 
 const isolateVendorScripts = false;
 
@@ -107,10 +107,13 @@ export default {
     filename: "[name].[chunkhash].bundle.js",
     
     // public path is assets path
-    publicPath: buildPublicPath,
+    publicPath: buildPath,
   },
   
   devtool: false,
+  
+  // Stats from rules
+  stats,
   
   plugins: [
     // While building remove the dist dir
@@ -123,14 +126,13 @@ export default {
     
     // Uglify the output so that we have the most optimized code
     new UglifyJSPlugin({
-      compress: true,
-      comments: false,
-      sourceMap: false,
-      parallel: {
-        cache: true,
-        workers: 3
+      uglifyOptions: {
+        compress: {
+          warnings: false,
+        },
       },
-      warnings: false
+      sourceMap: false,
+      parallel: 3,
     }),
     
     // Create common chunk of data

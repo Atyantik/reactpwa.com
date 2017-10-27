@@ -1,5 +1,3 @@
-import path from "path";
-
 /**
  * @description It moves all the require("style.css")s in entry chunks into
  * a separate single CSS file. So your styles are no longer inlined
@@ -11,12 +9,24 @@ import path from "path";
 import { srcDir } from "../directories";
 import {getStylesRule} from "./utils";
 
+// minimal logging
+export const stats = {
+  assets: false,
+  colors: true,
+  version: false,
+  hash: false,
+  timings: false,
+  chunks: false,
+  chunkModules: false,
+  children: false
+};
+
 export default ({ imageOutputPath = "images/" }) => {
   return [
     // Rules for js or jsx files. Use the babel loader.
     // Other babel configuration can be found in .babelrc
     {
-      test: /pages\/.*\.jsx?$/,
+      test: /pages(\/|\\).*\.jsx?$/,
       include: srcDir,
       use: [
         {
@@ -41,20 +51,13 @@ export default ({ imageOutputPath = "images/" }) => {
     ...[getStylesRule({development: false, extract: true, isResource: false})],
     ...[getStylesRule({development: false, extract: true, isResource: true})],
   
-    // Manage fonts other than svg format
     {
-      test: /\.(eot|ttf|woff|woff2|svg)$/,
-      include: [
-        path.join(srcDir, "resources", "fonts"),
-      ],
+      test: /\.(eot|ttf|woff|woff2)$/,
       loader: `file-loader?outputPath=fonts/&name=[path][hash].[ext]&context=${srcDir}`
     },
   
     {
       test: /\.(jpe?g|png|svg|gif|webp)$/i,
-      exclude: [
-        path.join(srcDir, "resources", "fonts"),
-      ],
       // match one of the loader's main parameters (sizes and placeholder)
       resourceQuery: /[?&](sizes|placeholder)(=|&|\[|$)/i,
       use: [
@@ -64,11 +67,8 @@ export default ({ imageOutputPath = "images/" }) => {
     {
       test: /\.(jpe?g|png|gif|svg|webp)$/i,
       // match one of the loader's main parameters (sizes and placeholder)
-      exclude: [
-        path.join(srcDir, "resources", "fonts"),
-      ],
       use: [
-        `file-loader?outputPath=${imageOutputPath}/&name=[path][hash].[ext]&context=${srcDir}`,
+        `file-loader?outputPath=${imageOutputPath}&name=[path][hash].[ext]&context=${srcDir}`,
         {
           loader: "imagemin-loader",
           options: {

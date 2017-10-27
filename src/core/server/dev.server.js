@@ -20,7 +20,6 @@ import webpackConfig from "../../../webpack/dev.babel";
 import {extractFilesFromAssets} from "../utils/utils";
 import Html from "../components/html";
 import {publicDirName, srcPublicDir} from "../../../directories";
-
 const app = express();
 
 const enableServiceWorker = false;
@@ -58,7 +57,7 @@ if (_.isArray(webpackConfig)) {
 }
 
 // server content from content base
-app.use("/public", express.static(commonClientConfig.devServer.contentBase));
+app.use(express.static(commonClientConfig.devServer.contentBase));
 
 // Compile common & client configurations
 const commonClientCompiler = webpack(commonClientConfig);

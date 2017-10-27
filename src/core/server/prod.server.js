@@ -42,8 +42,6 @@ import Routes from "../../routes";
 import {extractFilesFromAssets} from "../utils/utils";
 import {publicDirName} from "../../../directories";
 import config from "../../config";
-
-
 /**
  * Set current dir for better computation
  * @type {String}
@@ -62,9 +60,10 @@ if (filename) {
 let allAssets = [];
 const getAllAssets = () => {
   if (_.isEmpty(allAssets)) {
-    allAssets = glob.sync(path.join(currentDir, "public") + "/**/*");
+    const publicDirPrefix = path.join(currentDir, publicDirName);
+    allAssets = glob.sync( publicDirPrefix + "/**/*");
     allAssets = _.filter(
-      _.map(allAssets, a => a.replace(currentDir, "")),
+      _.map(allAssets, a => a.replace(publicDirPrefix, "")),
       a => !!path.extname(a)
     );
   }
@@ -118,7 +117,7 @@ if (hstsSettings.enabled) {
 }
 
 const cacheTime = 86400000*30;     // 30 days;
-app.use("/public", express.static(path.join(currentDir, "public"), {
+app.use(express.static(path.join(currentDir, "public"), {
   maxAge: cacheTime
 }));
 
@@ -213,7 +212,6 @@ try {
  * window object
  */
 app.get("/_globals", infiniteCache(), (req, res) => {
-  
   // Never ever cache this request
   const {assets} = req;
   const allCss = extractFilesFromAssets(assets, ".css");

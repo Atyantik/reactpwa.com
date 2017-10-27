@@ -2,6 +2,7 @@ import path from "path";
 import webpack from "webpack";
 import UglifyJSPlugin from "uglifyjs-webpack-plugin";
 import WebpackDeleteAfterEmit from "webpack-delete-after-emit";
+import RemoveAfterEmit from "./remove-after-emit";
 
 
 /**
@@ -22,7 +23,7 @@ import autoprefixer from "autoprefixer";
 
 import { srcDir, distDir } from "../directories";
 
-import rules from "./prod.rules";
+import rules, { stats } from "./prod.rules";
 
 export default [{
   
@@ -43,7 +44,7 @@ export default [{
   //These options determine how the different types of modules within
   // a project will be treated.
   module: {
-    rules: rules({imageOutputPath: "public/build/images/"}),
+    rules: rules({imageOutputPath: "build/images/"}),
   },
   resolve: {
     modules: [
@@ -74,19 +75,19 @@ export default [{
   },
   target: "node",
   devtool: false,
+  stats,
   
   plugins: [
     
     // Uglify the output so that we have the most optimized code
     new UglifyJSPlugin({
-      compress: true,
-      comments: false,
-      sourceMap: false,
-      parallel: {
-        cache: true,
-        workers: 3
+      uglifyOptions: {
+        compress: {
+          warnings: false,
+        },
       },
-      warnings: false
+      sourceMap: false,
+      parallel: 3,
     }),
     new webpack.DefinePlugin({
       "process.env.NODE_ENV": JSON.stringify(process.env.NODE_ENV || "production"),
@@ -113,8 +114,15 @@ export default [{
     // but we still need the css class names that are generated. Thus we remove the server.min.css
     // after the build process
     new WebpackDeleteAfterEmit({
-      globs: ["server.min.css"]
-    })
+      globs: [
+        "server.min.css",
+        "service-worker.min.css"
+      ]
+    }),
+    // Remove build directory generated extra while compiling server
+    new RemoveAfterEmit([
+      "build"
+    ])
   ],
 },
 {
@@ -159,19 +167,19 @@ export default [{
   },
   target: "web",
   devtool: false,
+  stats,
   
   plugins: [
     
     // Uglify the output so that we have the most optimized code
     new UglifyJSPlugin({
-      compress: true,
-      comments: false,
-      sourceMap: false,
-      parallel: {
-        cache: true,
-        workers: 3
+      uglifyOptions: {
+        compress: {
+          warnings: false,
+        },
       },
-      warnings: false
+      sourceMap: false,
+      parallel: 3,
     }),
     new webpack.DefinePlugin({
       "process.env.NODE_ENV": JSON.stringify(process.env.NODE_ENV || "production"),
@@ -200,8 +208,14 @@ export default [{
     // but we still need the css class names that are generated. Thus we remove the server.min.css
     // after the build process
     new WebpackDeleteAfterEmit({
-      globs: ["service-worker.min.css"]
-    })
+      globs: [
+        "server.min.css",
+        "service-worker.min.css"
+      ]
+    }),
+    // Remove build directory generated extra while compiling service-worker.js
+    new RemoveAfterEmit([
+      "build"
+    ])
   ],
-}
-];
+}];

@@ -73,13 +73,14 @@
     "react-test-render": "^1.0.3",
     "react-test-renderer": "^16.0.0",
     "react-transform-hmr": "^1.0.4",
+    "react-transition-group": "^2.2.1",
     "redux": "^3.7.2",
     "sass-loader": "^6.0.6",
     "serve-favicon": "^2.4.3",
     "strict-uri-encode": "^2.0.0",
     "style-loader": "^0.19.0",
     "uglify-js": "^3.0.28",
-    "uglifyjs-webpack-plugin": "^0.4.6",
+    "uglifyjs-webpack-plugin": "^1.0.1",
     "universal-fetch": "^1.0.0",
     "url-loader": "^0.6.2",
     "webp-loader": "^0.2.1",
@@ -87,13 +88,22 @@
     "webpack-delete-after-emit": "^1.0.5",
     "webpack-dev-middleware": "^1.12.0",
     "webpack-dev-server": "^2.7.1",
-    "webpack-hot-middleware": "^2.19.1"
+    "webpack-hot-middleware": "^2.19.1",
+    "workbox-sw": "^2.1.0"
   },
   "scripts": {
     "start": "cross-env NODE_ENV=development nodemon --exec babel-node --watch ./src/server.js --watch ./src/client.js --watch ./src/core --watch ./webpack ./src/server.js",
     "lint": "eslint --ignore-path .gitignore src webpack",
     "build": "cross-env NODE_ENV=production webpack -p --config ./webpack/prod.client.babel.js && cross-env NODE_ENV=production webpack -p --config ./webpack/prod.server.babel.js",
-    "test": "npm run lint && cross-env NODE_ENV=test mocha --require babel-core/register \"src/**/*.test.js\""
+    "test": "npm run lint && cross-env NODE_ENV=test mocha --require babel-core/register \"src/**/*.test.js\"",
+    "docker:dev:image": "docker build -t react-pwa -f docker/Dockerfile .",
+    "docker:dev:start": "docker run -it -v \"$PWD/src\":\"/app/src\" -p 3003:3003 react-pwa",
+    "docker:dev:list": "docker run -it -v \"$PWD/src\":\"/app/src\" -p 3003:3003 react-pwa yarn lint",
+    "docker:dev:test": "docker run -it -v \"$PWD/src\":\"/app/src\" -p 3003:3003 react-pwa yarn test",
+    "docker:prod:build": "docker run -it -v \"$PWD/src\":\"/app/src\" -v \"$PWD/dist\":\"/app/dist\" react-pwa yarn build",
+    "docker:prod:image": "npm run docker:dev:image && npm run docker:prod:build && docker build -t react-pwa-prod -f docker/prod/Dockerfile .",
+    "docker:prod:start": "docker run -it -p 3003:3003 react-pwa-prod",
+    "postinstall": "opencollective postinstall"
   },
   "keywords": [
     "es7",
@@ -101,5 +111,12 @@
   ],
   "author": "Tirth Bodawala",
   "license": "ISC",
-  "dependencies": {}
+  "dependencies": {
+    "opencollective": "^1.0.3"
+  },
+  "collective": {
+    "type": "opencollective",
+    "url": "https://opencollective.com/react-pwa",
+    "logo": "https://opencollective.com/opencollective/logo.txt"
+  }
 }
