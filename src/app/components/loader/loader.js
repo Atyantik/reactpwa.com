@@ -20,8 +20,11 @@ export default class Loader extends Component {
           this.props.screenState === SCREEN_STATE_LOADING &&
           (
             <div className={styles["whole-page"]}>
-              <div className={styles["escapingBall"]}>
-                <div className={styles["escapingBallG"]} />
+              <div className={styles["thecube"]}>
+                <div className={`${styles["cube"]} ${styles["c1"]}`} />
+                <div className={`${styles["cube"]} ${styles["c2"]}`} />
+                <div className={`${styles["cube"]} ${styles["c4"]}`} />
+                <div className={`${styles["cube"]} ${styles["c3"]}`} />
               </div>
             </div>
           )
