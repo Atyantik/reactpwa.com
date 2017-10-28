@@ -12,11 +12,23 @@ export default class Html extends React.Component {
     stylesheets: PropTypes.array,
     scripts: PropTypes.array,
     globals: PropTypes.shape({}),
-    seo: PropTypes.shape({})
+    seo: PropTypes.shape({}),
+    isBot: PropTypes.bool,
+    baseUrl: PropTypes.string,
+    url: PropTypes.string,
+  };
+  static defaultProps = {
+    stylesheets: [],
+    scripts: [],
+    globals: {},
+    seo: {},
+    isBot: false,
+    baseUrl: "",
+    url: "",
   };
   
   getMeta() {
-    return generateMeta(this.props.seo);
+    return generateMeta(this.props.seo, {baseUrl: this.props.baseUrl, url: this.props.url});
   }
   
   getTitle() {

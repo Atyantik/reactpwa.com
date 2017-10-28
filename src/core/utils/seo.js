@@ -40,14 +40,16 @@ const metaKeys = [
  * Return array of meta tags required for the route
  * Pass seo data to the function and get array of meta data
  * @param data
+ * @param options
  * @returns {Array}
  */
-export const generateMeta = (data) => {
+export const generateMeta = (data, options = { baseUrl: "", url: "" }) => {
   let seoData = _.defaults(data, seoSchema);
   let generatedSchema = [];
   const desc155words = trimTillLastSentence(seoData.description, 155);
   const desc200words = trimTillLastSentence(seoData.description, 200);
   const hasImage = !!seoData.image.length;
+  const baseUrl = options.baseUrl.replace(/\/$/, "");
 
   /**
    * Manage name/title
@@ -144,17 +146,21 @@ export const generateMeta = (data) => {
    * Manage Primary Image
    */
   if (hasImage) {
+    let fullImageUrl = seoData.image;
+    if (!_.startsWith(fullImageUrl, "http")) {
+      fullImageUrl = `${baseUrl}${!_.startsWith(seoData.image,"/")?"/":""}${fullImageUrl}`;
+    }
     generatedSchema.push({
       itemProp: "image",
-      content: seoData.image
+      content: fullImageUrl
     });
     generatedSchema.push({
       name: "twitter:image:src",
-      content: seoData.image
+      content: fullImageUrl
     });
     generatedSchema.push({
       property: "og:image",
-      content: seoData.image
+      content: fullImageUrl
     });
   }
 
@@ -211,7 +217,7 @@ export const generateMeta = (data) => {
     }
   });
 
-  let url = _.get(seoData, "url", "");
+  let url = _.get(seoData, "url", _.get(options, "url", ""));
   if (!url.length && isBrowser()) {
     url = _.get(window, "location.href", "");
   }
