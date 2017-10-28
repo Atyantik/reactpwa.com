@@ -65,11 +65,11 @@ Listening at http://0.0.0.0:3003
               <small>Before removing, make sure you have closed the running instance of example app</small>
             </header>
             <div>
-              <ol>
-                <li>Remove everything from <i>`src/app/components`</i>.</li>
-                <li>Remove all files from <i>`src/pages`</i> folder.</li>
+              <ul className="list-unstyled">
+                <li>1) Remove everything from <i>`src/app/components`</i>.</li>
+                <li>2) Remove all files from <i>`src/pages`</i> folder.</li>
                 <li>
-                  Edit <i>`src/routes.js`</i> and remove all the previous routes.
+                  3) Edit <i>`src/routes.js`</i> and remove all the previous routes.
                   <Prism code={`import { configureRoutes } from "./core/utils/bundler";
 
 // routes
@@ -77,7 +77,7 @@ Listening at http://0.0.0.0:3003
 export default configureRoutes([
 ]);`} />
                 </li>
-              </ol>
+              </ul>
             </div>
           </section>
           <hr />
@@ -86,9 +86,9 @@ export default configureRoutes([
               <h3>Creating Home Component & Route</h3>
             </header>
             <div>
-              <ol>
+              <ul className="list-unstyled">
                 <li>
-                  As simple as creating React Component create Home component in file `src/app/components/home.js`
+                  1) As simple as creating React Component create Home component in file `src/app/components/home.js`
                   <Prism code={`import React, { Component } from "react";
 
 export default class Home extends Component {
@@ -101,7 +101,7 @@ export default class Home extends Component {
 }`} />
                 </li>
                 <li>
-                  Create new page in `src/pages/home.js`
+                  2) Create new page in `src/pages/home.js`
                   <Prism code={`import Home from "../app/components/home";
 
 const routes = [
@@ -115,7 +115,7 @@ export default routes;
 `} />
                 </li>
                 <li>
-                  Edit <i>`src/routes.js`</i> and add route for home page.
+                  3) Edit <i>`src/routes.js`</i> and add route for home page.
                   <Prism code={`import { configureRoutes } from "./core/utils/bundler";
 
 // routes
@@ -128,7 +128,7 @@ export default configureRoutes([
                     <strong>NOTE:</strong> Please maintain the import syntax as above, because we add bundleKey to the route via route-loader.
                   </p>
                 </li>
-              </ol>
+              </ul>
               <p>That's all start your application with <strong>yarn start</strong> and you will have your <strong>Hello world!</strong> home page ready.</p>
             </div>
           </section>
