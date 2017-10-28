@@ -10,3 +10,12 @@
 .animator.fade-out {
   opacity: 0;
 }
+.padded-nav {
+  li {
+    padding: 0.5rem 0;
+    border-bottom: 1px solid rgba(204, 204, 204, 0.13);
+    :first-child {
+      padding-top: 0;
+    }
+  }
+}

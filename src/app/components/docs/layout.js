@@ -9,9 +9,40 @@ export default class DocsLayout extends Component {
     return (
       <div className="row">
         <div className="col col-md-3 p-2 mt-2">
-          <ul className="list-unstyled">
+          <strong className="text-muted">Navigate to:</strong>
+          <ul className={`list-unstyled ${styles["padded-nav"]}`}>
             <li>
-              <Link animateSection="docs-content" to="/docs" className="text-lead">Getting Started - Hello World!</Link>
+              <Link animateSection="docs-content" to="/docs">Getting Started - Hello World!</Link>
+            </li>
+            <li>
+              <Link animateSection="docs-content" to="/docs/configuring-pwa">Configuring PWA</Link>
+            </li>
+            <li>
+              <Link animateSection="docs-content" to="/docs/customizing-loader">Customizing Loader</Link>
+            </li>
+            <li>
+              <Link animateSection="docs-content" to="/docs/working-with-css">Working with CSS</Link>
+            </li>
+            <li>
+              <Link animateSection="docs-content" to="/docs/error-pages">Error Pages</Link>
+            </li>
+            <li>
+              <Link animateSection="docs-content" to="/docs/overriding-core-components">Overriding Core Components</Link>
+            </li>
+            <li>
+              <Link animateSection="docs-content" to="/docs/pages-routing">Pages and routing</Link>
+            </li>
+            <li>
+              <Link animateSection="docs-content" to="/docs/external-script-libraries">Using external script libraries</Link>
+            </li>
+            <li>
+              <Link animateSection="docs-content" to="/docs/page-transitions">Page Transitions</Link>
+            </li>
+            <li>
+              <Link animateSection="docs-content" to="/docs/ssr-server-side-rendering">Server Side Rendering (SSR)</Link>
+            </li>
+            <li>
+              <Link animateSection="docs-content" to="/docs/configuring-redux">Configuring Redux</Link>
             </li>
           </ul>
           <p>
