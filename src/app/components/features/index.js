@@ -5,7 +5,7 @@
  */
 
 import React, { Component } from "react";
-import { Link } from "react-router-dom";
+import Link from "../../../core/components/link";
 import Prism from "../prism";
 
 export default class FeaturesIndex extends Component {
