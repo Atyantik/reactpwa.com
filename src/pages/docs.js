@@ -1,5 +1,5 @@
 import DocsLayout from "../app/components/docs/layout";
-import Docs from "../app/components/docs/getting-started/docs";
+import Docs from "../app/components/docs/getting-started";
 import PendingDocs from "../app/components/docs/pending";
 import DefaultLayout from "../app/components/layout";
 import GettingStartedImage from "../app/components/docs/getting-started/Get Started - Docs.jpg";

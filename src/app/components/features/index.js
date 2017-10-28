@@ -19,7 +19,7 @@ export default class FeaturesIndex extends Component {
         </header>
         <section>
           <div className="card mt-4">
-            <Link to="/features/pwa-progressive-web-application" className="text-dark">
+            <Link animateSection="features-content" to="/features/pwa-progressive-web-application" className="text-dark">
               <div className="card-body">
                 <header>
                   <h4 className="card-title">Progressive Web Application</h4>
@@ -34,7 +34,7 @@ export default class FeaturesIndex extends Component {
           </div>
 
           <div className="card mt-4">
-            <Link to="/features/access-offline" className="text-dark">
+            <Link animateSection="features-content" to="/features/access-offline" className="text-dark">
               <div className="card-body">
                 <h4 className="card-title">Offline support</h4>
                 <p className="card-text">
@@ -46,7 +46,7 @@ export default class FeaturesIndex extends Component {
           </div>
 
           <div className="card mt-4">
-            <Link to="/features/code-splitting" className="text-dark">
+            <Link animateSection="features-content" to="/features/code-splitting" className="text-dark">
               <div className="card-body">
                 <h4 className="card-title">Code Splitting</h4>
                 <p className="card-text">
@@ -61,7 +61,7 @@ export default class FeaturesIndex extends Component {
           </div>
 
           <div className="card mt-4">
-            <Link to="/features/hot-reloading" className="text-dark">
+            <Link animateSection="features-content" to="/features/hot-reloading" className="text-dark">
               <div className="card-body">
                 <h4 className="card-title">Hot Reloading</h4>
                 <p className="card-text">

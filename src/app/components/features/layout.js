@@ -22,7 +22,7 @@ export default class FeaturesLayout extends Component {
         </div>
         <div  className="col col-md-9">
           <Transition
-            sectionName={"docs-content"}
+            sectionName={"features-content"}
             className={styles["animator"]}
             onEnterClassName={styles["fade-in"]}
             onExitClassName={styles["fade-out"]}

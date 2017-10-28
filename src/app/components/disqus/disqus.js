@@ -2,6 +2,8 @@ import _ from "lodash";
 import React, {Component} from "react";
 import {generateStringHash, loadScript} from "../../../core/utils/utils";
 
+const __production = process.env.NODE_ENV === "production";
+
 export default class Disqus extends Component {
   async loadDisqus() {
     let DISQUS = _.get(window, "DISQUS", false);
@@ -11,6 +13,7 @@ export default class Disqus extends Component {
     return Promise.resolve(DISQUS);
   }
   reloadWidget() {
+    if (!__production) return;
     this.loadDisqus().then(DISQUS => {
       DISQUS.reset({
         reload: true,
@@ -28,6 +31,9 @@ export default class Disqus extends Component {
     this.reloadWidget();
   }
   render() {
+    if (!__production) {
+      return null;
+    }
     return <div id="disqus_thread" />;
   }
 }
