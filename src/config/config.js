@@ -22,9 +22,14 @@ export default {
     // Orientation of web-app possible:
     // any, natural, landscape, landscape-primary, landscape-secondary, portrait, portrait-primary, portrait-secondary
     "orientation": "any",
+    
     "start_url": "/",
-    "background_color": "#f6f6f6",
-    "theme_color": "#f6f6f6",
+    // Background color of the application
+    "background_color": "#17a2b8",
+    
+    // Theme color, used to modify the status bar color etc
+    "theme_color": "#17a2b8",
+    
     "display": "standalone",
     "description": "A highly scalable, Progressive Web Application foundation with the best Developer Experience."
   },

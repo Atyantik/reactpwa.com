@@ -30,11 +30,9 @@ const routes = [
           title: "Configuring PWA"
         },
         seo: {
-          title: "Getting Started - Hello World | React PWA",
-          description: "Get started with your own Progressive web application in the most simplest way.",
-          keywords: "pwa,progressive web application,hello world, react,getting started,tutorials",
-          image: GettingStartedImage,
-          type: "article"
+          title: "Configuring PWA | React PWA",
+          description: "Modify the PWA for your own application. Set the background color and theme color. Setting for add to home screen.",
+          keywords: "theme,background,homescreen",
         }
       },
       {
@@ -45,11 +43,9 @@ const routes = [
           title: "Customizing Loader"
         },
         seo: {
-          title: "Getting Started - Hello World | React PWA",
-          description: "Get started with your own Progressive web application in the most simplest way.",
-          keywords: "pwa,progressive web application,hello world, react,getting started,tutorials",
-          image: GettingStartedImage,
-          type: "article"
+          title: "Customizing Loader | React PWA",
+          description: "Page loaders can be tricky and every web application has a different requirement for loading pages. Some wants to load whole page while others just a partial section",
+          keywords: "loaders,page loading,spinner,history change",
         }
       },
       {
@@ -60,11 +56,9 @@ const routes = [
           title: "Working with CSS"
         },
         seo: {
-          title: "Getting Started - Hello World | React PWA",
-          description: "Get started with your own Progressive web application in the most simplest way.",
-          keywords: "pwa,progressive web application,hello world, react,getting started,tutorials",
-          image: GettingStartedImage,
-          type: "article"
+          title: "Working with CSS | React PWA",
+          description: "Use CSS for module that is loaded, other css can be lazy loaded. Create lightweight application with bundled CSS. Use your favourite SASS compiler with postcss",
+          keywords: "postcss,sass,css,css3,node-sass,css-next",
         }
       },
       {
@@ -75,11 +69,9 @@ const routes = [
           title: "Error Pages"
         },
         seo: {
-          title: "Getting Started - Hello World | React PWA",
-          description: "Get started with your own Progressive web application in the most simplest way.",
-          keywords: "pwa,progressive web application,hello world, react,getting started,tutorials",
-          image: GettingStartedImage,
-          type: "article"
+          title: "Error Pages | React PWA",
+          description: "Modify you error pages for 404 and 500. Show interactive error messages and not-found page with ReactPWA.",
+          keywords: "error,404,500,Internal Server Error,server,not found"
         }
       },
       {
@@ -90,11 +82,9 @@ const routes = [
           title: "Overriding Core Components"
         },
         seo: {
-          title: "Getting Started - Hello World | React PWA",
-          description: "Get started with your own Progressive web application in the most simplest way.",
-          keywords: "pwa,progressive web application,hello world, react,getting started,tutorials",
-          image: GettingStartedImage,
-          type: "article"
+          title: "Overriding Core Components | React PWA",
+          description: "Override core components for more flexibility and customization. End goal of ReactPWA is to provide flexibility, not stiffness",
+          keywords: "loader,root,override,404,500",
         }
       },
       {
@@ -105,11 +95,9 @@ const routes = [
           title: "Pages & Routing"
         },
         seo: {
-          title: "Getting Started - Hello World | React PWA",
-          description: "Get started with your own Progressive web application in the most simplest way.",
-          keywords: "pwa,progressive web application,hello world, react,getting started,tutorials",
-          image: GettingStartedImage,
-          type: "article"
+          title: "Pages & Routing | React PWA",
+          description: "Create separate bundles for different pages. Write universal routing. Easy to use and adapt react-router-configuration",
+          keywords: "react-router,react-router-web,page,bundle,code-splitting"
         }
       },
       {
@@ -120,11 +108,9 @@ const routes = [
           title: "Using external script libraries"
         },
         seo: {
-          title: "Getting Started - Hello World | React PWA",
-          description: "Get started with your own Progressive web application in the most simplest way.",
-          keywords: "pwa,progressive web application,hello world, react,getting started,tutorials",
-          image: GettingStartedImage,
-          type: "article"
+          title: "Using external script libraries | React PWA",
+          description: "Don't get stuck with limited resources. Use external JS SDKs to solve your problem in PWA.",
+          keywords: "pwa,3rd Party JS,SDK,GTM,GA,DISQUS",
         }
       },
       {
@@ -135,11 +121,9 @@ const routes = [
           title: "Page transitions"
         },
         seo: {
-          title: "Getting Started - Hello World | React PWA",
-          description: "Get started with your own Progressive web application in the most simplest way.",
-          keywords: "pwa,progressive web application,hello world, react,getting started,tutorials",
-          image: GettingStartedImage,
-          type: "article"
+          title: "Page Transitions | React PWA",
+          description: "Don't just reload page. Do it with a style. ReactPWA can handle page transitions really simple with lightweight CSS transitions",
+          keywords: "transition,css,css transitions,history change",
         }
       },
       {
@@ -150,11 +134,9 @@ const routes = [
           title: "SSR - Server side rendering"
         },
         seo: {
-          title: "Getting Started - Hello World | React PWA",
-          description: "Get started with your own Progressive web application in the most simplest way.",
-          keywords: "pwa,progressive web application,hello world, react,getting started,tutorials",
-          image: GettingStartedImage,
-          type: "article"
+          title: "Server side rendering | React PWA",
+          description: "Never let the end user wait for the JavaScript to load, instead send the data with server side rendering and load the JavaScript there after.",
+          keywords: "ssr,server side rendering,render,seo,server side render",
         }
       },
       {
@@ -165,14 +147,11 @@ const routes = [
           title: "Configuring Redux"
         },
         seo: {
-          title: "Getting Started - Hello World | React PWA",
-          description: "Get started with your own Progressive web application in the most simplest way.",
-          keywords: "pwa,progressive web application,hello world, react,getting started,tutorials",
-          image: GettingStartedImage,
-          type: "article"
+          title: "Configuring Redux | React PWA",
+          description: "Use redux for your application. Adding your custom reducers and actions can not be more easy.",
+          keywords: "redux,react-redux,connect",
         }
       },
-      
     ]
   }
 ];
