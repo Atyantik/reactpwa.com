@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import Link from "../../../core/components/link";
 import Transition from "../../../core/components/transition/transition";
 import * as styles from "./styles.scss";
+import Disqus from "../disqus";
 
 export default class DocsLayout extends Component {
   
@@ -62,6 +63,9 @@ export default class DocsLayout extends Component {
             </div>
           </Transition>
           <div className="alert alert-warning mt-5">We are looking for contributors and queries to create useful documentation. Please contribute.</div>
+          <div className="mt-4">
+            <Disqus />
+          </div>
         </div>
       </div>
     );
