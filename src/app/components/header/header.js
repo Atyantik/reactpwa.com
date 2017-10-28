@@ -16,7 +16,8 @@ export default class Header extends Component {
             </div>
             <Link to="/" className="d-none d-sm-inline text-white ml-2 align-bottom" style={{ textDecoration: "none"}}>React PWA</Link>
           </div>
-          
+
+          <Link to="/features" className="text-white pull-right mr-3" style={{ textDecoration: "none", lineHeight: "2rem"}}>Features</Link>
           <Link to="/docs" className="d-none d-sm-block text-white pull-right" style={{ textDecoration: "none", lineHeight: "2rem"}}>Documentation</Link>
           <Link to="/docs" className="d-sm-none text-white pull-right" style={{ textDecoration: "none", lineHeight: "2rem"}}>Docs</Link>
         </div>

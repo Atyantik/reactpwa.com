@@ -46,9 +46,7 @@ export default class DocsLayout extends Component {
               <Link animateSection="docs-content" to="/docs/configuring-redux">Configuring Redux</Link>
             </li>
           </ul>
-          <p>
-            We are busy writing documentation for the boilerplate. Till then please visit our <a href="https://github.com/Atyantik/react-pwa/wiki" rel="noFollow" target="_blank">wiki</a> for limited examples.
-          </p>
+          <p>We are busy writing documentation for the boilerplate. Thank you for your patience.</p>
           <div className="alert alert-warning mt-2">We are looking for contributors and queries to create useful documentation. Please contribute.</div>
         </div>
         <div  className="col col-md-9">
