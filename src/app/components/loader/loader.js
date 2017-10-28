@@ -30,6 +30,8 @@ export default class Loader extends Component {
           )
         }
         <Transition
+          key="loader-transition"
+          sectionName="page"
           className={styles["animator"]}
           onEnterClassName={styles["fade-in"]}
           onExitClassName={styles["fade-out"]}

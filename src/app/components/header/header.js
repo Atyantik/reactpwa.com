@@ -1,5 +1,5 @@
 import React, {Component} from "react";
-import { Link } from "react-router-dom";
+import Link from "../../../core/components/link";
 import WhiteLogo from "../../../resources/images/white-logo.png?sizes=64w";
 import Picture from "../../../core/components/picture";
 
