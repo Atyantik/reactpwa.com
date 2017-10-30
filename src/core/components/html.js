@@ -49,9 +49,9 @@ export default class Html extends React.Component {
           {/** The url /manifest.json is a url handled via the server.js **/}
           {
             !__development &&
-            (<link rel="manifest" href={"/manifest.json"} />)
+          (<link rel="manifest" href={"/manifest.json"} />)
           }
-          
+        
           {
             _.map(this.getMeta(), (meta, i) => {
               return <meta key={i} {...meta} />;
@@ -71,6 +71,7 @@ export default class Html extends React.Component {
           </div>
           <div id="temp" />
           {
+            !this.props.isBot &&
             _.map(scripts, path => {
               const pathHash = generateStringHash(path, "JS");
               return <script type="text/javascript" key={pathHash} id={pathHash} src={path} defer />;
