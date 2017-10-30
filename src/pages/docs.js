@@ -1,6 +1,6 @@
 import DocsLayout from "../app/components/docs/layout";
 import GettingStarted from "../app/components/docs/getting-started";
-import ConfiguringPWA from "../app/components/docs/configuring-pwa";
+//import ConfiguringPWA from "../app/components/docs/configuring-pwa";
 import PendingDocs from "../app/components/docs/pending";
 import DefaultLayout from "../app/components/layout";
 import GettingStartedImage from "../app/components/docs/getting-started/Get Started - Docs.jpg";
@@ -26,7 +26,8 @@ const routes = [
       {
         path: "/docs/configuring-pwa",
         exact: true,
-        component: ConfiguringPWA,
+        // component: ConfiguringPWA,
+        component: PendingDocs,
         props: {
           title: "Configuring PWA"
         },
