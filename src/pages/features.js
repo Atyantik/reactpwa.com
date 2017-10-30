@@ -13,6 +13,11 @@ import CodeSplitting from "../app/components/features/feature-list/code-splittin
 import HotReloading from "../app/components/features/feature-list/hot-reloading";
 import NextGenJS from "../app/components/features/feature-list/nextgen-js";
 import PendingDocs from "../app/components/docs/pending/pending";
+import SSR from "../app/components/features/feature-list/ssr";
+import SocialSharing from "../app/components/features/feature-list/social-sharing";
+import UniversalRouting from "../app/components/features/feature-list/iso-uni-routing";
+import Caching from "../app/components/features/feature-list/caching";
+import HSTS from "../app/components/features/feature-list/hsts";
 
 const routes = [
   {
@@ -117,7 +122,7 @@ const routes = [
       {
         path: "/features/isomorphic-universal-routing",
         exact: true,
-        component: PendingDocs,
+        component: UniversalRouting,
         props: {
           title: "Isomorphic/Universal Routing"
         },
@@ -145,7 +150,7 @@ const routes = [
       {
         path: "/features/seo-search-engine-optimization/social-sharing",
         exact: true,
-        component: PendingDocs,
+        component: SocialSharing,
         props: {
           title: "Social Sharing"
         },
@@ -159,7 +164,7 @@ const routes = [
       {
         path: "/features/seo-search-engine-optimization/ssr-server-side-rendering",
         exact: true,
-        component: PendingDocs,
+        component: SSR,
         props: {
           title: "Server Side Rendering - SSR"
         },
@@ -187,7 +192,7 @@ const routes = [
       {
         path: "/features/caching",
         exact: true,
-        component: PendingDocs,
+        component: Caching,
         props: {
           title: "Caching"
         },
@@ -229,7 +234,7 @@ const routes = [
       {
         path: "/features/hsts",
         exact: true,
-        component: PendingDocs,
+        component: HSTS,
         props: {
           title: "HTTP Strict Transport Security - HSTS"
         },

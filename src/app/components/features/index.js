@@ -73,14 +73,16 @@ export default class FeaturesIndex extends Component {
           </div>
 
           <div className="card mt-4">
-            <div className="card-body">
-              <h4 className="card-title">Next Generation JavaScript</h4>
-              <h6 className="card-subtitle mb-2 text-muted">ES6/7 Compatible</h6>
-              <p className="card-text">
-                Using babel we support the next generation JavaScript syntax including Object/Array destructuring,
-                arrow functions, JSX syntax and more...
-              </p>
-            </div>
+            <Link animateSection="features-content" to="/features/next-gen-js-es6-es7" className="text-dark">
+              <div className="card-body">
+                <h4 className="card-title">Next Generation JavaScript</h4>
+                <h6 className="card-subtitle mb-2 text-muted">ES6/7 Compatible</h6>
+                <p className="card-text">
+                  Using babel we support the next generation JavaScript syntax including Object/Array destructuring,
+                  arrow functions, JSX syntax and more...
+                </p>
+              </div>
+            </Link>
           </div>
 
           <div className="card mt-4">
@@ -137,17 +139,6 @@ export default class FeaturesIndex extends Component {
               <p className="card-text">
                 this helps you cache page when rendered via server. Why increase server load when page is static and cacheable!
               </p>
-            </div>
-          </div>
-
-          <div className="card mt-4">
-            <div className="card-body">
-              <h4 className="card-title">API caching</h4>
-              <h6 className="card-subtitle mb-2 text-muted">Enabled in production mode</h6>
-              <p className="card-text">
-                Wait what? Why do you need to cache API ? With service worker & cache mechanisms, even opaque response can be cached (no kidding!).
-              </p>
-              <Prism code={"api.fetch(\"https://api.com/endpoint\", { swcache: 10 /* seconds */})"} />
             </div>
           </div>
 
