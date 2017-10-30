@@ -1,5 +1,6 @@
 import DocsLayout from "../app/components/docs/layout";
-import Docs from "../app/components/docs/getting-started";
+import GettingStarted from "../app/components/docs/getting-started";
+import ConfiguringPWA from "../app/components/docs/configuring-pwa";
 import PendingDocs from "../app/components/docs/pending";
 import DefaultLayout from "../app/components/layout";
 import GettingStartedImage from "../app/components/docs/getting-started/Get Started - Docs.jpg";
@@ -13,7 +14,7 @@ const routes = [
       {
         path: "/docs",
         exact: true,
-        component: Docs,
+        component: GettingStarted,
         seo: {
           title: "Getting Started - Hello World | React PWA",
           description: "Get started with your own Progressive web application in the most simplest way.",
@@ -25,7 +26,7 @@ const routes = [
       {
         path: "/docs/configuring-pwa",
         exact: true,
-        component: PendingDocs,
+        component: ConfiguringPWA,
         props: {
           title: "Configuring PWA"
         },

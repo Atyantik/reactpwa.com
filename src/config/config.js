@@ -1,6 +1,6 @@
 export default {
   server: {
-    port: 3003,
+    port: 3005,
   },
   hsts: {
     enabled: true,
