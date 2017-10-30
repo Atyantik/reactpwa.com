@@ -4,7 +4,6 @@
 
 .mobile-nav {
   transition: transform .3s linear;
-  transform: translateX(-100vw);
   .btn-close {
     display: none;
   }
@@ -31,6 +30,7 @@
     }
   }
   @include media-breakpoint-down(md) {
+    transform: translateX(-100vw);
     position: fixed;
     top: 0;
     padding: 0.5rem;
