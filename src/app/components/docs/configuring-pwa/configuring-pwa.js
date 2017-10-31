@@ -62,118 +62,86 @@ export default class Docs extends Component {
 		"sizes": "512x512"
 	}]
 }`} />
-            <p>This will create a directory "react-pwa" in your current folder</p>
           </div>
   
-          <div>
-            <p>We are using yarn for examples but you can use npm instead as well.</p>
-            <Prism code={"cd react-pwa && yarn install"}/>
-          </div>
-          
-          <div className="alert alert-danger mt-4">
-            <strong>The PYTHON error: </strong>
+          <div className="mt-4">
+            <p>This can be easily managed by configuring few settings and adding appropriate images in resources. Let start with simple configuration:</p>
+            <p>1) Open file `src/config/config.js` and edit the following section: </p>
             <Prism
-              code={"Can't find Python executable \"python\", you can set the PYTHON env variable."}
-              language={"bash"}
+              code={`export default {
+  // ...
+  pwa: {
+    "name": "React PWA",
+    "short_name": "ReactPWA",
+    // Possible values ltr(left to right)/rtl(right to left)
+    "dir": "ltr",
+    
+    // language: Default en-US
+    "lang": "en-US",
+    
+    // Orientation of web-app possible:
+    // any, natural, landscape, landscape-primary, landscape-secondary, portrait, portrait-primary, portrait-secondary
+    "orientation": "any",
+    
+    "start_url": "/",
+    // Background color of the application
+    "background_color": "#17a2b8",
+    
+    // Theme color, used to modify the status bar color etc
+    "theme_color": "#17a2b8",
+    
+    "display": "standalone",
+    "description": "A highly scalable, Progressive Web Application foundation with the best Developer Experience."
+  },
+  // ...
+};`}
             />
-            <p>You will need to install <strong>node-gyp</strong></p>
             <div className="alert alert-danger">
-              <p>If you're using Windows you can now install all node-gyp dependencies with single command (NOTE: Run As Admin in Windows PowerShell):</p>
-              <Prism code="yarn global add windows-build-tools" language={"bash"} />
+              Do not copy paste the above code to `src/config/config.js`. We just need to update the <strong>pwa</strong> section.
+              Modify it with your app details.
             </div>
-            <Prism code="yarn global add node-gyp" language={"bash"} />
-            <p>Please refer to detailed docs at <a target="_blank" href="https://github.com/nodejs/node-gyp" rel="nofollow noopener">https://github.com/nodejs/node-gyp</a></p>
+            More details about Web App Manifest can be found at <a href="https://developer.mozilla.org/en-US/docs/Web/Manifest" target="_blank" rel="nofollow noopener">https://developer.mozilla.org/en-US/docs/Web/Manifest</a>
           </div>
-          
-          <div>
-            <p>Once the installation is completed, you can now test if the example app is working</p>
-            <Prism code={"yarn start"} language={"bash"} />
-            <p>Once the compilation is completed by webpack dev server it should output the below: </p>
-            <Prism code={`cross-env NODE_ENV=development nodemon --exec babel-node --watch ./src/server.js --watch ./src/client.js --watch ./src/core --watch ./webpack ./src/server.js
-[nodemon] 1.12.1
-[nodemon] to restart at any time, enter \`rs\`
-[nodemon] watching: ./src/server.js ./src/client.js /home/tirthbodawala/workspace/reactpwa.com/src/core/**/* /home/tirthbodawala/workspace/reactpwa.com/webpack/**/*
-[nodemon] starting \`babel-node ./src/server.js\`
-Creating bundle with Webpack dev server.. Please wait..
-Listening at http://0.0.0.0:3003
-`} language={"bash"}/>
-            <p>You can access your local application at <i>http://localhost:3003</i></p>
-          </div>
-          <hr />
-          <section>
-            <header>
-              <h3>Removing the example application</h3>
-              <small>Before removing, make sure you have closed the running instance of example app</small>
-            </header>
-            <div>
-              <ul className="list-unstyled">
-                <li>1) Remove everything from <i>`src/app/components`</i>.</li>
-                <li>2) Remove all files from <i>`src/pages`</i> folder.</li>
-                <li>
-                  3) Edit <i>`src/routes.js`</i> and remove all the previous routes.
-                  <Prism code={`import { configureRoutes } from "./core/utils/bundler";
-
-// routes
-
-export default configureRoutes([
-]);`} />
-                </li>
-              </ul>
-            </div>
-          </section>
-          <hr />
-          <section>
-            <header>
-              <h3>Creating Home Component & Route</h3>
-            </header>
-            <div>
-              <ul className="list-unstyled">
-                <li>
-                  1) As simple as creating React Component create Home component in file `src/app/components/home.js`
-                  <Prism code={`import React, { Component } from "react";
-
-export default class Home extends Component {
-  
-  render() {
-    return (
-      <h1>Hello World!</h1>
-    );
-  }
-}`} />
-                </li>
-                <li>
-                  2) Create new page in `src/pages/home.js`
-                  <Prism code={`import Home from "../app/components/home";
-
-const routes = [
-  {
-    path: "/",
-    exact: true,
-    component: Home
-  }
-];
-export default routes;
-`} />
-                </li>
-                <li>
-                  3) Edit <i>`src/routes.js`</i> and add route for home page.
-                  <Prism code={`import { configureRoutes } from "./core/utils/bundler";
-
-// routes
-import * as Home from "./pages/home";
-
-export default configureRoutes([
-  Home
-]);`} />
-                  <p className="alert alert-info">
-                    <strong>NOTE:</strong> Please maintain the import syntax as above, because we add bundleKey to the route via route-loader.
-                  </p>
-                </li>
-              </ul>
-              <p>That's all start your application with <strong>yarn start</strong> and you will have your <strong>Hello world!</strong> home page ready.</p>
-            </div>
-          </section>
         </section>
+  
+        <hr />
+        <section className="mt-4">
+          <header>
+            <h2>App Icons</h2>
+          </header>
+          <div>
+            <p>
+              In the above section we didn't included icons like:
+            </p>
+            <Prism code={`"icons": [
+    // ...
+    {
+		"src": "/build/images/resources/images/pwa/ec1fa5f40405b10b364c2ee8e6eeffce.png",
+		"sizes": "72x72"
+	}, {
+		"src": "/build/images/resources/images/pwa/3f9898f6af26a26506fd2108a89a7eb1.png",
+		"sizes": "96x96"
+	}
+	//...
+]`} />
+            <p>
+              The reason we didn't included then is because we are including the Images directly from `src/resources/images/pwa` and it is mandatory to use the same naming convention:
+            </p>
+            <Prism code={`icon-72x72.png
+icon-96x96.png
+icon-128x128.png
+icon-144x144.png
+icon-152x152.png
+icon-192x192.png
+icon-384x384.png
+icon-512x512.png
+`} language="text" />
+            <p>
+              Create and replace files in `src/resources/images/pwa` folder with your own application logo-images making sure you have all the above sizes included or the application won't work as expected.
+            </p>
+          </div>
+        </section>
+        <p>That is all folks. Pretty easy huh?!</p>
       </article>
     );
   }
