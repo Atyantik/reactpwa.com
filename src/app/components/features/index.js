@@ -19,7 +19,11 @@ export default class FeaturesIndex extends Component {
         </header>
         <section>
           <div className="card mt-4">
-            <Link animateSection="features-content" to="/features/pwa-progressive-web-application" className="text-dark">
+            <Link
+              animateSection="features-content"
+              to="/features/pwa-progressive-web-application"
+              className="text-dark"
+            >
               <div className="card-body">
                 <header>
                   <h4 className="card-title">Progressive Web Application</h4>
@@ -34,19 +38,26 @@ export default class FeaturesIndex extends Component {
           </div>
 
           <div className="card mt-4">
-            <Link animateSection="features-content" to="/features/access-offline" className="text-dark">
+            <Link
+              animateSection="features-content"
+              to="/features/access-offline"
+              className="text-dark"
+            >
               <div className="card-body">
                 <h4 className="card-title">Offline support</h4>
                 <p className="card-text">
                   Use Service Worker to connect with your users even when they're not
-
                 </p>
               </div>
             </Link>
           </div>
 
           <div className="card mt-4">
-            <Link animateSection="features-content" to="/features/code-splitting" className="text-dark">
+            <Link
+              animateSection="features-content"
+              to="/features/code-splitting"
+              className="text-dark"
+            >
               <div className="card-body">
                 <h4 className="card-title">Code Splitting</h4>
                 <p className="card-text">
@@ -61,7 +72,11 @@ export default class FeaturesIndex extends Component {
           </div>
 
           <div className="card mt-4">
-            <Link animateSection="features-content" to="/features/hot-reloading" className="text-dark">
+            <Link
+              animateSection="features-content"
+              to="/features/hot-reloading"
+              className="text-dark"
+            >
               <div className="card-body">
                 <h4 className="card-title">Hot Reloading</h4>
                 <p className="card-text">
@@ -73,7 +88,11 @@ export default class FeaturesIndex extends Component {
           </div>
 
           <div className="card mt-4">
-            <Link animateSection="features-content" to="/features/next-gen-js-es6-es7" className="text-dark">
+            <Link
+              animateSection="features-content"
+              to="/features/next-gen-js-es6-es7"
+              className="text-dark"
+            >
               <div className="card-body">
                 <h4 className="card-title">Next Generation JavaScript</h4>
                 <h6 className="card-subtitle mb-2 text-muted">ES6/7 Compatible</h6>
@@ -96,105 +115,92 @@ export default class FeaturesIndex extends Component {
           </div>
 
           <div className="card mt-4">
-            <div className="card-body">
-              <h4 className="card-title">Server side rendering</h4>
-              <h6 className="card-subtitle mb-2 text-muted">Enabled in production mode</h6>
-              <p className="card-text">
-                The best way to get your application SEO-ed is enable Server side rendering i.e.
-                Universal applications.
-              </p>
-            </div>
+            <Link
+              animateSection="features-content"
+              to="/features/seo-search-engine-optimization"
+              className="text-dark"
+            >
+              <div className="card-body">
+                <h4 className="card-title">SEO</h4>
+                <h6 className="card-subtitle mb-2 text-muted">Enabled in production mode</h6>
+                <p className="card-text">
+                  Our customized routes enable creating meta tags to create Twitter, Google+, Linkedin, Facebook cards.
+                  We know how important SEO is to an application.
+                </p>
+              </div>
+            </Link>
           </div>
 
           <div className="card mt-4">
-            <div className="card-body">
-              <h4 className="card-title">SEO</h4>
-              <h6 className="card-subtitle mb-2 text-muted">Enabled in production mode</h6>
-              <p className="card-text">
-                Our customized routes enable creating meta tags to create Twitter, Google+, Linkedin, Facebook cards.
-                We know how important SEO is to an application.
-              </p>
-            </div>
+            <Link
+              animateSection="features-content"
+              to="/features/caching"
+              className="text-dark"
+            >
+              <div className="card-body">
+                <h4 className="card-title">Page caching</h4>
+                <h6 className="card-subtitle mb-2 text-muted">Enabled in production mode</h6>
+                <p className="card-text">
+                  Well now you can cache a page in SSR. Pretty simple. just add cache option to your route
+                </p>
+                <Prism code={"{ cache: { enable: true, duration: 10000}}"} />
+                <p className="card-text">
+                  this helps you cache page when rendered via server. Why increase server load when page is static and cacheable!
+                </p>
+              </div>
+            </Link>
           </div>
 
           <div className="card mt-4">
-            <div className="card-body">
-              <h4 className="card-title">Content Folding</h4>
-              <h6 className="card-subtitle mb-2 text-muted">Enabled in production mode</h6>
-              <p className="card-text">
-                We do not just worry about SEO. We provide tools to optimize SEO.
-                Show only relevant data when loading via server. Fold your content to save bytes.
-              </p>
-            </div>
+            <Link
+              animateSection="features-content"
+              to="/features/bundling"
+              className="text-dark"
+            >
+              <div className="card-body">
+                <h4 className="card-title">Bundling</h4>
+                <p className="card-text">
+                  Webpack is a module bundler that takes assets such as CSS, images or JavaScript
+                  files with lots of dependencies and turns them into something that you can provide
+                  to a client web page.
+                </p>
+              </div>
+            </Link>
           </div>
 
           <div className="card mt-4">
-            <div className="card-body">
-              <h4 className="card-title">Page caching</h4>
-              <h6 className="card-subtitle mb-2 text-muted">Enabled in production mode</h6>
-              <p className="card-text">
-                Well now you can cache a page in SSR. Pretty simple. just add cache option to your route
-              </p>
-              <Prism code={"{ cache: { enable: true, duration: 10000}}"} />
-              <p className="card-text">
-                this helps you cache page when rendered via server. Why increase server load when page is static and cacheable!
-              </p>
-            </div>
+            <Link
+              animateSection="features-content"
+              to="/features/image-optimization"
+              className="text-dark"
+            >
+              <div className="card-body">
+                <h4 className="card-title">Image optimizations</h4>
+                <p className="card-text">
+                  You can use any type of Image during development and we will make sure that images get optimized before a build is generated.
+                  This takes time but its totally worth it. Best user experience is what we all developers are looking for.
+                  <i>We are using imagemin plugins to optimize SVG, JPEG, GIF & PNG</i>
+                </p>
+              </div>
+            </Link>
           </div>
 
           <div className="card mt-4">
-            <div className="card-body">
-              <h4 className="card-title">Webpack</h4>
-              <h6 className="card-subtitle mb-2 text-muted">For experts</h6>
-              <p className="card-text">
-                We use the latest webpack for best results. All the magic is executed with help of webpack including file loading,
-                image optimizations, SCSS loading, code splitting etc.
-              </p>
-            </div>
+            <Link
+              animateSection="features-content"
+              to="/features/hsts"
+              className="text-dark"
+            >
+              <div className="card-body">
+                <h4 className="card-title">HSTS Supported</h4>
+                <h6 className="card-subtitle mb-2 text-muted">Using HTTPS ?</h6>
+                <p className="card-text">
+                  HSTS is enabled default for your secure sites. Options to define maxAge and preload of HSTS, all with very simple configuration.
+                </p>
+              </div>
+            </Link>
           </div>
 
-          <div className="card mt-4">
-            <div className="card-body">
-              <h4 className="card-title">Pre loading</h4>
-              <p className="card-text">
-                Pre loading CSS & JS for non-ServiceWorker compatible browsers. Yes we do give a damn about old browsers.
-              </p>
-            </div>
-          </div>
-
-          <div className="card mt-4">
-            <div className="card-body">
-              <h4 className="card-title">WebP Supported</h4>
-              <p className="card-text">
-                Make your application super fast with WebP support. Read more about it at
-                <a href="https://developers.google.com/speed/webp/" target="_blank" rel="nofollow noopener">https://developers.google.com/speed/webp/</a>
-              </p>
-            </div>
-          </div>
-
-          <div className="card mt-4">
-            <div className="card-body">
-              <h4 className="card-title">Image optimizations</h4>
-              <p className="card-text">
-                You can use any typeof Image during development and we will make sure that images get optimized before a build is generated.
-                This takes time but its totally worth it. Best user experience is what we all developers are looking for.
-                <i>We are using imagemin plugins to optimize SVG, JPEG, GIF & PNG</i>
-              </p>
-            </div>
-          </div>
-
-          <div className="card mt-4">
-            <div className="card-body">
-
-              <h4 className="card-title">HSTS Supported</h4>
-              <h6 className="card-subtitle mb-2 text-muted">Using HTTPS ?</h6>
-              <p className="card-text">
-                HSTS is enabled default for your secure sites. Options to define maxAge and preload of HSTS, all with very simple configuration.
-              </p>
-            </div>
-          </div>
-
-          <div className="alert alert-warning mt-5">We are looking for contributors and queries to create useful documentation. Please contribute.</div>
         </section>
       </article>
     );

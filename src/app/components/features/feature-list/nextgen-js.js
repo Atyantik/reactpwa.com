@@ -15,6 +15,23 @@ export default class NextGenJS extends Component {
           <hr/>
         </header>
         <section>
+          <h3 className="mt-4">Babel</h3>
+          <p>
+            The JSX syntax and ES6/ES7, are not supported in all the browsers.
+          </p>
+          <p>
+            Hence, if we are using them in the React code, we need to use a tool which
+            translates them to the format that has been supported by the browsers.
+            It’s where&nbsp;
+            <a
+              href="http://babeljs.io"
+              target="_blank"
+              rel="nofollow noopener"
+            >
+              babel
+            </a> comes into the picture.
+          </p>
+
           <h3 className="mt-4">What is ECMAScript(ES)?</h3>
           <p>
             <span className="font-weight-bold">ECMAScript (or ES)</span> is a trademarked scripting-language specification standardized by Ecma International in ECMA-262 and ISO/IEC 16262.

@@ -6,7 +6,7 @@
 
 import React, { Component } from "react";
 
-import Offline from "./images/offline.jpg";
+import Offline from "./images/offline.png";
 
 export default class AccessOffline extends Component {
   render() {
