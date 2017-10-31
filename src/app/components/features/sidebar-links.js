@@ -13,6 +13,9 @@ export default class SidebarLinks extends Component {
     return (
       <ul className={`list-unstyled ${styles["padded-nav"]}`}>
         <li>
+          <Link animateSection="features-content" to="/features" className="text-lead">Features</Link>
+        </li>
+        <li>
           <Link animateSection="features-content" to="/features/pwa-progressive-web-application" className="text-lead">PWA</Link>
         </li>
         <li>
