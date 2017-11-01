@@ -9,17 +9,17 @@ import Disqus from "../disqus";
 import Transition from "../../../core/components/transition/transition";
 import SidebarLinks from "./sidebar-links";
 import * as styles from "./features.scss";
+import SidebarNav from "../sidebar-nav";
 
 export default class FeaturesLayout extends Component {
   render() {
     return (
       <div className="row">
-        <div className="col col-md-3 p-2 mt-2">
-          <strong className="text-muted">Navigate to:</strong>
+        <SidebarNav className={"col-lg-3 p-2 mt-2"}>
           <SidebarLinks/>
           <p>We are busy writing documentation for the boilerplate. Thank you for your patience.</p>
           <div className="alert alert-warning mt-2">We are looking for contributors and queries to create useful documentation. Please contribute.</div>
-        </div>
+        </SidebarNav>
         <div  className="col col-md-9">
           <Transition
             sectionName={"features-content"}

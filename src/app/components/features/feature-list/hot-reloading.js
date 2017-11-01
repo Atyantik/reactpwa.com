@@ -35,7 +35,7 @@ export default class HotReloading extends Component {
             When the runtime receives them, it replaces the old modules' code with the new one:
           </p>
           <p>
-            <img src={HMR}/>
+            <img src={HMR} className="mw-100"/>
           </p>
         </section>
       </article>

@@ -6,6 +6,7 @@
 
 import React, { Component } from "react";
 
+import PWAImage from "./images/pwa.gif";
 import TwitterLogo from "./images/twitter-logo.png";
 import WPLogo from "./images/WP-Logo.png";
 import FlipboardLogo from "./images/Flipboard-Logo.png";
@@ -14,20 +15,22 @@ import PaperPlanesLogo from "./images/PaperPlanes-Logo.png";
 export default class PWA extends Component {
   render() {
     return (
-      <article>
+      <div>
         <header>
           <h1 className="mt-4">PWA - Progressive Web Application</h1>
           <hr/>
         </header>
-        <section>
-          <header>
-            <h3 className="mt-5">What is PWA?</h3>
-          </header>
+        <div>
+          <div className="text-center">
+            <img src={PWAImage} alt="Progressive Web Application" className="mw-100 m-auto"/>
+          </div>
+          <h3 className="mt-4">What is PWA?</h3>
           <p>
             <span className="font-italic font-weight-bold">The web…but better</span><br/>
             A Progressive Web App (PWA) is a web app that uses modern web capabilities to deliver an app-like experience to users.
             These apps meet certain requirements (see below), are deployed to servers, accessible through URLs, and indexed by search engines.
           </p>
+
           <h3 className="mt-5 h5">Progressive Web Apps are:</h3>
           <dl>
             <dt>Progressive </dt>
@@ -132,8 +135,8 @@ export default class PWA extends Component {
             <img src={PaperPlanesLogo} width="100px"/>
           </a>
 
-        </section>
-      </article>
+        </div>
+      </div>
     );
   }
 }

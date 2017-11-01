@@ -12,7 +12,15 @@ import AccessOffline from "../app/components/features/feature-list/access-offlin
 import CodeSplitting from "../app/components/features/feature-list/code-splitting";
 import HotReloading from "../app/components/features/feature-list/hot-reloading";
 import NextGenJS from "../app/components/features/feature-list/nextgen-js";
-import PendingDocs from "../app/components/docs/pending/pending";
+import SSR from "../app/components/features/feature-list/ssr";
+import SocialSharing from "../app/components/features/feature-list/social-sharing";
+import UniversalRouting from "../app/components/features/feature-list/iso-uni-routing";
+import Caching from "../app/components/features/feature-list/caching";
+import HSTS from "../app/components/features/feature-list/hsts";
+import ImageOptimization from "../app/components/features/feature-list/image-optimization";
+import ContentFolding from "../app/components/features/feature-list/content-folding";
+import SEO from "../app/components/features/feature-list/seo";
+import Bundling from "../app/components/features/feature-list/bundling";
 
 const routes = [
   {
@@ -117,7 +125,7 @@ const routes = [
       {
         path: "/features/isomorphic-universal-routing",
         exact: true,
-        component: PendingDocs,
+        component: UniversalRouting,
         props: {
           title: "Isomorphic/Universal Routing"
         },
@@ -131,7 +139,7 @@ const routes = [
       {
         path: "/features/seo-search-engine-optimization",
         exact: true,
-        component: PendingDocs,
+        component: SEO,
         props: {
           title: "Search Engine Optimization - SEO"
         },
@@ -145,7 +153,7 @@ const routes = [
       {
         path: "/features/seo-search-engine-optimization/social-sharing",
         exact: true,
-        component: PendingDocs,
+        component: SocialSharing,
         props: {
           title: "Social Sharing"
         },
@@ -159,7 +167,7 @@ const routes = [
       {
         path: "/features/seo-search-engine-optimization/ssr-server-side-rendering",
         exact: true,
-        component: PendingDocs,
+        component: SSR,
         props: {
           title: "Server Side Rendering - SSR"
         },
@@ -173,7 +181,7 @@ const routes = [
       {
         path: "/features/seo-search-engine-optimization/content-folding",
         exact: true,
-        component: PendingDocs,
+        component: ContentFolding,
         props: {
           title: "Content Folding"
         },
@@ -187,7 +195,7 @@ const routes = [
       {
         path: "/features/caching",
         exact: true,
-        component: PendingDocs,
+        component: Caching,
         props: {
           title: "Caching"
         },
@@ -201,13 +209,13 @@ const routes = [
       {
         path: "/features/bundling",
         exact: true,
-        component: PendingDocs,
+        component: Bundling,
         props: {
           title: "Bundling"
         },
         seo: {
           title: "Bundling | Features",
-          description: "With bundle splitting, you can push the vendor dependencies to a bundle of their own and benefit from client level caching.",
+          description: "Webpack is a module bundler that takes assets such as CSS, images or JavaScript files with lots of dependencies and turns them into something that you can provide to a client web page.",
           keywords: "bundling,strategy,webpack,babel,reactjs,react",
           type: "article"
         }
@@ -215,7 +223,7 @@ const routes = [
       {
         path: "/features/image-optimization",
         exact: true,
-        component: PendingDocs,
+        component: ImageOptimization,
         props: {
           title: "Image Optimization"
         },
@@ -229,7 +237,7 @@ const routes = [
       {
         path: "/features/hsts",
         exact: true,
-        component: PendingDocs,
+        component: HSTS,
         props: {
           title: "HTTP Strict Transport Security - HSTS"
         },
