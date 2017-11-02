@@ -20,7 +20,7 @@ export default class FeaturesLayout extends Component {
           <p>We are busy writing documentation for the boilerplate. Thank you for your patience.</p>
           <div className="alert alert-warning mt-2">We are looking for contributors and queries to create useful documentation. Please contribute.</div>
         </SidebarNav>
-        <div  className="col col-md-9">
+        <div  className="col col-lg-9">
           <Transition
             sectionName={"features-content"}
             className={styles["animator"]}

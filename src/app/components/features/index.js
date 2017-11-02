@@ -105,13 +105,19 @@ export default class FeaturesIndex extends Component {
           </div>
 
           <div className="card mt-4">
-            <div className="card-body">
-              <h4 className="card-title">React Router</h4>
-              <p className="card-text">
-                We are using the most accepted React router for routing the application.
-                Add your favorite /about, /contact, /dashboard pages easily.
-              </p>
-            </div>
+            <Link
+              animateSection="features-content"
+              to="/features/isomorphic-universal-routing"
+              className="text-dark"
+            >
+              <div className="card-body">
+                <h4 className="card-title">React Router</h4>
+                <p className="card-text">
+                  We are using the most accepted React router for routing the application.
+                  Add your favorite /about, /contact, /dashboard pages easily.
+                </p>
+              </div>
+            </Link>
           </div>
 
           <div className="card mt-4">
