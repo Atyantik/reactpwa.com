@@ -2,6 +2,7 @@ import DocsLayout from "../app/components/docs/layout";
 import GettingStarted from "../app/components/docs/getting-started";
 import ConfiguringPWA from "../app/components/docs/configuring-pwa";
 import CustomizingLoader from "../app/components/docs/customizing-loader";
+import WorkingWithCss from "../app/components/docs/working-with-css";
 
 import PendingDocs from "../app/components/docs/pending";
 import DefaultLayout from "../app/components/layout";
@@ -54,7 +55,7 @@ const routes = [
       {
         path: "/docs/working-with-css",
         exact: true,
-        component: PendingDocs,
+        component: WorkingWithCss,
         props: {
           title: "Working with CSS"
         },

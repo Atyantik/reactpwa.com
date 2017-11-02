@@ -1,6 +1,7 @@
 import React, {Component} from "react";
 import Picture from "../../../core/components/picture";
 import BrowserStackLogo from "./BrowserStackLogo.png?sizes=50w+100w+200w";
+import EventerpriseLogo from "./EventerpriseLogo.png?sizes=50w+100w+200w";
 import * as styles from "./style.scss";
 
 export default class Header extends Component {
@@ -24,10 +25,19 @@ export default class Header extends Component {
             <a
               href="https://www.browserstack.com"
               target="_blank"
-              className="text-black d-inline-block v-middle"
+              className="text-black d-inline-block v-middle  ml-2"
               rel="nofollow noopener"
             >
               <Picture imgClassName={styles["supporter-img"]} image={BrowserStackLogo} alt={"Browser Stack Logo"}/>
+            </a>
+            <a
+              href="https://www.eventerprise.com"
+              target="_blank"
+              className="text-black d-inline-block v-middle ml-2"
+              rel="nofollow noopener"
+            >
+              <Picture imgClassName={styles["eventerprise-log"]} image={EventerpriseLogo} alt={"Eventerprise Logo"}/>
+              Eventerprise
             </a>
           </div>
         </div>
