@@ -18,8 +18,8 @@ export default class Disqus extends Component {
       DISQUS.reset({
         reload: true,
         config: function () {
-          this.page.identifier = generateStringHash("window.location.url", "DISQUS");
-          this.page.url = window.location.url;
+          this.page.identifier = generateStringHash(window.location.href, "DISQUS");
+          this.page.url = window.location.href;
         }
       });
     });
