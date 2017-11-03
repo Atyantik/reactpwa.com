@@ -31,6 +31,23 @@ export default class DocsLayout extends Component {
             </li>
             <li>
               <Link animateSection="docs-content" to="/docs/pages-routing">Pages and routing</Link>
+              <ul >
+                <li>
+                  <Link animateSection="docs-content" to="/docs/pages-routing/create-new-page">
+                    Simple Page with Routes
+                  </Link>
+                </li>
+                <li>
+                  <Link animateSection="docs-content" to="/docs/pages-routing/page-with-subroutes">
+                    Page with Sub-Routes
+                  </Link>
+                </li>
+                <li>
+                  <Link animateSection="docs-content" to="/docs/pages-routing/page-with-layout">
+                    Create a Page with Layout
+                  </Link>
+                </li>
+              </ul>
             </li>
             <li>
               <Link animateSection="docs-content" to="/docs/external-script-libraries">Using external script libraries</Link>

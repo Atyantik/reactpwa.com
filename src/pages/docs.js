@@ -7,6 +7,11 @@ import WorkingWithCss from "../app/components/docs/working-with-css";
 import PendingDocs from "../app/components/docs/pending";
 import DefaultLayout from "../app/components/layout";
 import GettingStartedImage from "../app/components/docs/getting-started/Get Started - Docs.jpg";
+import PagesAndRouting from "../app/components/docs/pages-and-routing/pages-routing";
+import CreateNewPage from "../app/components/docs/pages-and-routing/create-new-page/create-new-page";
+import PageWithSubroutes from "../app/components/docs/pages-and-routing/page-with-subroutes/page-wth-subroutes";
+import PageWithLayout from "../app/components/docs/pages-and-routing/page-with-layout/page-wth-layout";
+import OverrideCore from "../app/components/docs/override-core/override-core";
 
 const routes = [
   {
@@ -81,7 +86,7 @@ const routes = [
       {
         path: "/docs/overriding-core-components",
         exact: true,
-        component: PendingDocs,
+        component: OverrideCore,
         props: {
           title: "Overriding Core Components"
         },
@@ -94,12 +99,51 @@ const routes = [
       {
         path: "/docs/pages-routing",
         exact: true,
-        component: PendingDocs,
+        component: PagesAndRouting,
         props: {
           title: "Pages & Routing"
         },
         seo: {
           title: "Pages & Routing | React PWA",
+          description: "Create separate bundles for different pages. Write universal routing. Easy to use and adapt react-router-configuration",
+          keywords: "react-router,react-router-web,page,bundle,code-splitting"
+        }
+      },
+      {
+        path: "/docs/pages-routing/create-new-page",
+        exact: true,
+        component: CreateNewPage,
+        props: {
+          title: "Create a Simple Page and its Route"
+        },
+        seo: {
+          title: "Create a Simple Page and its Route | React PWA",
+          description: "Create separate bundles for different pages. Write universal routing. Easy to use and adapt react-router-configuration",
+          keywords: "react-router,react-router-web,page,bundle,code-splitting"
+        }
+      },
+      {
+        path: "/docs/pages-routing/page-with-subroutes",
+        exact: true,
+        component: PageWithSubroutes,
+        props: {
+          title: "Create a Page with Sub-Routes"
+        },
+        seo: {
+          title: "Create a Page with Sub-Routes | React PWA",
+          description: "Create separate bundles for different pages. Write universal routing. Easy to use and adapt react-router-configuration",
+          keywords: "react-router,react-router-web,page,bundle,code-splitting"
+        }
+      },
+      {
+        path: "/docs/pages-routing/page-with-layout",
+        exact: true,
+        component: PageWithLayout,
+        props: {
+          title: "Create a Page with Layout"
+        },
+        seo: {
+          title: "Create a Page with Layout | React PWA",
           description: "Create separate bundles for different pages. Write universal routing. Easy to use and adapt react-router-configuration",
           keywords: "react-router,react-router-web,page,bundle,code-splitting"
         }

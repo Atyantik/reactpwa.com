@@ -4,7 +4,7 @@
  * Time: 3:20 PM
  */
 import React, { Component } from "react";
-import Link from "../../../../core/components/link/link";
+import Link from "../../../../../core/components/link/link";
 
 export default class SEO extends Component {
   render() {
@@ -15,7 +15,9 @@ export default class SEO extends Component {
           <hr/>
         </header>
         <section>
-          <h3 className="mt-4">What is Search Engine Optimization - SEO ?</h3>
+          <header>
+            <h3 className="mt-4">What is Search Engine Optimization - SEO ?</h3>
+          </header>
           <p>
             Search Engine Optimization (SEO) is the process of optimizing your website
             such that it is search engine friendly and increases the quantity and quality of
@@ -49,7 +51,7 @@ export default class SEO extends Component {
           <div className="card mt-4">
             <Link
               animateSection="features-content"
-              to="/features/hsts"
+              to="/features/seo-search-engine-optimization/ssr-server-side-rendering"
               className="text-dark"
             >
               <div className="card-body">
