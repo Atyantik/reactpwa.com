@@ -11,6 +11,7 @@ import PagesAndRouting from "../app/components/docs/pages-and-routing/pages-rout
 import CreateNewPage from "../app/components/docs/pages-and-routing/create-new-page/create-new-page";
 import PageWithSubroutes from "../app/components/docs/pages-and-routing/page-with-subroutes/page-wth-subroutes";
 import PageWithLayout from "../app/components/docs/pages-and-routing/page-with-layout/page-wth-layout";
+import OverrideCore from "../app/components/docs/override-core/override-core";
 
 const routes = [
   {
@@ -85,7 +86,7 @@ const routes = [
       {
         path: "/docs/overriding-core-components",
         exact: true,
-        component: PendingDocs,
+        component: OverrideCore,
         props: {
           title: "Overriding Core Components"
         },
