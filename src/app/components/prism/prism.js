@@ -42,7 +42,7 @@ export default class Header extends Component {
   render() {
     return (
       <pre
-        className={this.props.className}
+        className={`${this.props.className} language-${this.props.language}`}
       ><code ref={codeElement => {this.codeElement = codeElement;}} className={`language-${this.props.language}`}>{this.state.code}</code></pre>
     );
   }
