@@ -49,19 +49,8 @@ export default {
     },
     meta: [
       {
-        name:"viewport",
-        content: "width=device-width, initial-scale=1, shrink-to-fit=no"
-      },
-      {
         name:"theme-color",
         content: "#f6f6f6"
-      },
-      {
-        charSet: "utf-8",
-      },
-      {
-        httpEquiv: "x-ua-compatible",
-        content: "ie=edge",
       }
     ],
   },

@@ -5,7 +5,7 @@ import { isBrowser } from "./utils";
 /**
  * Seo Schema. This can be used while using it in routes
  */
-const seoSchema = _.defaults(_.get(config, "seo", {}),{
+const seoSchema = _.defaultsDeep(_.get(config, "seo", {}),{
   title: "",
   description: "",
   keywords: [],
@@ -23,8 +23,91 @@ const seoSchema = _.defaults(_.get(config, "seo", {}),{
     section: "", // Lifestyle/sports/news
     published_time: "",
     modified_time: "",
-  },
+  }
 });
+
+const pwaSchema = _.defaultsDeep(_.get(config, "pwa", {}), {
+  "name": "",
+  "short_name": "",
+  
+  // Possible values ltr(left to right)/rtl(right to left)
+  "dir": "ltr",
+    
+  // language: Default en-US
+  "lang": "en-US",
+    
+  // Orientation of web-app possible:
+  // any, natural, landscape, landscape-primary, landscape-secondary, portrait, portrait-primary, portrait-secondary
+  "orientation": "any",
+  "start_url": "/",
+  "background_color": "#fff",
+  "theme_color": "#fff",
+  "display": "standalone",
+  "description": ""
+});
+
+const defaultMeta = [
+  {
+    charSet: "utf-8",
+  },
+  {
+    httpEquiv: "x-ua-compatible",
+    content: "ie=edge",
+  },
+  {
+    name: "viewport",
+    content: "width=device-width, initial-scale=1, shrink-to-fit=no",
+  },
+  {
+    name: "application-name",
+    content: _.get(pwaSchema, "name", ""),
+  },
+  {
+    name: "generator",
+    content: "ReactPWA",
+  },
+  {
+    name: "rating",
+    content: "General"
+  },
+  {
+    name: "mobile-web-app-capable",
+    content: "yes"
+  },
+  {
+    name: "apple-mobile-web-app-capable",
+    content: "yes"
+  },
+  {
+    name: "apple-mobile-web-app-status-bar-style",
+    content: _.get(pwaSchema, "theme_color", "#fff"),
+  },
+  {
+    name: "apple-mobile-web-app-title",
+    content: _.get(pwaSchema, "name", ""),
+  },
+  {
+    name: "msapplication-tooltip",
+    content: _.get(pwaSchema, "description", "")
+  },
+  {
+    name:"msapplication-starturl",
+    content: _.get(pwaSchema, "start_url", ""),
+  },
+  {
+    name:"msapplication-TileColor",
+    content: _.get(pwaSchema, "background_color", "#fff"),
+  },
+  {
+    name: "renderer",
+    content: "webkit|ie-comp|ie-stand"
+  },
+  {
+    name: "full-screen",
+    content: "yes",
+  }
+  
+];
 
 /**
  * Standard meta keys
@@ -34,6 +117,7 @@ const metaKeys = [
   "name",
   "itemProp",
   "property",
+  "charSet"
 ];
 
 /**
@@ -43,14 +127,28 @@ const metaKeys = [
  * @param options
  * @returns {Array}
  */
-export const generateMeta = (data, options = { baseUrl: "", url: "" }) => {
-  let seoData = _.defaults(data, seoSchema);
+export const generateMeta = (data = {}, options = { baseUrl: "", url: "" }) => {
+  // deep defaults the seoSchema we have in config file and the data provided to us.
+  let seoData = _.defaultsDeep(data, seoSchema);
+  
+  // Let store the generated Schema in following variable
   let generatedSchema = [];
+  
+  // Get 155 words out of description
   const desc155words = trimTillLastSentence(seoData.description, 155);
+  
+  // Get 200 words out of description
   const desc200words = trimTillLastSentence(seoData.description, 200);
+  
+  // check if default image is provided
   const hasImage = !!seoData.image.length;
+  
+  // Base url after removing the end slash
   const baseUrl = options.baseUrl.replace(/\/$/, "");
-
+  
+  // Add meta required for at top of head
+  addUpdateMeta(generatedSchema, _.cloneDeep(defaultMeta));
+  
   /**
    * Manage name/title
    */
@@ -68,9 +166,9 @@ export const generateMeta = (data, options = { baseUrl: "", url: "" }) => {
     property: "og:title",
     content: seoData.title
   });
-
+  
   /**
-   * Manage keywords
+   * Manage keywords (allow string and array as well)
    */
   if (_.isString(seoData.keywords) && seoData.keywords.trim().length) {
     generatedSchema.push({
@@ -84,7 +182,7 @@ export const generateMeta = (data, options = { baseUrl: "", url: "" }) => {
       content: seoData.keywords.join(","),
     });
   }
-
+  
   /**
    * Manage twitter site & author
    */
@@ -95,7 +193,7 @@ export const generateMeta = (data, options = { baseUrl: "", url: "" }) => {
       content: twitterSite
     });
   }
-
+  
   const twitterCreator =_.get(seoData, "twitter.creator", "");
   if (twitterCreator.length) {
     generatedSchema.push({
@@ -103,7 +201,7 @@ export const generateMeta = (data, options = { baseUrl: "", url: "" }) => {
       content: twitterCreator
     });
   }
-
+  
   /**
    * Manage facebook admins
    */
@@ -114,7 +212,7 @@ export const generateMeta = (data, options = { baseUrl: "", url: "" }) => {
       content: fbAdmins.join(",")
     });
   }
-
+  
   /**
    * Manage description
    */
@@ -131,7 +229,7 @@ export const generateMeta = (data, options = { baseUrl: "", url: "" }) => {
     property: "og:description",
     content: seoData.description
   });
-
+  
   /**
    * Site name
    */
@@ -141,7 +239,7 @@ export const generateMeta = (data, options = { baseUrl: "", url: "" }) => {
       content: seoData.site_name,
     });
   }
-
+  
   /**
    * Manage Primary Image
    */
@@ -163,13 +261,13 @@ export const generateMeta = (data, options = { baseUrl: "", url: "" }) => {
       content: fullImageUrl
     });
   }
-
+  
   // Add type of twitter card
   generatedSchema.push({
     name: "twitter:card",
     content: (hasImage ? "summary_large_image" : "summary")
   });
-
+  
   /**
    * Manage Type article/product/music/movie etc
    */
@@ -177,7 +275,7 @@ export const generateMeta = (data, options = { baseUrl: "", url: "" }) => {
     property: "og:type",
     content: seoData.type,
   });
-
+  
   let twitterDataCounter = 1;
   _.each(seoData.type_details, (value, key) => {
     if (_.isObject(value)) {
@@ -216,7 +314,7 @@ export const generateMeta = (data, options = { baseUrl: "", url: "" }) => {
       }
     }
   });
-
+  
   let url = _.get(seoData, "url", _.get(options, "url", ""));
   if (!url.length && isBrowser()) {
     url = _.get(window, "location.href", "");
@@ -227,16 +325,16 @@ export const generateMeta = (data, options = { baseUrl: "", url: "" }) => {
       content: url
     });
   }
-
+  
   // Add config meta
   const configMeta = _.get(config, "seo.meta", []);
   addUpdateMeta(generatedSchema, configMeta);
-
+  
   const userMeta = _.get(seoData, "meta", []);
   addUpdateMeta(generatedSchema, userMeta);
   
   generatedSchema = _.uniqWith(generatedSchema, _.isEqual);
-
+  
   return generatedSchema;
 };
 
