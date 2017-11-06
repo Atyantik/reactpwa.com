@@ -55,9 +55,7 @@ const getSegment = () => {
  * @returns {Promise.<void>}
  */
 export const trackPageView = async (location = "", title = "") => {
-  // Add delay of 100 ms to let the title set properly before the track page view event is triggered
   await new Promise(resolve => setTimeout(resolve, 50));
-  
   let loc = location;
   if (!loc) {
     loc = _.get(window, "location.pathname", "") + _.get(window, "location.search", "");
