@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
-import Fold from "../../../core/components/fold";
+import Fold from "core/components/fold";
 import Prism from "../prism";
 import Logo from "../../../resources/images/logo.svg";
 

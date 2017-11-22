@@ -1,7 +1,7 @@
 import React, {Component} from "react";
-import Link from "../../../core/components/link";
+import Link from "core/components/link";
 import WhiteLogo from "../../../resources/images/white-logo.png?sizes=64w";
-import Picture from "../../../core/components/picture";
+import Picture from "core/components/picture";
 
 export default class Header extends Component {
   render() {

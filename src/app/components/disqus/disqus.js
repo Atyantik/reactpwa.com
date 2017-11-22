@@ -1,6 +1,6 @@
 import _ from "lodash";
 import React, {Component} from "react";
-import {generateStringHash, loadScript} from "../../../core/utils/utils";
+import {generateStringHash, loadScript} from "core/utils/utils";
 
 const __production = process.env.NODE_ENV === "production";
 

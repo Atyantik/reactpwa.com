@@ -1,4 +1,4 @@
-import { configureRoutes } from "./core/utils/bundler";
+import { configureRoutes } from "core/utils/bundler";
 
 // routes
 import * as Home from "./pages/home";

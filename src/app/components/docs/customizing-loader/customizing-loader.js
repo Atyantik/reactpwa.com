@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Link from "../../../../core/components/link";
+import Link from "core/components/link";
 import Prism from "../../prism/prism";
 
 export default class Docs extends Component {
