@@ -52,7 +52,7 @@ export default class WorkingWithCss extends Component {
               <h4>Adding from node_modules</h4>
             </header>
             <p>Step 1) Add Bootstrap</p>
-            <Prism code="yarn add bootstrap --dev" language="bash" />
+            <Prism code="npm i bootstrap --save-dev" language="bash" />
             <p className="mt-4">
               Step 2) Import the CSS in `src/client.js`
             </p>

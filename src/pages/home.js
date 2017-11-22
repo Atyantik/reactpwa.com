@@ -1,12 +1,12 @@
 import Home from "../app/components/home";
-import DefaultLayout from "../app/components/layout";
+import FullwidthLayout from "../app/components/layout/fullwidth";
 
 const routes = [
   {
     path: "/",
     exact: true,
     component: Home,
-    layout: DefaultLayout,
+    layout: FullwidthLayout,
   }
 ];
 export default routes;

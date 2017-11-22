@@ -25,8 +25,7 @@ export default class Docs extends Component {
           </div>
   
           <div>
-            <p>We are using yarn for examples but you can use npm instead as well.</p>
-            <Prism code={"cd react-pwa && yarn install"}/>
+            <Prism code={"cd react-pwa && npm install"}/>
           </div>
           
           <div className="alert alert-danger mt-4">
@@ -38,15 +37,15 @@ export default class Docs extends Component {
             <p>You will need to install <strong>node-gyp</strong></p>
             <div className="alert alert-danger">
               <p>If you're using Windows you can now install all node-gyp dependencies with single command (NOTE: Run As Admin in Windows PowerShell):</p>
-              <Prism code="yarn global add windows-build-tools" language={"bash"} />
+              <Prism code="npm install -g windows-build-tools" language={"bash"} />
             </div>
-            <Prism code="yarn global add node-gyp" language={"bash"} />
+            <Prism code="npm install -g node-gyp" language={"bash"} />
             <p>Please refer to detailed docs at <a target="_blank" href="https://github.com/nodejs/node-gyp" rel="nofollow noopener">https://github.com/nodejs/node-gyp</a></p>
           </div>
           
           <div>
             <p>Once the installation is completed, you can now test if the example app is working</p>
-            <Prism code={"yarn start"} language={"bash"} />
+            <Prism code={"npm start"} language={"bash"} />
             <p>Once the compilation is completed by webpack dev server it should output the below: </p>
             <Prism code={`cross-env NODE_ENV=development nodemon --exec babel-node --watch ./src/server.js --watch ./src/client.js --watch ./src/core --watch ./webpack ./src/server.js
 [nodemon] 1.12.1
@@ -129,7 +128,7 @@ export default configureRoutes([
                   </p>
                 </li>
               </ul>
-              <p>That's all start your application with <strong>yarn start</strong> and you will have your <strong>Hello world!</strong> home page ready.</p>
+              <p>That's all start your application with <strong>npm start</strong> and you will have your <strong>Hello world!</strong> home page ready.</p>
             </div>
           </section>
         </section>
