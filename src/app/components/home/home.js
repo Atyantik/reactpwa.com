@@ -32,12 +32,12 @@ export default class Home extends Component {
                 <br />
                 <strong>And more importantly its <i>UPGRADABLE!</i></strong>
                 <br />
-                <Link to="/features" className="btn btn-white mt-3">View all features</Link>
+                <Link to="/features" className="btn btn-pearl mt-3">View all features</Link>
               </p>
             </div>
             <div className="col-sm-12 text-center mt-5">
               <a
-                className="btn btn-outline-white mr-2"
+                className="btn btn-outline-pearl mr-2"
                 href="https://github.com/Atyantik/react-pwa/archive/master.zip"
                 target="_blank"
               >
