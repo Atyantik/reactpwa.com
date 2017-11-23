@@ -58,7 +58,11 @@ fieldset[disabled] a.btn {
 
 @each $color, $value in $theme-colors {
   .btn-outline-#{$color} {
-    @include button-outline-variant($value, #fff);
+    @if ($color == $white) {
+      @include button-outline-variant($value, "transparent");
+    } @else {
+      @include button-outline-variant($value, #fff);
+    }
   }
 }
 
