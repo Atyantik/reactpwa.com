@@ -15,33 +15,35 @@ export default class Home extends Component {
   render() {
     return (
       <div>
-        <div className="hero bg-primary p-5 row align-items-center justify-content-center">
-          <div className={`text-white mb-3 mb-md-0 ${styles["hero-left"]}`}>
-            <h1 className="d-sm-none">React PWA</h1>
-            <p className="h4 text-uppercase">
-              <small>Create</small><br />
-              <strong>Upgradable</strong><br /><strong>SEO Friendly</strong><br /><strong>Progressive web applications</strong></p>
-          </div>
-          <div className="m-auto">
-            <AnimatedAtom />
-          </div>
-          <div className={`text-white mt-5 mt-md-0 ${styles["hero-right"]}`}>
-            <p>
-              Its fast and developer friendly, already loaded with Docker support and deployable with no need to install with npm dependencies!
-              <br />
-              <strong>And more importantly its <i>UPGRADABLE!</i></strong>
-              <br />
-              <Link to="/features" className="btn btn-white mt-3">View all features</Link>
-            </p>
-          </div>
-          <div className="col-sm-12 text-center mt-5">
-            <a
-              className="btn btn-outline-white mr-2"
-              href="https://github.com/Atyantik/react-pwa/archive/master.zip"
-              target="_blank"
-            >
-              Download and get started
-            </a>
+        <div className="container-fluid">
+          <div className="hero bg-primary p-5 row align-items-center justify-content-center">
+            <div className={`text-white mb-3 mb-md-0 ${styles["hero-left"]}`}>
+              <h1 className="d-sm-none">React PWA</h1>
+              <p className="h4 text-uppercase">
+                <small>Create</small><br />
+                <strong>Upgradable</strong><br /><strong>SEO Friendly</strong><br /><strong>Progressive web applications</strong></p>
+            </div>
+            <div className="m-auto">
+              <AnimatedAtom />
+            </div>
+            <div className={`text-white mt-5 mt-md-0 ${styles["hero-right"]}`}>
+              <p>
+                Its fast and developer friendly, already loaded with Docker support and deployable with no need to install with npm dependencies!
+                <br />
+                <strong>And more importantly its <i>UPGRADABLE!</i></strong>
+                <br />
+                <Link to="/features" className="btn btn-white mt-3">View all features</Link>
+              </p>
+            </div>
+            <div className="col-sm-12 text-center mt-5">
+              <a
+                className="btn btn-outline-white mr-2"
+                href="https://github.com/Atyantik/react-pwa/archive/master.zip"
+                target="_blank"
+              >
+                Download and get started
+              </a>
+            </div>
           </div>
         </div>
         <div className="container">

@@ -262,9 +262,10 @@ app.get("*", pageCache(_.cloneDeep(Routes)), (req, res) => {
     return !(_.startsWith(fileName, "mod-") && fileName.indexOf(mod) === -1);
   });
   
-  const inlineCss = _.map(currentRouteCss, css => {
-    return fs.readFileSync(path.join(currentDir, publicDirName, css), "utf8");
-  }).join("");
+  // const inlineCss = _.map(currentRouteCss, css => {
+  //   return fs.readFileSync(path.join(currentDir, publicDirName, css), "utf8");
+  // }).join("");
+  const inlineCss = "";
   
   /**
    * Get all javascript but the modules
@@ -343,6 +344,7 @@ app.get("*", pageCache(_.cloneDeep(Routes)), (req, res) => {
       html = ReactDOMServer.renderToString((
         <Html
           inlineCss={inlineCss}
+          stylesheets={currentRouteCss}
           scripts={currentRouteJs}
           seo={seoDetails}
           baseUrl={requestHost}
@@ -365,6 +367,7 @@ app.get("*", pageCache(_.cloneDeep(Routes)), (req, res) => {
       routerComponent = getErrorComponent(err, store, storage, api);
       html = ReactDOMServer.renderToString((
         <Html
+          stylesheets={currentRouteCss}
           inlineCss={inlineCss}
           scripts={currentRouteJs}
           baseUrl={requestHost}
@@ -381,6 +384,7 @@ app.get("*", pageCache(_.cloneDeep(Routes)), (req, res) => {
     routerComponent = getErrorComponent(err, store, storage, api);
     html = ReactDOMServer.renderToString((
       <Html
+        stylesheets={currentRouteCss}
         inlineCss={inlineCss}
         scripts={currentRouteJs}
         baseUrl={requestHost}
