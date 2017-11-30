@@ -1,6 +1,6 @@
 import _ from "lodash";
 import React from "react";
-import Html from "core/components/html";
+import Html from "react-pwa/src/components/html";
 import ReactDOMServer from "react-dom/server";
 
 import WorkboxSW from "./libs/workbox-sw";

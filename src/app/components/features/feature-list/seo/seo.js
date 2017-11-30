@@ -4,7 +4,7 @@
  * Time: 3:20 PM
  */
 import React, { Component } from "react";
-import Link from "core/components/link/link";
+import Link from "react-pwa/src/components/link/link";
 
 export default class SEO extends Component {
   render() {

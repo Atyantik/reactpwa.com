@@ -1,9 +1,9 @@
 import React, {Component} from "react";
-import Link from "core/components/link";
+import Link from "react-pwa/src/components/link";
 import WhiteLogo from "src/resources/images/reactpwa-logo-white.png?sizes=64w";
 import GithubImage from "./github-icon-white.png?sizes=64w";
-import Picture from "core/components/picture";
-import Storage from "core/libs/storage";
+import Picture from "react-pwa/src/components/picture";
+import Storage from "react-pwa/src/libs/storage";
 
 export default class Header extends Component {
   state = {

@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-import Link from "core/components/link";
-import Fold from "core/components/fold";
+import Link from "react-pwa/src/components/link";
+import Fold from "react-pwa/src/components/fold";
 import Prism from "../prism";
 import AnimatedAtom from "../animated-atom";
 import * as styles from "./home.scss";

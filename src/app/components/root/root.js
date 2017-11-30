@@ -1,9 +1,9 @@
 import { Component } from "react";
 import _ from "lodash";
 import { connect } from "react-redux";
-import { loadStyle } from "core/utils";
-import { screenLoaded } from "core/components/screen/action";
-import { loadScript } from "core/utils/utils";
+import { loadStyle } from "react-pwa/src/utils";
+import { screenLoaded } from "react-pwa/src/components/screen/action";
+import { loadScript } from "react-pwa/src/utils/utils";
 
 const __development = process.env.NODE_ENV === "development";
 

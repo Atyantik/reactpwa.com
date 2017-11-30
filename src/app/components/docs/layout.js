@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-import Link from "core/components/link";
-import Transition from "core/components/transition/transition";
+import Link from "react-pwa/src/components/link";
+import Transition from "react-pwa/src/components/transition/transition";
 import SidebarNav from "../sidebar-nav";
 import * as styles from "./styles.scss";
 import Disqus from "../disqus";

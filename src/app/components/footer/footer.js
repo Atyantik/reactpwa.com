@@ -1,5 +1,5 @@
 import React, {Component} from "react";
-import Picture from "core/components/picture";
+import Picture from "react-pwa/src/components/picture";
 import BrowserStackLogo from "./BrowserStackLogo.png?sizes=50w+100w+200w";
 import EventerpriseLogo from "./EventerpriseLogo.png?sizes=50w+100w+200w";
 import * as styles from "./style.scss";

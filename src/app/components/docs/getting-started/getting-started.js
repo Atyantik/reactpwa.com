@@ -69,7 +69,7 @@ Listening at http://0.0.0.0:3003
                 <li>2) Remove all files from <i>`src/pages`</i> folder.</li>
                 <li>
                   3) Edit <i>`src/routes.js`</i> and remove all the previous routes.
-                  <Prism code={`import { configureRoutes } from "core/utils/bundler";
+                  <Prism code={`import { configureRoutes } from "react-pwa/src/utils/bundler";
 
 // routes
 
@@ -115,7 +115,7 @@ export default routes;
                 </li>
                 <li>
                   3) Edit <i>`src/routes.js`</i> and add route for home page.
-                  <Prism code={`import { configureRoutes } from "core/utils/bundler";
+                  <Prism code={`import { configureRoutes } from "react-pwa/src/utils/bundler";
 
 // routes
 import * as Home from "./pages/home";

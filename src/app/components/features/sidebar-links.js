@@ -5,7 +5,7 @@
  */
 
 import React, { Component } from "react";
-import Link from "core/components/link";
+import Link from "react-pwa/src/components/link";
 import * as styles from "./features.scss";
 
 export default class SidebarLinks extends Component {
