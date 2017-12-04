@@ -15,6 +15,7 @@ export default class Header extends Component {
               href="https://www.atyantik.com"
               target="_blank"
               className="text-black"
+              rel="nofollow noopener"
             >
               Atyantik Technologies Private Limited
             </a>

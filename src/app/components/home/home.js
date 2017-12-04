@@ -40,6 +40,7 @@ export default class Home extends Component {
                 className="btn btn-outline-pearl mr-2"
                 href="https://github.com/Atyantik/react-pwa/archive/master.zip"
                 target="_blank"
+                rel="nofollow noopener"
               >
                 Download and get started
               </a>
@@ -64,7 +65,7 @@ export default class Home extends Component {
             <Prism code={"npm start"} language="bash" />
           </div>
           <p className="text-center">
-            Visit <a href="http://localhost:3003" rel="noFollow" target="_blank">http://localhost:3003</a> to see the boilerplate in action!
+            Visit <a href="http://localhost:3003" rel="nofollow noopener" target="_blank">http://localhost:3003</a> to see the boilerplate in action!
           </p>
           <p className="mt-4">
             <i>For more detailed instruction please visit <Link to="/docs">docs</Link></i>

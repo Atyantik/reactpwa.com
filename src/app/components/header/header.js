@@ -31,10 +31,10 @@ export default class Header extends Component {
             <div className="bg-dark row text-white p-4">
               <div className="float-left mr-4">
                 <p className="mb-1">
-                  Please support us at <a className="text-white" href="https://opencollective.com/react-pwa" target="_blank" rel="nofollow"><u>OpenCollective</u></a>. Your small contribution motivates us and helps us moving forward, thus improving the project.
+                  Please support us at <a className="text-white" href="https://opencollective.com/react-pwa" target="_blank" rel="nofollow noopener"><u>OpenCollective</u></a>. Your small contribution motivates us and helps us moving forward, thus improving the project.
                 </p>
                 <p>
-                  You can also visit our github repository: <a className="text-white" href="https://github.com/Atyantik/react-pwa" target="_blank" rel="nofollow"><u>https://github.com/Atyantik/react-pwa</u></a> and star our repo.
+                  You can also visit our github repository: <a className="text-white" href="https://github.com/Atyantik/react-pwa" target="_blank" rel="nofollow noopener"><u>https://github.com/Atyantik/react-pwa</u></a> and star our repo.
                 </p>
               </div>
               <a href="/" className="text-white ml-md-auto" onClick={e => this.hideNeedContributors(e)}><strong>[x] close</strong></a>
@@ -51,7 +51,7 @@ export default class Header extends Component {
             </div>
             <Link to="/" className="d-none d-sm-inline text-white ml-2 align-bottom" style={{ textDecoration: "none"}}>React PWA</Link>
           </div>
-          <a className="mr-2" href="https://github.com/Atyantik/react-pwa" target="_blank" rel="nofollow" style={{ width: "32px" }}>
+          <a className="mr-2" href="https://github.com/Atyantik/react-pwa" target="_blank" rel="nofollow noopener" style={{ width: "32px" }}>
             <Picture image={GithubImage} alt="ReactPWA" imgClassName="mw-100"/>
           </a>
           <Link to="/features" className="text-white pull-right mr-3" style={{ textDecoration: "none", lineHeight: "2rem"}}>Features</Link>
