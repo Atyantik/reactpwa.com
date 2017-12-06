@@ -1,5 +1,5 @@
 import DocsLayout from "../app/components/docs/layout";
-import GettingStarted from "../app/components/docs/getting-started";
+import DocPage from "../app/components/docs/page";
 import ConfiguringPWA from "../app/components/docs/configuring-pwa";
 import CustomizingLoader from "../app/components/docs/customizing-loader";
 import WorkingWithCss from "../app/components/docs/working-with-css";
@@ -22,7 +22,16 @@ const routes = [
       {
         path: "/docs",
         exact: true,
-        component: GettingStarted,
+        component: DocPage,
+        preLoadData: async ({api}) => {
+          const content = await api.fetch("/docs?slug=getting-started");
+          if (content.length) {
+            return content[0];
+          }
+          const error = new Error("Page not found");
+          error.statusCode = error.code = 404;
+          throw error;
+        },
         seo: {
           title: "Getting Started - Hello World | React PWA",
           description: "Get started with your own Progressive web application in the most simplest way.",

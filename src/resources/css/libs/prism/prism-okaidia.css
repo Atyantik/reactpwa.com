@@ -5,6 +5,7 @@
  */
 
 code[class*="language-"],
+pre[class*="prism"],
 pre[class*="language-"] {
 	color: #f8f8f2;
 	background: none;
@@ -28,7 +29,8 @@ pre[class*="language-"] {
 }
 
 /* Code blocks */
-pre[class*="language-"] {
+pre[class*="language-"],
+pre[class*="prism"]{
 	padding: 1em;
 	margin: .5em 0;
 	overflow: auto;
@@ -36,7 +38,8 @@ pre[class*="language-"] {
 }
 
 :not(pre) > code[class*="language-"],
-pre[class*="language-"] {
+pre[class*="language-"],
+pre[class*="prism"]{
 	background: #272822;
 }
 

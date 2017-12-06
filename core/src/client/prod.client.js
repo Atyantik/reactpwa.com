@@ -56,7 +56,7 @@ const updateByUrl = (url) => {
           store: global.store
         }, () => {
           !global.isInitialLoad && hideScreenLoader(global.store);
-          scrollToTop();
+          !global.isInitialLoad && scrollToTop();
         });
         return resolve();
       }

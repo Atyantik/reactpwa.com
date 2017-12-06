@@ -2,6 +2,9 @@ export default {
   server: {
     port: 3005,
   },
+  api: {
+    baseUrl: "https://api.reactpwa.com/wp-json/wp/v2/",
+  },
   hsts: {
     enabled: true,
     // mageAge: Must be at least 18 weeks to be approved by Google, but we are setting it to 1 year
