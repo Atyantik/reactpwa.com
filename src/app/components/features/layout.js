@@ -6,7 +6,7 @@
 
 import React, { Component } from "react";
 import Disqus from "../disqus";
-import Transition from "react-pwa/src/components/transition/transition";
+import Transition from "pawjs/src/components/transition/transition";
 import SidebarLinks from "./sidebar-links";
 import * as styles from "./features.scss";
 import SidebarNav from "../sidebar-nav";

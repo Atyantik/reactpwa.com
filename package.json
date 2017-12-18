@@ -7,26 +7,21 @@
   },
   "engineStrict": true,
   "devDependencies": {
-    "react-pwa": "file:core",
+    "pawjs": "^0.4",
     "prismjs": "^1.8.1",
     "raw-loader": "^0.5.1"
   },
   "scripts": {
-    "rpwa": "cd core && npm run",
-    "setup": "npm run rpwa setup",
-    "start": "npm run rpwa start",
-    "build": "npm run rpwa build",
-    "build:client": "npm run rpwa build:client",
-    "build:server": "npm run rpwa build:server",
-    "lint": "npm run rpwa lint",
-    "lint:core": "npm run rpwa lint:core",
-    "test": "npm run rpwa test",
-    "docker:dev:image": "docker build -t react-pwa -f core/docker/Dockerfile .",
-    "docker:dev:start": "docker run -it -v \"$PWD/src\":\"/app/src\" -v \"$PWD/core\":\"/app/core\" -p 3003:3003 react-pwa",
-    "docker:dev:lint": "docker run -it -v \"$PWD/src\":\"/app/src\" -v \"$PWD/core\":\"/app/core\" -p 3003:3003 react-pwa npm run lint",
-    "docker:dev:test": "docker run -it -v \"$PWD/src\":\"/app/src\" -v \"$PWD/core\":\"/app/core\" -p 3003:3003 react-pwa npm run test",
-    "docker:prod:build": "docker run -it -v \"$PWD/src\":\"/app/src\" -v \"$PWD/core\":\"/app/core\" -v \"$PWD/dist\":\"/app/dist\" react-pwa npm run build",
-    "docker:prod:image": "npm run docker:dev:image && npm run docker:prod:build && docker build -t react-pwa-prod -f core/docker/prod/Dockerfile .",
+    "start": "pawjs start",
+    "build": "pawjs build",
+    "lint": "pawjs lint",
+    "test": "pawjs test",
+    "docker:dev:image": "NODE_ENV=development pawjs docker build -t react-pwa .",
+    "docker:dev:start": "docker run -it -v \"$PWD/src\":\"/app/src\" -p 3003:3003 react-pwa",
+    "docker:dev:lint": "docker run -it -v \"$PWD/src\":\"/app/src\" -p 3003:3003 react-pwa npm run lint",
+    "docker:dev:test": "docker run -it -v \"$PWD/src\":\"/app/src\" -p 3003:3003 react-pwa npm run test",
+    "docker:prod:build": "docker run -it -v \"$PWD/src\":\"/app/src\" -v \"$PWD/dist\":\"/app/dist\" react-pwa npm run build",
+    "docker:prod:image": "npm run docker:dev:image && npm run docker:prod:build && NODE_ENV=production pawjs docker build -t react-pwa-prod .",
     "docker:prod:start": "docker run -it -p 3003:3003 react-pwa-prod"
   },
   "keywords": [
@@ -40,6 +35,6 @@
   },
   "license": "MIT",
   "babel": {
-    "extends": "./core/.babelrc"
+    "extends": "pawjs/.babelrc"
   }
 }

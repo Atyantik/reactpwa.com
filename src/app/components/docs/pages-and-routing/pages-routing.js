@@ -6,7 +6,7 @@
 
 import React, { Component } from "react";
 import Prism from "../../prism/prism";
-import Link from "react-pwa/src/components/link/link";
+import Link from "pawjs/src/components/link/link";
 
 export default class PagesAndRouting extends Component {
   render() {

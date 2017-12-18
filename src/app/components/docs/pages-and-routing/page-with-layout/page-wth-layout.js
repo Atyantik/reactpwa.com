@@ -99,7 +99,7 @@ export default routes;
             </li>
             <li className="mt-4">
               6) Edit <i>`src/routes.js`</i> and add route for home page.
-              <Prism code={`import { configureRoutes } from "react-pwa/src/utils/bundler";
+              <Prism code={`import { configureRoutes } from "pawjs/src/utils/bundler";
 
 // routes
 import * as Home from "./pages/home";

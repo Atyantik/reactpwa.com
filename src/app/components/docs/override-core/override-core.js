@@ -6,7 +6,7 @@
 
 import React, { Component } from "react";
 import Prism from "../../prism/prism";
-import Link from "react-pwa/src/components/link/link";
+import Link from "pawjs/src/components/link/link";
 
 export default class OverrideCore extends Component {
   render(){
@@ -33,12 +33,12 @@ export default class OverrideCore extends Component {
               which contains all the core components.
             </p>
             <Prism
-              code={`import Err404 from "react-pwa/src/components/error/404";
-import Err500 from "react-pwa/src/components/error/500";
-import Offline from "react-pwa/src/components/error/offline";
-import Loader from "react-pwa/src/components/loader";
-import Fold from "react-pwa/src/components/fold";
-import Root from "react-pwa/src/components/root";
+              code={`import Err404 from "pawjs/src/components/error/404";
+import Err500 from "pawjs/src/components/error/500";
+import Offline from "pawjs/src/components/error/offline";
+import Loader from "pawjs/src/components/loader";
+import Fold from "pawjs/src/components/fold";
+import Root from "pawjs/src/components/root";
 
   /**
    * Specify Mapping of components respective to
@@ -86,11 +86,11 @@ export default class AppRoot extends Component {
                 </li>
                 <li className="mt-4">
                   2) import the AppRoot component in <i>`src/config/classMap.js`</i> and replace it with Root of core.
-                  <Prism code={`import Err404 from "react-pwa/src/components/error/404";
-import Err500 from "react-pwa/src/components/error/500";
-import Offline from "react-pwa/src/components/error/offline";
-import Loader from "react-pwa/src/components/loader";
-import Fold from "react-pwa/src/components/fold";
+                  <Prism code={`import Err404 from "pawjs/src/components/error/404";
+import Err500 from "pawjs/src/components/error/500";
+import Offline from "pawjs/src/components/error/offline";
+import Loader from "pawjs/src/components/loader";
+import Fold from "pawjs/src/components/fold";
 import AppRoot from "../app/components/root";
 
   /**
@@ -161,11 +161,11 @@ export default class OfflinePage extends Component {
                 </li>
                 <li className="mt-4">
                   2) import the OfflinePage component in <i>`src/config/classMap.js`</i> and replace it with Offline of core.
-                  <Prism code={`import Err404 from "react-pwa/src/components/error/404";
-import Err500 from "react-pwa/src/components/error/500";
+                  <Prism code={`import Err404 from "pawjs/src/components/error/404";
+import Err500 from "pawjs/src/components/error/500";
 import OfflinePage from "../app/components/offline";
-import Loader from "react-pwa/src/components/loader";
-import Fold from "react-pwa/src/components/fold";
+import Loader from "pawjs/src/components/loader";
+import Fold from "pawjs/src/components/fold";
 import AppRoot from "../app/components/root";
 
   /**

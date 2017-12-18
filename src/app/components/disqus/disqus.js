@@ -1,6 +1,6 @@
 import _ from "lodash";
 import React, {Component} from "react";
-import {generateStringHash, loadScript} from "react-pwa/src/utils/utils";
+import {generateStringHash, loadScript} from "pawjs/src/utils/utils";
 
 const __production = process.env.NODE_ENV === "production";
 

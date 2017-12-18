@@ -8,7 +8,7 @@ import React, { Component } from "react";
 
 import SSRImage from "./images/ssr.png?sizes=600w";
 import CSRImage from "./images/csr.png?sizes=600w";
-import Picture from "react-pwa/src/components/picture/picture";
+import Picture from "pawjs/src/components/picture/picture";
 
 export default class SSR extends Component {
   render() {

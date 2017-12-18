@@ -56,7 +56,7 @@ export default class WorkingWithCss extends Component {
             <p className="mt-4">
               Step 2) Import the CSS in `src/client.js`
             </p>
-            <Prism code={`// .... import { trackPageView } from "react-pwa/src/utils/analytics";
+            <Prism code={`// .... import { trackPageView } from "pawjs/src/utils/analytics";
 
 // Importing bootstrap
 import "bootstrap/dist/css/bootstrap-theme.css";

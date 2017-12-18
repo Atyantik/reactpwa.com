@@ -1,8 +1,6 @@
 import DocsLayout from "../app/components/docs/layout";
 import DocPage from "../app/components/docs/page";
-import ConfiguringPWA from "../app/components/docs/configuring-pwa";
-import CustomizingLoader from "../app/components/docs/customizing-loader";
-import WorkingWithCss from "../app/components/docs/working-with-css";
+//import WorkingWithCss from "../app/components/docs/working-with-css";
 
 import PendingDocs from "../app/components/docs/pending";
 import DefaultLayout from "../app/components/layout";
@@ -35,7 +33,7 @@ const routes = [
         seo: {
           title: "Getting Started - Hello World | React PWA",
           description: "Get started with your own Progressive web application in the most simplest way.",
-          keywords: "pwa,progressive web application,hello world, react,getting started,tutorials",
+          keywords: "pwa,progressive web application,hello world,react,getting started,tutorials",
           image: GettingStartedImage,
           type: "article"
         }
@@ -43,7 +41,16 @@ const routes = [
       {
         path: "/docs/configuring-pwa",
         exact: true,
-        component: ConfiguringPWA,
+        component: DocPage,
+        preLoadData: async ({api}) => {
+          const content = await api.fetch("/docs?slug=configuring-pwa");
+          if (content.length) {
+            return content[0];
+          }
+          const error = new Error("Page not found");
+          error.statusCode = error.code = 404;
+          throw error;
+        },
         props: {
           title: "Configuring PWA"
         },
@@ -56,7 +63,16 @@ const routes = [
       {
         path: "/docs/customizing-loader",
         exact: true,
-        component: CustomizingLoader,
+        component: DocPage,
+        preLoadData: async ({api}) => {
+          const content = await api.fetch("/docs?slug=customizing-loader");
+          if (content.length) {
+            return content[0];
+          }
+          const error = new Error("Page not found");
+          error.statusCode = error.code = 404;
+          throw error;
+        },
         props: {
           title: "Customizing Loader"
         },
@@ -69,7 +85,16 @@ const routes = [
       {
         path: "/docs/working-with-css",
         exact: true,
-        component: WorkingWithCss,
+        component: DocPage,
+        preLoadData: async ({api}) => {
+          const content = await api.fetch("/docs?slug=working-with-css");
+          if (content.length) {
+            return content[0];
+          }
+          const error = new Error("Page not found");
+          error.statusCode = error.code = 404;
+          throw error;
+        },
         props: {
           title: "Working with CSS"
         },
