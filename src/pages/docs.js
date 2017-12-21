@@ -10,6 +10,7 @@ import CreateNewPage from "../app/components/docs/pages-and-routing/create-new-p
 import PageWithSubroutes from "../app/components/docs/pages-and-routing/page-with-subroutes/page-wth-subroutes";
 import PageWithLayout from "../app/components/docs/pages-and-routing/page-with-layout/page-wth-layout";
 import OverrideCore from "../app/components/docs/override-core/override-core";
+import ConfiguringRedux from "../app/components/docs/configuring-redux";
 
 const routes = [
   {
@@ -224,7 +225,7 @@ const routes = [
       {
         path: "/docs/configuring-redux",
         exact: true,
-        component: PendingDocs,
+        component: ConfiguringRedux,
         props: {
           title: "Configuring Redux"
         },
