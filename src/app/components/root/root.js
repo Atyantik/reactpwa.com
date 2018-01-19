@@ -46,20 +46,31 @@ export default class CoreRoot extends Component {
     // Load google analytics
     !__development && this.loadGoogleAnalytics();
     !__development && this.loadTwakChat();
+    !__development && this.loadSumo();
   }
   
   loadTwakChat() {
     // eslint-disable-next-line
     window.Tawk_API= window.Tawk_API||{};
+    // eslint-disable-next-line
     window.Tawk_LoadStart =new Date();
-    (function(){
-      const s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-      s1.async=true;
-      s1.src="https://embed.tawk.to/5a6182a0d7591465c706e568/default";
-      s1.charset="UTF-8";
-      s1.setAttribute("crossorigin","*");
-      s0.parentNode.insertBefore(s1,s0);
-    })();
+    
+    // eslint-disable-next-line
+    const s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+    s1.async=true;
+    s1.src="https://embed.tawk.to/5a6182a0d7591465c706e568/default";
+    s1.charset="UTF-8";
+    s1.setAttribute("crossorigin","*");
+    s0.parentNode.insertBefore(s1,s0);
+  }
+  
+  loadSumo() {
+    // eslint-disable-next-line
+    const s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+    s1.async=true;
+    s1.src="//load.sumome.com/";
+    s1.setAttribute("data-sumo-site-id","110138f66c3c23754ff97de8b4bdf49eaa28ea67852c7a62647e171852e741a2");
+    s0.parentNode.insertBefore(s1,s0);
   }
   render() {
     return this.props.children || null;
