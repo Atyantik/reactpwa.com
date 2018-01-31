@@ -10,7 +10,8 @@ export default class Header extends Component {
     showNeedContributors: false,
   };
   componentDidMount() {
-    let showNeedContributors = Storage.getItem("showNeedContributors");
+    //let showNeedContributors = Storage.getItem("showNeedContributors");
+    let showNeedContributors = Storage.getItem("showNeedContributorsUpgrade");
     showNeedContributors = typeof showNeedContributors === "undefined";
     this.setState({
       showNeedContributors
@@ -30,6 +31,8 @@ export default class Header extends Component {
           this.state.showNeedContributors && (
             <div className="bg-dark row text-white p-4">
               <div className="float-left mr-4">
+                <h1>Upgrading!</h1>
+                <h3>Thanks for your support to ReactPWA. We are upgrading PawJS, the core of ReactPWA, with great optimization changes.</h3>
                 <p className="mb-1">
                   Please support us at <a className="text-white" href="https://opencollective.com/react-pwa" target="_blank" rel="nofollow noopener"><u>OpenCollective</u></a>. Your small contribution motivates us and helps us moving forward, thus improving the project.
                 </p>
