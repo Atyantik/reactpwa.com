@@ -1,0 +1,8 @@
+{
+  "port": "9090",
+  "host": "0.0.0.0",
+  "appRootUrl": "/",
+  "serviceWorker": false,
+  "serverSideRender": true,
+  "asyncCSS": false
+}

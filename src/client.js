@@ -1,8 +1,3 @@
-import { trackPageView } from "pawjs/src/utils/analytics";
-export const reduxInitialState = {};
-export const reduxReducers = null;
-export const onPageChange = function() {
-  trackPageView().catch();
-};
+import "./resources/css/style.scss";
 
-if (module.hot) module.hot.accept();
+export default class Client {}

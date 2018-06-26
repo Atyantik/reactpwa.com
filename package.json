@@ -7,22 +7,15 @@
   },
   "engineStrict": true,
   "devDependencies": {
-    "pawjs": "^0.4",
+    "pawjs": "^0.8.8",
     "prismjs": "^1.8.1",
     "raw-loader": "^0.5.1"
   },
   "scripts": {
-    "start": "pawjs start",
-    "build": "pawjs build",
+    "start": "pawjs start:dev",
+    "build": "pawjs build:prod",
     "lint": "pawjs lint",
-    "test": "pawjs test",
-    "docker:dev:image": "NODE_ENV=development pawjs docker build -t react-pwa .",
-    "docker:dev:start": "docker run -it -v \"$PWD/src\":\"/app/src\" -p 3003:3003 react-pwa",
-    "docker:dev:lint": "docker run -it -v \"$PWD/src\":\"/app/src\" -p 3003:3003 react-pwa npm run lint",
-    "docker:dev:test": "docker run -it -v \"$PWD/src\":\"/app/src\" -p 3003:3003 react-pwa npm run test",
-    "docker:prod:build": "docker run -it -v \"$PWD/src\":\"/app/src\" -v \"$PWD/dist\":\"/app/dist\" react-pwa npm run build",
-    "docker:prod:image": "npm run docker:dev:image && npm run docker:prod:build && NODE_ENV=production pawjs docker build -t react-pwa-prod .",
-    "docker:prod:start": "docker run -it -p 3003:3003 react-pwa-prod"
+    "test": "pawjs test"
   },
   "keywords": [
     "es7",
@@ -33,8 +26,5 @@
     "email": "admin@atyantik.com",
     "url": "https://www.atyantik.com/"
   },
-  "license": "MIT",
-  "babel": {
-    "extends": "pawjs/.babelrc"
-  }
+  "license": "MIT"
 }

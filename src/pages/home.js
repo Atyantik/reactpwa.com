@@ -1,12 +1,12 @@
-import Home from "../app/components/home";
-import FullwidthLayout from "../app/components/layout/fullwidth";
+import HomeSkeleton from "../app/components/skeleton/home";
+// something
 
-const routes = [
+export default [
   {
     path: "/",
+    component: import("../app/components/home"),
+    layout: import("../app/components/layout"),
+    skeleton: HomeSkeleton,
     exact: true,
-    component: Home,
-    layout: FullwidthLayout,
   }
 ];
-export default routes;
