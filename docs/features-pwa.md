@@ -63,7 +63,7 @@ PWAs are based on a set of things on which Web Apps are already based on:
 
 However, they are distinguished by two recent technical components:
 
- - <a href="https://developer.mozilla.org/fr/docs/Web/API/Service_Worker_API/Using_Service_Workers" target="_blank" rel="nofollow noopener">Service Workers</a>: This is a browser capability to provide an intermediate layer between the Web App and the network, which runs in the background (even when the application is closed). This “network” layer is capable of listening and sending requests, notifications or even capturing connectivity changes;
+ - [Service Workers](https://developer.mozilla.org/fr/docs/Web/API/Service_Worker_API/Using_Service_Workers): This is a browser capability to provide an intermediate layer between the Web App and the network, which runs in the background (even when the application is closed). This “network” layer is capable of listening and sending requests, notifications or even capturing connectivity changes;
  - The <a href="https://developer.mozilla.org/fr/docs/Utilisation_des_web_workers" target="_blank" rel="nofollow noopener">Web Workers</a> are also background capabilities but they are rather dedicated to calculations and “services” oriented development.
 
 ---

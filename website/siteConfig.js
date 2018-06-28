@@ -7,6 +7,7 @@
 
 // See https://docusaurus.io/docs/site-config.html for all the possible
 // site configuration options.
+const extLink = require('remarkable-extlink');
 
 /* List of projects/orgs using your project for the users page */
 const users = [
@@ -42,6 +43,13 @@ const siteConfig = {
     {doc: 'doc4', label: 'API'},
     {page: 'help', label: 'Help'},
     {blog: true, label: 'Blog'},
+  ],
+  markdownPlugins: [
+    function(md) {
+      md.use(extLink, {
+        host: siteConfig.url
+      })
+    }
   ],
 
   // If you have users set above, you add it here:
@@ -93,7 +101,7 @@ const siteConfig = {
 
   // You may provide arbitrary config keys to be used as needed by your
   // template. For example, if you need your repo's URL...
-    repoUrl: 'https://github.com/atyantik/react-pwa',
+  repoUrl: 'https://github.com/atyantik/react-pwa',
 };
 
 module.exports = siteConfig;
