@@ -5,9 +5,11 @@
       "feature-pwa",
       "feature-access-offline",
       "feature-code-splitting",
-      "feature-hot-reloading",
       "feature-next-gen-js",
-      "feature-isomorphic-universal-routing"
+      "feature-isomorphic-universal-routing",
+      "feature-ssr",
+      "feature-seo",
+      "feature-hsts"
     ],
     "API": ["doc3"]
   },
