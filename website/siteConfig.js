@@ -47,7 +47,7 @@ const siteConfig = {
   markdownPlugins: [
     function(md) {
       md.use(extLink, {
-        host: siteConfig.url
+        host: siteConfig.url 
       })
     }
   ],
