@@ -1,7 +1,14 @@
 {
   "docs": {
     "Getting Started": ["setup"],
-    "Features": ["doc2"],
+    "Features": [
+      "feature-pwa",
+      "feature-access-offline",
+      "feature-code-splitting",
+      "feature-hot-reloading",
+      "feature-next-gen-js",
+      "feature-isomorphic-universal-routing"
+    ],
     "API": ["doc3"]
   },
   "docs-other": {
