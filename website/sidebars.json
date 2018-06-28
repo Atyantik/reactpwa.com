@@ -1,6 +1,8 @@
 {
   "docs": {
-    "Getting Started": ["setup"],
+    "Getting Started": ["setup"]
+  },
+  "features": {
     "Features": [
       "feature-pwa",
       "feature-access-offline",
@@ -10,10 +12,11 @@
       "feature-ssr",
       "feature-seo",
       "feature-hsts"
-    ],
-    "API": ["doc3"]
+    ]
   },
-  "docs-other": {
-    "First Category": ["doc4", "doc5"]
+  "api": {
+    "Getting Started": [
+      "doc3"
+    ]
   }
 }

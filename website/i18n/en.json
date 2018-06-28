@@ -26,12 +26,10 @@
     "setup": "Setup",
     "Setup": "Setup",
     "Docs": "Docs",
-    "API": "API",
-    "Help": "Help",
-    "Blog": "Blog",
-    "Getting Started": "Getting Started",
     "Features": "Features",
-    "First Category": "First Category"
+    "Blog": "Blog",
+    "Help": "Help",
+    "Getting Started": "Getting Started"
   },
   "pages-strings": {
     "Learn more using the [documentation on this site.](/test-site/docs/en/doc1.html)|no description given": "Learn more using the [documentation on this site.](/test-site/docs/en/doc1.html)",
