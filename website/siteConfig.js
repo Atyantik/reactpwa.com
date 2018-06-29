@@ -12,11 +12,11 @@ const extLink = require("remarkable-extlink");
 /* List of projects/orgs using your project for the users page */
 const users = [
   {
-    caption: "User1",
+    caption: "Eventerprise",
     // You will need to prepend the image path with your baseUrl
     // if it is not '/', like: '/test-site/img/docusaurus.svg'.
-    image: "/img/logo.svg",
-    infoLink: "https://www.facebook.com",
+    image: "https://www.eventerprise.com/page/wp-content/uploads/2018/03/4a425d1b9754081a358b88bbd88089d6.svg",
+    infoLink: "https://www.eventerprise.com",
     pinned: true,
   },
 ];
