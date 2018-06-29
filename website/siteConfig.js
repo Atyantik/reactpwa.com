@@ -23,15 +23,16 @@ const users = [
 
 const siteConfig = {
   title: "ReactPWA" /* title for your website */,
-  tagline: "A boilerplate built on top of PawJS",
-  url: "web.reactpwa.com" /* your website url */,
+  disableHeaderTitle: false,
+  tagline: "An extendable boilerplate built on top of PawJS",
+  url: "https://www.reactpwa.com" /* your website url */,
   baseUrl: "/" /* base url for your project */,
   // For github.io type URLs, you would set the url and baseUrl like:
   //   url: 'https://facebook.github.io',
   //   baseUrl: '/test-site/',
 
   // Used for publishing and more
-  projectName: "test-site",
+  projectName: "react-pwa",
   organizationName: "Atyantik Technologies Private Limited",
   // For top-level user or org sites, the organization is still the same.
   // e.g., for the https://JoelMarcey.github.io site, it would be set like...
@@ -55,31 +56,24 @@ const siteConfig = {
     }
   ],
 
+  editUrl: "https://github.com/Atyantik/reactpwa.com/edit/master/docs/",
+
   // If you have users set above, you add it here:
   users,
 
   /* path to images for header/footer */
   headerIcon: "img/logo.svg",
-  footerIcon: "img/logo.svg",
-  favicon: "img/pwa/icon-72X72.png",
+  footerIcon: "img/white-logo.png",
+  favicon: "img/favicon/favicon.ico",
+
+  /** Google analytics **/
+  gaTrackingId: "UA-108804791-1",
 
   /* colors for website */
   colors: {
     primaryColor: "#17a2b8",
-    secondaryColor: "#202020",
+    secondaryColor: "#128293",
   },
-
-  /* custom fonts for website */
-  /*fonts: {
-    myFont: [
-      "Times New Roman",
-      "Serif"
-    ],
-    myOtherFont: [
-      "-apple-system",
-      "system-ui"
-    ]
-  },*/
 
   // This copyright info is used in /core/Footer.js and blog rss/atom feeds.
   copyright:
@@ -93,18 +87,35 @@ const siteConfig = {
   },
 
   // Add custom scripts here that would be placed in <script> tags
-  scripts: ["https://buttons.github.io/buttons.js"],
+  scripts: [
+    "https://buttons.github.io/buttons.js",
+    "https://opencollective.com/react-pwa/contribute/button.js"
+  ],
 
   /* On page navigation for the current documentation page */
   onPageNav: "separate",
 
-  /* Open Graph and Twitter card images */
-  ogImage: "img/docusaurus.png",
-  twitterImage: "img/docusaurus.png",
-
   // You may provide arbitrary config keys to be used as needed by your
   // template. For example, if you need your repo's URL...
   repoUrl: "https://github.com/atyantik/react-pwa",
+
+  /* Open Graph and Twitter card images */
+  facebookAppId: "778795602266784",
+  facebookComments: true,
+  facebookPixelId: "778795602266784",
+  twitter: "true",
+  twitterUsername: "atyantik_tech",
+  twitterImage: "img/pwa/icon-512x512.png",
+  ogImage: "img/pwa/icon-512x512.png",
+  scrollToTop: true,
+  scrollToTopOptions: {
+    zIndex: 100,
+  },
+  algolia: {
+    apiKey: "626e03f900a93b0dc06a820f11bdb98c",
+    indexName: "reactpwa.com",
+    appId: "0D0WDCNF8X"
+  }
 };
 
 module.exports = siteConfig;

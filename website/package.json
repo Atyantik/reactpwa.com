@@ -13,6 +13,7 @@
     "eslint": "^5.0.1",
     "eslint-plugin-react": "^7.10.0",
     "react": "^16.4.1",
-    "remarkable-extlink": "^1.1.0"
+    "remarkable-extlink": "^1.1.0",
+    "whatwg-fetch": "^2.0.4"
   }
 }

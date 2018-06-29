@@ -8,6 +8,8 @@
 const React = require("react");
 const siteConfig = require(process.cwd() + "/siteConfig.js");
 
+const Supporters = require(process.cwd() + "/core/Supporters.js");
+
 function imgUrl(img) {
   return siteConfig.baseUrl + "img/" + img;
 }
@@ -79,6 +81,52 @@ class HomeSplash extends React.Component {
   }
 }
 
+const GettingStarted = function() {
+  return (
+    <div className="mw-1000 m-auto">
+      <h4 className="text-center">Lets get started with 3 simple steps:</h4>
+      <ol>
+        <li>
+          <strong>Cloning the repository:</strong>
+          <small className="text-muted">
+            The command below will create a folder &quot;react-pwa&quot; relative to your current directory
+          </small>
+          <pre>
+                  <code className="hljs css languages- bash">
+                    git clone https://github.com/Atyantik/react-pwa.git
+                  </code>
+                </pre>
+        </li>
+        <li>
+          <strong>Moving to the repository &amp; installing dependencies:</strong>
+          <pre>
+                  <code className="hljs css languages- bash">
+                    cd react-pwa &amp;&amp; npm install
+                  </code>
+                </pre>
+        </li>
+        <li>
+          <strong>Running the boilerplate:</strong>
+          <pre>
+                  <code className="hljs css languages- bash">npm start</code>
+                </pre>
+        </li>
+      </ol>
+      <p className="text-center">
+        Visit&nbsp;
+        <a
+          href="http://localhost:3003"
+          rel="nofollow noopener noreferrer"
+          target="_blank"
+        >
+          http://localhost:3003
+        </a>
+        &nbsp;to see the boilerplate in action!
+      </p>
+    </div>
+  );
+};
+
 class Index extends React.Component {
   render() {
     let language = this.props.language || "";
@@ -87,47 +135,8 @@ class Index extends React.Component {
       <div>
         <HomeSplash language={language} />
         <div className="mainContainer">
-          <div className="mw-1000 m-auto">
-            <h4 className="text-center">Lets get started with 3 simple steps:</h4>
-            <ol>
-              <li>
-                <strong>Cloning the repository:</strong>
-                <small className="text-muted">
-                  The command below will create a folder &quot;react-pwa&quot; relative to your current directory
-                </small>
-                <pre>
-                  <code className="hljs css languages- bash">
-                    git clone https://github.com/Atyantik/react-pwa.git
-                  </code>
-                </pre>
-              </li>
-              <li>
-                <strong>Moving to the repository &amp; installing dependencies:</strong>
-                <pre>
-                  <code className="hljs css languages- bash">
-                    cd react-pwa &amp;&amp; npm install
-                  </code>
-                </pre>
-              </li>
-              <li>
-                <strong>Running the boilerplate:</strong>
-                <pre>
-                  <code className="hljs css languages- bash">npm start</code>
-                </pre>
-              </li>
-            </ol>
-            <p className="text-center">
-              Visit&nbsp;
-              <a
-                href="http://localhost:3003"
-                rel="nofollow noopener noreferrer"
-                target="_blank"
-              >
-                http://localhost:3003
-              </a>
-              &nbsp;to see the boilerplate in action!
-            </p>
-          </div>
+          <GettingStarted />
+          <Supporters />
         </div>
       </div>
     );
