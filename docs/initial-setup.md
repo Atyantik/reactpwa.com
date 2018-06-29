@@ -1,7 +1,7 @@
 ---
-id: setup
-title: Setup
-sidebar_label: Setup
+id: initial-setup
+title: Initial Setup
+sidebar_label: Initial Setup
 ---
 
 ## Requirements
