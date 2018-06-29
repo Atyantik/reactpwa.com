@@ -4,26 +4,20 @@
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  */
-
-const React = require('react');
-
-const CompLibrary = require('../../core/CompLibrary.js');
-const MarkdownBlock = CompLibrary.MarkdownBlock; /* Used to read markdown */
-const Container = CompLibrary.Container;
-const GridBlock = CompLibrary.GridBlock;
-
-const siteConfig = require(process.cwd() + '/siteConfig.js');
+ 
+const React = require("react");
+const siteConfig = require(process.cwd() + "/siteConfig.js");
 
 function imgUrl(img) {
-  return siteConfig.baseUrl + 'img/' + img;
+  return siteConfig.baseUrl + "img/" + img;
 }
 
 function docUrl(doc, language) {
-  return siteConfig.baseUrl + 'docs/' + (language ? language + '/' : '') + doc;
+  return siteConfig.baseUrl + "docs/" + (language ? language + "/" : "") + doc;
 }
 
 function pageUrl(page, language) {
-  return siteConfig.baseUrl + (language ? language + '/' : '') + page;
+  return siteConfig.baseUrl + (language ? language + "/" : "") + page;
 }
 
 class Button extends React.Component {
@@ -39,177 +33,115 @@ class Button extends React.Component {
 }
 
 Button.defaultProps = {
-  target: '_self',
+  target: "_self",
 };
-
-const SplashContainer = props => (
-  <div className="homeContainer">
-    <div className="homeSplashFade">
-      <div className="wrapper homeWrapper">{props.children}</div>
-    </div>
-  </div>
-);
-
-const Logo = props => (
-  <div className="projectLogo">
-    <img src={props.img_src} />
-  </div>
-);
-
-const ProjectTitle = props => (
-  <h2 className="projectTitle">
-    {siteConfig.title}
-    <small>{siteConfig.tagline}</small>
-  </h2>
-);
-
-const PromoSection = props => (
-  <div className="section promoSection">
-    <div className="promoRow">
-      <div className="pluginRowBlock">{props.children}</div>
-    </div>
-  </div>
-);
 
 class HomeSplash extends React.Component {
   render() {
-    let language = this.props.language || '';
+    let language = this.props.language || "";
     return (
-      <SplashContainer>
-        <Logo img_src={imgUrl('logo.svg')} />
-        <div className="inner">
-          <ProjectTitle />
-          <PromoSection>
-            <Button href="#try">Try It Out</Button>
-            <Button href={docUrl('doc1.html', language)}>Example Link</Button>
-            <Button href={docUrl('doc2.html', language)}>Example Link 2</Button>
-          </PromoSection>
+      <div className="hero">
+        <div className="hero-left"><h1 className="d-sm-none">React PWA</h1>
+          <p className="h4 text-uppercase">
+            <small>Create</small><br />
+            <strong>Upgradable</strong><br />
+            <strong>SEO Friendly</strong><br />
+            <strong>Progressive web applications</strong>
+          </p>
         </div>
-      </SplashContainer>
+        <div className="m-auto">
+          <div className="atom-animate">
+            <div><div/></div>
+            <div><div/></div>
+            <div><div/></div>
+            <div><div/></div>
+          </div>
+        </div>
+        <div className="hero-right">
+          <p>Its fast and developer friendly, already
+          loaded with Docker support and deployable with no need to install with npm dependencies!<br />
+            <strong>And more importantly its <i>UPGRADABLE!</i></strong><br />
+            <a className="btn btn-pearl mt-3" href={docUrl("feature-pwa", language)}>View all features</a>
+          </p>
+        </div>
+        <div className="col-sm-12 text-center mt-5">
+          <a
+            className="btn btn-outline-pearl mr-2"
+            href="https://github.com/Atyantik/react-pwa/archive/master.zip"
+            target="_blank"
+            rel="nofollow noopener noreferrer"
+          >
+            Download and get started
+          </a>
+        </div>
+      </div>
     );
   }
 }
 
-const Block = props => (
-  <Container
-    padding={['bottom', 'top']}
-    id={props.id}
-    background={props.background}>
-    <GridBlock align="center" contents={props.children} layout={props.layout} />
-  </Container>
-);
-
-const Features = props => (
-  <Block layout="fourColumn">
-    {[
-      {
-        content: 'This is the content of my feature',
-        image: imgUrl('logo.svg'),
-        imageAlign: 'top',
-        title: 'Feature One',
-      },
-      {
-        content: 'The content of my second feature',
-        image: imgUrl('logo.svg'),
-        imageAlign: 'top',
-        title: 'Feature Two',
-      },
-    ]}
-  </Block>
-);
-
-const FeatureCallout = props => (
-  <div
-    className="productShowcaseSection paddingBottom"
-    style={{textAlign: 'center'}}>
-    <h2>Feature Callout</h2>
-    <MarkdownBlock>These are features of this project</MarkdownBlock>
-  </div>
-);
-
-const LearnHow = props => (
-  <Block background="light">
-    {[
-      {
-        content: 'Talk about learning how to use this',
-        image: imgUrl('logo.svg'),
-        imageAlign: 'right',
-        title: 'Learn How',
-      },
-    ]}
-  </Block>
-);
-
-const TryOut = props => (
-  <Block id="try">
-    {[
-      {
-        content: 'Talk about trying this out',
-        image: imgUrl('logo.svg'),
-        imageAlign: 'left',
-        title: 'Try it Out',
-      },
-    ]}
-  </Block>
-);
-
-const Description = props => (
-  <Block background="dark">
-    {[
-      {
-        content: 'This is another description of how this project is useful',
-        image: imgUrl('logo.svg'),
-        imageAlign: 'right',
-        title: 'Description',
-      },
-    ]}
-  </Block>
-);
-
-const Showcase = props => {
-  if ((siteConfig.users || []).length === 0) {
-    return null;
-  }
-  const showcase = siteConfig.users
-    .filter(user => {
-      return user.pinned;
-    })
-    .map((user, i) => {
-      return (
-        <a href={user.infoLink} key={i}>
-          <img src={user.image} alt={user.caption} title={user.caption} />
-        </a>
-      );
-    });
-
-  return (
-    <div className="productShowcaseSection paddingBottom">
-      <h2>{"Who's Using This?"}</h2>
-      <p>This project is used by all these people</p>
-      <div className="logos">{showcase}</div>
-      <div className="more-users">
-        <a className="button" href={pageUrl('users.html', props.language)}>
-          More {siteConfig.title} Users
-        </a>
-      </div>
-    </div>
-  );
-};
-
 class Index extends React.Component {
   render() {
-    let language = this.props.language || '';
+    let language = this.props.language || "";
 
     return (
       <div>
         <HomeSplash language={language} />
         <div className="mainContainer">
-          <Features />
-          <FeatureCallout />
-          <LearnHow />
-          <TryOut />
-          <Description />
-          <Showcase language={language} />
+          <div className="mw-1000 m-auto">
+            <p className="mt-5 text-center">
+              <span className="h4">Lets get started with 3 simple steps:</span>
+            </p>
+            <div className="mt-5"><strong>1) Cloning the repository: </strong>
+              <small className="text-muted">
+                The command below will create a folder "react-pwa" relative to your current directory
+              </small>
+              <pre>
+                <code className="hljs css languages- bash">
+                  git clone https://github.com/Atyantik/react-pwa.git
+                </code>
+              </pre>
+            </div>
+            <div className="mt-3">
+              <strong>2) Moving to the repository &amp; installing dependencies: &nbsp;</strong>
+              <pre>
+                <code className="hljs css languages- bash">
+                  cd react-pwa &amp;&amp; npm install
+                </code>
+              </pre>
+            </div>
+            <div className="mt-3">
+              <strong>3) Running the boilerplate: &nbsp;</strong>
+              <pre>
+                <code className="hljs css languages- bash">npm start</code>
+              </pre>
+            </div>
+            <p className="text-center">
+              Visit
+              <a
+                href="http://localhost:3003"
+                rel="nofollow noopener noreferrer"
+                target="_blank"
+              >
+                http://localhost:3003
+              </a>
+              to see the boilerplate in action!
+            </p>
+            <p className="mt-4">
+              <i>For more detailed instruction please visit <a href="/docs">docs</a></i>
+            </p>
+            <div className="card text-white bg-info mb-3">
+              <div className="card-header">
+                <small>This is a</small>
+                Progressive Web Application!
+              </div>
+              <div className="card-body">
+                <h4 className="card-title">Add us to &quot;Home screen&quot;</h4>
+                <p className="card-text">
+                  You might be interested to learn that current site is build using ReactPWA. Why don't you add us to your Home Screen when prompted. We are sure you will love the experience.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     );
