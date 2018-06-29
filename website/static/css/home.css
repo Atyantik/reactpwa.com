@@ -20,10 +20,26 @@
 .m-auto {
     margin: auto;
 }
+.mw-500 {
+    padding: 0 10px;
+    max-width: 500px;
+}
 .mw-1000 {
     padding: 0 10px;
     max-width: 1000px;
 }
 .text-center {
     text-align: center;
+}
+
+img:before {
+    content: "We're sorry, the image below is broken :(";
+    display: block;
+    margin-bottom: 10px;
+}
+
+img:after {
+    content: "(url: " attr(src) ")";
+    display: block;
+    font-size: 12px;
 }

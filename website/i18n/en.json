@@ -3,7 +3,7 @@
   "localized-strings": {
     "next": "Next",
     "previous": "Previous",
-    "tagline": "A boilerplate built on top of PawJS",
+    "tagline": "An extendable boilerplate built on top of PawJS",
     "configuration": "Configuration",
     "Configuration": "Configuration",
     "feature-code-splitting": "Code Splitting",

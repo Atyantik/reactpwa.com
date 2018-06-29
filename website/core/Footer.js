@@ -62,6 +62,12 @@ class Footer extends React.Component {
             </a>
           </div>
         </section>
+        <section className="text-center">
+          <a href="https://opencollective.com/react-pwa/donate" target="_blank" rel="nofollow noopener noreferrer">
+            <img src="https://opencollective.com/react-pwa/contribute/button@2x.png?color=blue" width="300" />
+          </a>
+        </section>
+        <br />
         <section className="copyright">
           <a
             href={"https://www.atyantik.com"}
