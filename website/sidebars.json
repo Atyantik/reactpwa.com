@@ -1,6 +1,7 @@
 {
   "docs": {
-    "Getting Started": ["setup"]
+    "Getting Started": ["initial-setup", "configuration"],
+    "Plugins": ["redux", "image-optimization"]
   },
   "features": {
     "Features": [
@@ -12,11 +13,6 @@
       "feature-ssr",
       "feature-seo",
       "feature-hsts"
-    ]
-  },
-  "api": {
-    "Getting Started": [
-      "doc3"
     ]
   }
 }

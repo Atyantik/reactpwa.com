@@ -31,7 +31,7 @@ const siteConfig = {
   //   baseUrl: '/test-site/',
 
   // Used for publishing and more
-  projectName: "test-site",
+  projectName: "react-pwa",
   organizationName: "Atyantik Technologies Private Limited",
   // For top-level user or org sites, the organization is still the same.
   // e.g., for the https://JoelMarcey.github.io site, it would be set like...
@@ -39,7 +39,7 @@ const siteConfig = {
 
   // For no header links in the top nav bar -> headerLinks: [],
   headerLinks: [
-    {doc: "setup", label: "Docs"},
+    {doc: "initial-setup", label: "Docs"},
     {doc: "feature-pwa", label: "Features"},
     {blog: true, label: "Blog"},
     {page: "help", label: "Help"},
@@ -50,10 +50,12 @@ const siteConfig = {
   markdownPlugins: [
     function(md) {
       md.use(extLink, {
-        host: siteConfig.url 
+        host: siteConfig.url
       })
     }
   ],
+  
+  editUrl: "https://github.com/Atyantik/reactpwa.com/edit/master/docs/",
 
   // If you have users set above, you add it here:
   users,
@@ -61,7 +63,7 @@ const siteConfig = {
   /* path to images for header/footer */
   headerIcon: "img/logo.svg",
   footerIcon: "img/logo.svg",
-  favicon: "img/pwa/icon-72X72.png",
+  favicon: "img/favicon/favicon.ico",
 
   /* colors for website */
   colors: {

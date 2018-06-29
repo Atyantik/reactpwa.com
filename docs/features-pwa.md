@@ -64,13 +64,13 @@ PWAs are based on a set of things on which Web Apps are already based on:
 However, they are distinguished by two recent technical components:
 
  - [Service Workers](https://developer.mozilla.org/fr/docs/Web/API/Service_Worker_API/Using_Service_Workers): This is a browser capability to provide an intermediate layer between the Web App and the network, which runs in the background (even when the application is closed). This “network” layer is capable of listening and sending requests, notifications or even capturing connectivity changes;
- - The <a href="https://developer.mozilla.org/fr/docs/Utilisation_des_web_workers" target="_blank" rel="nofollow noopener">Web Workers</a> are also background capabilities but they are rather dedicated to calculations and “services” oriented development.
+ - The [Web Workers](https://developer.mozilla.org/fr/docs/Utilisation_des_web_workers) are also background capabilities but they are rather dedicated to calculations and “services” oriented development.
 
 ---
 
 ## Who are using PWA?
 
-<a href="https://mobile.twitter.com/" target="_blank"><img width="80px" src="/img/features/twitter.png" style="max-width:100%; display: inline-block; margin-right: 10px;"></a>
-<a href="https://www.washingtonpost.com/pwa" target="_blank"><img width="80px" src="/img/features/washington-post.png" style="max-width:100%; display: inline-block; margin-right: 10px;"></a>
-<a href="https://flipboard.com/" target="_blank"><img width="80px" src="/img/features/flipboard.png" style="max-width:100%; display: inline-block; margin-right: 10px;"></a>
-<a href="https://paperplanes.world/" target="_blank"><img width="80px" src="/img/features/paper-planes.png" style="max-width:100%; display: inline-block; margin-right: 10px;"></a>
+<a href="https://mobile.twitter.com/" target="_blank"><img width="80px" src="/img/features/twitter.png" alt="Twitter Logo" style="max-width:100%; display: inline-block; margin-right: 10px;"></a>
+<a href="https://www.washingtonpost.com/pwa" target="_blank"><img width="80px" src="/img/features/washington-post.png" alt="Washington Post Logo" style="max-width:100%; display: inline-block; margin-right: 10px;"></a>
+<a href="https://flipboard.com/" target="_blank"><img width="80px" src="/img/features/flipboard.png" alt="Flipboard Logo" style="max-width:100%; display: inline-block; margin-right: 10px;"></a>
+<a href="https://paperplanes.world/" target="_blank"><img width="80px" src="/img/features/paper-planes.png" alt="Paper Planes Logo" style="max-width:100%; display: inline-block; margin-right: 10px;"></a>
