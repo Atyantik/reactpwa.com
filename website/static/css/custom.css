@@ -25,7 +25,6 @@
     max-width: 1000px;
 }
 
-
 @media only screen and (min-device-width: 360px) and (max-device-width: 736px) {
 }
 
@@ -40,3 +39,70 @@
 
 @media only screen and (min-width: 1500px) {
 }
+
+
+/*Added by Janki*/
+
+
+.text-uppercase {
+    text-transform: uppercase;
+}
+.hero-left .h4 {
+    font-size: 1.5rem;
+    line-height: 1.3;
+}
+.hero-left h1 {
+    margin-top: 0;
+}
+.hero-left small {
+    font-size: 80%;
+}
+.hero-right {
+    margin-top: 1.5rem;
+}
+.mt-3 {
+    margin-top: 1rem;
+}
+.mt-5 {
+    margin-top: 3rem;
+}
+/*button css*/
+.btn {
+    display: inline-block;
+    border: 1px solid var(--color, white);
+    color: var(--color, $primaryColor);
+    background: var(--background, white);
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    user-select: none;
+    padding: .5rem .75rem;
+    font-size: 1rem;
+    line-height: 1.25;
+    border-radius: .25rem;
+    transition: all .15s ease-in-out;
+}
+.btn:hover {
+    background: var(--color, white);
+}
+.btn-outline-pearl {
+  --color: #fff;
+  --background: transparent;
+}
+
+@media (min-width: 576px) {
+    .d-sm-none {
+        display: none;
+    }
+}
+
+@media (max-width: 991px) {
+    .hero-left,
+    .hero-right {
+        text-align: center;
+        width: 100%;
+    }
+}
+
+
