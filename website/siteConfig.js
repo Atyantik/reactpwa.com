@@ -39,7 +39,7 @@ const siteConfig = {
 
   // For no header links in the top nav bar -> headerLinks: [],
   headerLinks: [
-    {doc: "setup", label: "Docs"},
+    {doc: "initial-setup", label: "Docs"},
     {doc: "feature-pwa", label: "Features"},
     {blog: true, label: "Blog"},
     {page: "help", label: "Help"},
@@ -50,7 +50,7 @@ const siteConfig = {
   markdownPlugins: [
     function(md) {
       md.use(extLink, {
-        host: siteConfig.url 
+        host: siteConfig.url
       })
     }
   ],

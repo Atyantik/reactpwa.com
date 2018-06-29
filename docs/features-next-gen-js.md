@@ -9,7 +9,7 @@ sidebar_label: Next Gen JS
 The JSX syntax and ES6/ES7, are not supported in all the browsers.
 
 Hence, if we are using them in the React code, we need to use a tool which translates them to the format that has been supported by the browsers. 
-It’s where <a href="http://babeljs.io" target="_blank" rel="nofollow noopener">babel</a> comes into the picture.
+It’s where [babel](http://babeljs.io) comes into the picture.
 
 ---
 
@@ -18,7 +18,7 @@ It’s where <a href="http://babeljs.io" target="_blank" rel="nofollow noopener"
 **ECMAScript (or ES)** is a trademarked scripting-language specification standardized by Ecma International in ECMA-262 and ISO/IEC 16262. 
 It was created to standardize JavaScript, so as to foster multiple independent implementations. 
 JavaScript has remained the best-known implementation of ECMAScript since the standard was first published, 
-with other well-known implementations including <a href="https://en.wikipedia.org/wiki/JScript" target="_blank" rel="nofollow noopener">JScript</a> and <a href="https://en.wikipedia.org/wiki/ActionScript" target="_blank" rel="nofollow noopener">ActionScript</a>. 
+with other well-known implementations including [JScript](https://en.wikipedia.org/wiki/JScript) and [ActionScript](https://en.wikipedia.org/wiki/ActionScript). 
 Coders commonly use ECMAScript for client-side scripting on the World Wide Web, 
 and it is increasingly being used for writing server applications and services using Node.js.
 
