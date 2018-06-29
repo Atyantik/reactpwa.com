@@ -4,7 +4,7 @@
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  */
- 
+
 const React = require("react");
 const siteConfig = require(process.cwd() + "/siteConfig.js");
 
@@ -59,7 +59,7 @@ class HomeSplash extends React.Component {
         </div>
         <div className="hero-right">
           <p>Its fast and developer friendly, already
-          loaded with Docker support and deployable with no need to install with npm dependencies!<br />
+            loaded with Docker support and deployable with no need to install with npm dependencies!<br />
             <strong>And more importantly its <i>UPGRADABLE!</i></strong><br />
             <a className="btn btn-pearl mt-3" href={docUrl("feature-pwa", language)}>View all features</a>
           </p>
@@ -82,41 +82,42 @@ class HomeSplash extends React.Component {
 class Index extends React.Component {
   render() {
     let language = this.props.language || "";
-
+    
     return (
       <div>
         <HomeSplash language={language} />
         <div className="mainContainer">
           <div className="mw-1000 m-auto">
-            <p className="mt-5 text-center">
-              <span className="h4">Lets get started with 3 simple steps:</span>
-            </p>
-            <div className="mt-5"><strong>1) Cloning the repository: </strong>
-              <small className="text-muted">
-                The command below will create a folder "react-pwa" relative to your current directory
-              </small>
-              <pre>
-                <code className="hljs css languages- bash">
-                  git clone https://github.com/Atyantik/react-pwa.git
-                </code>
-              </pre>
-            </div>
-            <div className="mt-3">
-              <strong>2) Moving to the repository &amp; installing dependencies: &nbsp;</strong>
-              <pre>
-                <code className="hljs css languages- bash">
-                  cd react-pwa &amp;&amp; npm install
-                </code>
-              </pre>
-            </div>
-            <div className="mt-3">
-              <strong>3) Running the boilerplate: &nbsp;</strong>
-              <pre>
-                <code className="hljs css languages- bash">npm start</code>
-              </pre>
-            </div>
+            <h4 className="text-center">Lets get started with 3 simple steps:</h4>
+            <ol>
+              <li>
+                <strong>Cloning the repository:</strong>
+                <small className="text-muted">
+                  The command below will create a folder &quot;react-pwa&quot; relative to your current directory
+                </small>
+                <pre>
+                  <code className="hljs css languages- bash">
+                    git clone https://github.com/Atyantik/react-pwa.git
+                  </code>
+                </pre>
+              </li>
+              <li>
+                <strong>Moving to the repository &amp; installing dependencies:</strong>
+                <pre>
+                  <code className="hljs css languages- bash">
+                    cd react-pwa &amp;&amp; npm install
+                  </code>
+                </pre>
+              </li>
+              <li>
+                <strong>Running the boilerplate:</strong>
+                <pre>
+                  <code className="hljs css languages- bash">npm start</code>
+                </pre>
+              </li>
+            </ol>
             <p className="text-center">
-              Visit
+              Visit&nbsp;
               <a
                 href="http://localhost:3003"
                 rel="nofollow noopener noreferrer"
@@ -124,23 +125,8 @@ class Index extends React.Component {
               >
                 http://localhost:3003
               </a>
-              to see the boilerplate in action!
+              &nbsp;to see the boilerplate in action!
             </p>
-            <p className="mt-4">
-              <i>For more detailed instruction please visit <a href="/docs">docs</a></i>
-            </p>
-            <div className="card text-white bg-info mb-3">
-              <div className="card-header">
-                <small>This is a</small>
-                Progressive Web Application!
-              </div>
-              <div className="card-body">
-                <h4 className="card-title">Add us to &quot;Home screen&quot;</h4>
-                <p className="card-text">
-                  You might be interested to learn that current site is build using ReactPWA. Why don't you add us to your Home Screen when prompted. We are sure you will love the experience.
-                </p>
-              </div>
-            </div>
           </div>
         </div>
       </div>

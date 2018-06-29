@@ -1,30 +1,4 @@
 /* your custom css */
-.hero {
-    display: flex;
-    flex-wrap: wrap;
-    background-color: $primaryColor;
-    color: #fff;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 3rem;
-}
-.hero-right {
-    text-align: left;
-    width: calc(50% - 150px);
-}
-.m-auto {
-    margin: auto;
-}
-.hero-left {
-    text-align: right;
-    width: calc(50% - 150px);
-}
-.mw-1000 {
-    padding: 0px 10px;
-    max-width: 1000px;
-}
-
 
 @media only screen and (min-device-width: 360px) and (max-device-width: 736px) {
 }
