@@ -20,7 +20,7 @@ We are using server side rendering for mainly two reasons:
  - Performance benefit for our users
  - Consistent SEO performance
  
-Here is a very simple timeline diagram(super simple)to showcase the difference between SSR and CSR.
+Here is a very simple timeline diagram(super simple) to showcase the difference between SSR and CSR.
 
 <h3 align="center" style="text-align:center">SSR</h1>
 ![Server Side Rendering](/img/features/ssr.png)

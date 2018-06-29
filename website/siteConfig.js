@@ -24,7 +24,7 @@ const users = [
 const siteConfig = {
   title: "ReactPWA" /* title for your website */,
   tagline: "A boilerplate built on top of PawJS",
-  url: "https://www.reactpwa.com" /* your website url */,
+  url: "web.reactpwa.com" /* your website url */,
   baseUrl: "/" /* base url for your project */,
   // For github.io type URLs, you would set the url and baseUrl like:
   //   url: 'https://facebook.github.io',
