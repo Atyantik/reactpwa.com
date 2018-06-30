@@ -23,18 +23,22 @@ class Help extends React.Component {
     const supportLinks = [
       {
         content: `Learn more using the [documentation on this site.](${docUrl(
-          "doc1.html",
+          "initial-setup.html",
           language
         )})`,
         title: "Browse Docs",
       },
       {
-        content: "Ask questions about the documentation and project",
+        content: "You can join us on [Gitter](https://gitter.im/react-pwa/Lobby). Ask us questions about the documentation and project.",
         title: "Join the community",
       },
       {
         content: "Find out what's new with this project",
         title: "Stay up to date",
+      },
+      {
+        title: "Github",
+        content: "At our [GitHub repo](https://github.com/Atyantik/react-pwa) Browse and submit [issues](https://github.com/Atyantik/react-pwa/issues) or [pull requests](https://github.com/Atyantik/react-pwa/pulls) for bugs you find or any new features you may want implemented. Be sure to also check out our [contributing information](https://github.com/Atyantik/reactpwa.com/blob/master/CONTRIBUTING.md).",
       },
     ];
 
@@ -45,8 +49,8 @@ class Help extends React.Component {
             <header className="postHeader">
               <h1>Need help?</h1>
             </header>
-            <p>This project is maintained by a dedicated group of people.</p>
-            <GridBlock contents={supportLinks} layout="threeColumn" />
+            <p>If you need help, you can use any one of the mechanisms provided below.</p>
+            <GridBlock contents={supportLinks} layout="fourColumn" />
           </div>
         </Container>
       </div>
