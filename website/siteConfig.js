@@ -19,6 +19,12 @@ const users = [
     infoLink: "https://www.eventerprise.com",
     pinned: true,
   },
+  {
+    caption: "Email-Extractor",
+    image: "/img/users/email-extractor.png",
+    infoLink: "https://www.emailextractor.online",
+    pinned: true,
+  }
 ];
 
 const siteConfig = {
