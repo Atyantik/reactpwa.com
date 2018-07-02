@@ -58,7 +58,7 @@ Suppose your domain is `https://www.example.com/` and you want to host the app a
 
 Loading assets from a CDN becomes easy. Just mention the `cdnUrl`, and the app fetches the assets from the CDN.
 
-**NOTE:** There are two types of CDN namely PULL and PUSH ([more here]()) if you are using a PUSH CDN kindly push 
+**NOTE:** There are two types of CDN namely PULL and PUSH ([more here](/blog/2018/07/02/pull-vs-push-cdn.html)) if you are using a PUSH CDN kindly push 
 the assets to the CDN before deploying the app.
 
 

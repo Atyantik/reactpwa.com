@@ -8,7 +8,7 @@ sidebar_label: Initial Setup
 
  - Mac OS X, Windows, or Linux
  - NPM package + Node.js v8 or newer
- - Text editor or IDE pre-configured with React/JSX/Flow/ESlint
+ - Text editor or IDE pre-configured with React/JSX/ESlint
 
 ## Quick Start
 1. **Clone the latest repository:**

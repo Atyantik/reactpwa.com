@@ -1,10 +1,13 @@
 ---
 title: Why move to progressive web apps?
 author: Yash Thakur
-authorURL: http://twitter.com/YdT07
+authorURL: http://yashthakur.in
 authorFBID: 1472013489
 ---
 Progressive Web Apps is a term that is most discussed these days amongst the developers. So, you may have also come across this term, unless you stay in a cave and are cut off from the world. Let’s know more about it.  
+
+<!--truncate-->
+
 ## What are Progressive Web Apps (PWA’s)?
 ![Progressive Web App](/img/blog/why-progressive-web-app/pwa-app.jpeg)
 - **Progressive**: It should work for every user no matter what browser the user uses. The core principle used to build it is the progressive enhancement.
