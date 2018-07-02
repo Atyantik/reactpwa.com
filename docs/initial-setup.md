@@ -20,7 +20,7 @@ sidebar_label: Initial Setup
    This will install both run-time project dependencies and developer tools listed in package.json file.  
    
 3. **Run the project using `npm start`.**  
-   After this step you can access the local web app at `http://localhost:3007`  
+   After this step you can access the local web app at `http://localhost:3003`  
    
 4. **To build the project run `npm run build`.**  
    This command will build the app from the source files (`/src`) into the output `/dist` folder. 
@@ -35,6 +35,7 @@ project-root
       |    |-- /routes.js               # Page/screen components along with the routing information
       |    |-- /client.js               # Client-side startup script
       |    |-- /server.js               # Server-side startup script
-      |    |__ /webpack.js              
+      |    |__ /webpack.js              # Extending the compilation properties of pawjs
       |-- package.json                  # The list of 3rd party libraries and utilities
+      |__ pawconfig.json                # Config file for PawJS
 ```

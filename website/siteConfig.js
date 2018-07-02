@@ -44,7 +44,7 @@ const siteConfig = {
     {doc: "feature-pwa", label: "Features"},
     {blog: true, label: "Blog"},
     {page: "help", label: "Help"},
-    { search: true },
+    // { search: true },
     // Determines language drop down position among links
     { languages: true }
   ],
@@ -111,11 +111,11 @@ const siteConfig = {
   scrollToTopOptions: {
     zIndex: 100,
   },
-  algolia: {
-    apiKey: "626e03f900a93b0dc06a820f11bdb98c",
-    indexName: "reactpwa.com",
-    appId: "0D0WDCNF8X"
-  }
+  // algolia: {
+  //   apiKey: "626e03f900a93b0dc06a820f11bdb98c",
+  //   indexName: "reactpwa.com",
+  //   appId: "0D0WDCNF8X"
+  // }
 };
 
 module.exports = siteConfig;

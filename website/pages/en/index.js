@@ -15,7 +15,7 @@ function imgUrl(img) {
 }
 
 function docUrl(doc, language) {
-  return siteConfig.baseUrl + "docs/" + (language ? language + "/" : "") + doc;
+  return siteConfig.baseUrl + "docs/" + (language ? language + "/" : "") + `${doc}${".html"}`;
 }
 
 function pageUrl(page, language) {
@@ -60,8 +60,7 @@ class HomeSplash extends React.Component {
           </div>
         </div>
         <div className="hero-right">
-          <p>Its fast and developer friendly, already
-            loaded with Docker support and deployable with no need to install with npm dependencies!<br />
+          <p>Its fast and developer friendly<br />
             <strong>And more importantly its <i>UPGRADABLE!</i></strong><br />
             <a className="btn btn-pearl mt-3" href={docUrl("feature-pwa", language)}>View all features</a>
           </p>
@@ -130,7 +129,7 @@ const GettingStarted = function() {
 class Index extends React.Component {
   render() {
     let language = this.props.language || "";
-    
+
     return (
       <div>
         <HomeSplash language={language} />
