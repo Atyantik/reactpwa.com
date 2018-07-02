@@ -4,8 +4,6 @@
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  */
-
-// See https://docusaurus.io/docs/site-config.html for all the possible
 // site configuration options.
 const extLink = require("remarkable-extlink");
 
@@ -14,7 +12,6 @@ const users = [
   {
     caption: "Eventerprise",
     // You will need to prepend the image path with your baseUrl
-    // if it is not '/', like: '/test-site/img/docusaurus.svg'.
     image: "https://www.eventerprise.com/page/wp-content/uploads/2018/03/4a425d1b9754081a358b88bbd88089d6.svg",
     infoLink: "https://www.eventerprise.com",
     pinned: true,
@@ -106,9 +103,8 @@ const siteConfig = {
   repoUrl: "https://github.com/atyantik/react-pwa",
 
   /* Open Graph and Twitter card images */
-  facebookAppId: "778795602266784",
+  facebookAppId: "136557516937157",
   facebookComments: true,
-  facebookPixelId: "778795602266784",
   twitter: "true",
   twitterUsername: "atyantik_tech",
   twitterImage: "img/pwa/icon-512x512.png",
