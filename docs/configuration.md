@@ -23,8 +23,8 @@ The default config for `pawconfig.json` that we provide with this boilerplate is
 
 | Name        |  Type          | Default|
 | ------------- |:----------------:|:---------------:|
-|   [port](#port)  | `String` |   "0.0.0.0"   |
-|   [host](#host)  |   `String`    |   "9090"    |
+|   [port](#port)  | `String` |   "9090"   |
+|   [host](#host)  |   `String`    |   "0.0.0.0"    |
 |   [appRootUrl](#approoturl)    | `String`    |   "/"   |
 |   [cdnUrl](#cdnurl)        | `String`    |   ""    |
 |   [serviceWorker](#serviceworker)    | `Boolean`    |   true    |
