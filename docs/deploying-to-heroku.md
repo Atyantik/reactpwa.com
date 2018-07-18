@@ -41,7 +41,15 @@ Make sure that `dist` folder is not ignored in the `.gitignore` file. Else, comm
 # dist
 ...
 ```
-
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7586505628408924"
+     data-ad-slot="5652642939"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 ## Step 3: Build the App.
 
 Build the app using the following command:
@@ -79,7 +87,7 @@ https://thawing-inlet-61413.herokuapp.com/ | https://git.heroku.com/thawing-inle
 
 **Add the remote named `heroku` to existing repository**
 
-```javascript
+```bash
 $ git remote add heroku  https://git.heroku.com/thawing-inlet-61413.git
 ```
 
