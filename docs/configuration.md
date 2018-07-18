@@ -8,7 +8,7 @@ The configuration file is used to change the behaviour of the boilerplate. The c
 
 
 The default config for `pawconfig.json` that we provide with this boilerplate is:
-```javascript
+```json
 {
   "port": "3003",
   "host": "0.0.0.0",
@@ -97,4 +97,15 @@ Setting `hstsIncludeSubDomains` to `true` enables HSTS on all subdomains and dir
 HSTS preloading is browser's inbuilt function whereby a global list of hosts enfore their site to use HTTPS only. 
 Enabling it forces the user to access the site on `HTTPS` only.
 
-**NOTE: If HSTS is disabled setting other HSTS options will not affect the app.**
+**NOTE: If HSTS is disabled setting other HSTS options will not affect the app.**  
+
+
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7586505628408924"
+     data-ad-slot="5652642939"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>

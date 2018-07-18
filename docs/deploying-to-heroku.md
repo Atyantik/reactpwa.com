@@ -41,15 +41,7 @@ Make sure that `dist` folder is not ignored in the `.gitignore` file. Else, comm
 # dist
 ...
 ```
-<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-7586505628408924"
-     data-ad-slot="5652642939"
-     data-ad-format="auto"></ins>
-<script>
-(adsbygoogle = window.adsbygoogle || []).push({});
-</script>
+
 ## Step 3: Build the App.
 
 Build the app using the following command:
@@ -109,3 +101,12 @@ Use this same command whenever you want to deploy the latest committed version o
 Pushing code to another branch of the remote has no effect.**
 
 
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7586505628408924"
+     data-ad-slot="5652642939"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>  

@@ -10,7 +10,7 @@ This plugin basically adds image-webpack-loader to current configuration.
 
 ## Installation
 
-```javascript
+```bash
 $ npm i @pawjs/image-optimizer --save-dev
 ```
 
@@ -72,7 +72,7 @@ We have predefined configurations labels for your usage.
 This configuration gives max quality output but does no lossy compression.  
 The equivalent configuration for this is as below:
 
-```javascript
+```json
 {
   "mozjpeg": {
     "progressive": true,
@@ -98,7 +98,7 @@ The equivalent configuration for this is as below:
 
 The equivalent configuration for this is as below:
 
-```javascript
+```json
 {
   "mozjpeg": {
     "progressive": true,
@@ -124,7 +124,7 @@ The equivalent configuration for this is as below:
 
 The equivalent configuration for this is as below:
 
-```javascript
+```json
 {
   "mozjpeg": {
     "progressive": true,
@@ -148,3 +148,13 @@ The equivalent configuration for this is as below:
 
 
 if `config` option is provided, `configLabel` is ignored
+
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7586505628408924"
+     data-ad-slot="5652642939"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>

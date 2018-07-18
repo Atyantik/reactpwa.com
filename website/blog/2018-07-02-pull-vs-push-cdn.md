@@ -16,17 +16,6 @@ The content will be delivered faster to the user if the server is closer to the 
 
 <!--truncate-->
 
-<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<ins class="adsbygoogle"
-     style="display:block; text-align:center;"
-     data-ad-layout="in-article"
-     data-ad-format="fluid"
-     data-ad-client="ca-pub-7586505628408924"
-     data-ad-slot="9476337873"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-
 ## Types of CDN
 
 There are mainly two types of CDN services: [Pull](#pull-cdn) and [Push](#push-cdn)  
@@ -64,6 +53,15 @@ or cached by the CDN and served to the user until the file expires.
   
 **Disadvantages:**
   - It is less flexible.
-  - The first user may find it time consuming to load the resources. 
-
-
+  - The first user may find it time consuming to load the resources.  
+  
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-7586505628408924"
+     data-ad-slot="9476337873"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>

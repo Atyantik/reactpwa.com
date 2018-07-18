@@ -27,7 +27,7 @@ sidebar_label: Initial Setup
 
 ## Directory Structure
 
-```bash
+```
 project-root
       |-- /dist/                        # The folder for compiled output
       |-- /node_modules/                # 3rd-party libraries and utilities
@@ -39,3 +39,13 @@ project-root
       |-- package.json                  # The list of 3rd party libraries and utilities
       |__ pawconfig.json                # Config file for PawJS
 ```
+
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7586505628408924"
+     data-ad-slot="5652642939"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>

@@ -74,3 +74,14 @@ However, they are distinguished by two recent technical components:
 <a href="https://www.washingtonpost.com/pwa" target="_blank"><img width="80px" src="/img/features/washington-post.png" alt="Washington Post Logo" style="max-width:100%; display: inline-block; margin-right: 10px;"></a>
 <a href="https://flipboard.com/" target="_blank"><img width="80px" src="/img/features/flipboard.png" alt="Flipboard Logo" style="max-width:100%; display: inline-block; margin-right: 10px;"></a>
 <a href="https://paperplanes.world/" target="_blank"><img width="80px" src="/img/features/paper-planes.png" alt="Paper Planes Logo" style="max-width:100%; display: inline-block; margin-right: 10px;"></a>
+
+
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7586505628408924"
+     data-ad-slot="5652642939"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>

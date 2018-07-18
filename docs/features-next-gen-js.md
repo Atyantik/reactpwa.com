@@ -38,3 +38,14 @@ However, ES2015 code can be transpiled into ES5 code, which has more consistent 
 ## ECMAScript 7 (ES7)/ ECMAScript 2016 (ES2016)
 
 The 7th edition, officially known as ECMAScript 2016, was finalized in June 2016. New features include the exponentiation operator (**) and others.
+
+
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7586505628408924"
+     data-ad-slot="5652642939"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>

@@ -17,3 +17,13 @@ that potentially supplants App Cache by providing more granular control over net
 
 Service Workers are JavaScript tasks (a bit like server-side daemons but running on the client side) that are instantiated by web pages and from that point, can intercept and route traffic emanating from that page. 
 The Service Worker API is much more flexible than AppCache as it allows the developer to decide in minute detail what happens to each client-side web request — but with flexibility comes complexity.
+
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7586505628408924"
+     data-ad-slot="5652642939"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
