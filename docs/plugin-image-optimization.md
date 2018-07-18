@@ -1,5 +1,5 @@
 ---
-id: image-optimization
+id: plugin-image-optimization
 title: Image Optimization
 sidebar_label: Image Optimization
 ---
@@ -11,7 +11,7 @@ This plugin basically adds image-webpack-loader to current configuration.
 ## Installation
 
 ```javascript
-npm i @pawjs/image-optimizer --save-dev
+$ npm i @pawjs/image-optimizer --save-dev
 ```
 
 ## webpack.js

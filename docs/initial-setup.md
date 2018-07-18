@@ -13,8 +13,8 @@ sidebar_label: Initial Setup
 ## Quick Start
 1. **Clone the latest repository:**
     ```bash
-    git clone https://github.com/Atyantik/react-pwa.git
-    cd react-pwa
+    $ git clone https://github.com/Atyantik/react-pwa.git
+    $ cd react-pwa
     ```
 2. **Run `npm install` to install dependencies**  
    This will install both run-time project dependencies and developer tools listed in package.json file.  

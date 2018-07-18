@@ -22,7 +22,7 @@ class Help extends React.Component {
     let language = this.props.language || "";
     const supportLinks = [
       {
-        content: `Learn more using the [documentation on this site.](${docUrl(
+        content: `Learn more about using the [documentation on this site.](${docUrl(
           "initial-setup.html",
           language
         )})`,

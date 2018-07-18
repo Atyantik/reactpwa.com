@@ -1,5 +1,5 @@
 ---
-id: redux
+id: plugin-redux
 title: Redux
 sidebar_label: Redux
 ---
@@ -11,7 +11,7 @@ This plugin allows you to add Redux to this boilerplate with simple configuratio
 ## Installation
 
 ```
-npm i redux react-redux @pawjs/redux --save-dev
+$ npm i redux react-redux @pawjs/redux --save-dev
 ```
 
 ## client.js

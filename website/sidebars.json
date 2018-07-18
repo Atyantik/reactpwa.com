@@ -1,7 +1,8 @@
 {
   "docs": {
     "Getting Started": ["initial-setup", "configuration"],
-    "Plugins": ["redux", "image-optimization"]
+    "Plugins": ["plugin-redux", "plugin-image-optimization"],
+    "Deployments": ["deploying-to-heroku"]
   },
   "features": {
     "Features": [
