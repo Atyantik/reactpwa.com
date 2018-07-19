@@ -2,7 +2,7 @@
   "docs": {
     "Getting Started": ["initial-setup", "configuration"],
     "Plugins": ["plugin-redux", "plugin-image-optimization"],
-    "Deployments": ["deploying-to-heroku"]
+    "Deployments": ["deploying-to-heroku", "deploying-to-amazon-ec2"]
   },
   "features": {
     "Features": [

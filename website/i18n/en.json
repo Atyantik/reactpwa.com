@@ -6,6 +6,8 @@
     "tagline": "An extendable boilerplate built on top of PawJS",
     "configuration": "Configuration",
     "Configuration": "Configuration",
+    "deploying-to-amazon-ec2": "Deploying to Amazon EC2",
+    "Amazon EC2": "Amazon EC2",
     "deploying-to-heroku": "Deploying to Heroku",
     "Heroku": "Heroku",
     "feature-code-splitting": "Code Splitting",
