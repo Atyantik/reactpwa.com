@@ -78,14 +78,6 @@ class Footer extends React.Component {
             {this.props.config.copyright}
           </a>
         </section>
-  
-        <script async={true} src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" />
-        <script type="text/javascript" dangerouslySetInnerHTML={{__html: `
-        (adsbygoogle = window.adsbygoogle || []).push({
-          google_ad_client: "ca-pub-7586505628408924",
-          enable_page_level_ads: true
-        });
-        `}} />
       </footer>
     );
   }
