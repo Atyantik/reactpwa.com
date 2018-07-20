@@ -8,6 +8,8 @@
     "Configuration": "Configuration",
     "deploying-to-amazon-ec2": "Deploying to Amazon EC2",
     "Amazon EC2": "Amazon EC2",
+    "deploying-to-digital-ocean": "Deploying to Digital Ocean",
+    "Digital Ocean": "Digital Ocean",
     "deploying-to-heroku": "Deploying to Heroku",
     "Heroku": "Heroku",
     "feature-code-splitting": "Code Splitting",

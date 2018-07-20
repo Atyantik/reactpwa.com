@@ -28,6 +28,7 @@ sidebar_label: Amazon EC2
     ```
 
 ## Step 2: Deploy the code
+  - Connect to your Amazon EC2 Instance using [SSH](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/AccessingInstancesLinux.html).
   - Unzip the **tar** file and move it to desired dirtectory using the following command:
     ```bash
     $ tar xvzf dist.tar.gz && mv dist /path/
