@@ -37,3 +37,14 @@ We know how important SEO is to an application.
 ## [HSTS Supported](features-hsts.md)
 **Using HTTPS?**  
 HSTS is enabled default for your secure sites. Options to define maxAge and preload of HSTS, all with very simple configuration.
+
+
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7586505628408924"
+     data-ad-slot="5652642939"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>

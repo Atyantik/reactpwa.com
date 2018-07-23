@@ -38,10 +38,11 @@
     "Image Optimization": "Image Optimization",
     "plugin-redux": "Redux",
     "Redux": "Redux",
+    "plugins": "Plugins",
+    "Plugins": "Plugins",
     "Blog": "Blog",
     "Help": "Help",
     "Getting Started": "Getting Started",
-    "Plugins": "Plugins",
     "Deployments": "Deployments"
   },
   "pages-strings": {

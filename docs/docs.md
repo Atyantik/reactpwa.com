@@ -23,3 +23,14 @@ We are improving the documentation continuously and you can find helpful docs to
   - [Heroku](deploying-to-heroku.md)
   - [Amazon EC2](deploying-to-amazon-ec2.md)
   - [Digital Ocean](deploying-to-digital-ocean.md)
+
+
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7586505628408924"
+     data-ad-slot="5652642939"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
