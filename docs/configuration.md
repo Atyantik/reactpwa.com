@@ -14,7 +14,8 @@ The default config for `pawconfig.json` that we provide with this boilerplate is
   "host": "0.0.0.0",
   "appRootUrl": "/",
   "serviceWorker": false,
-  "serverSideRender": true
+  "serverSideRender": true,
+  "singlePageApplication": false
 }
 ```
 
@@ -35,6 +36,7 @@ The default config for `pawconfig.json` that we provide with this boilerplate is
 |   [hstsmaxAge](#hstsmaxage)    |   `Integer`   |   31536000    |
 |   [hstsIncludeSubDomains](#hstsincludesubdomains) |  `Boolean`  |   true    |
 |   [hstsPreload](#hstspreload)   |   `Boolean`   |   false   |
+|   [singlePageApplication](#singlepageapplication)   |   `Boolean`   |   false   |
 
 
 ## port
@@ -98,6 +100,10 @@ HSTS preloading is browser's inbuilt function whereby a global list of hosts enf
 Enabling it forces the user to access the site on `HTTPS` only.
 
 **NOTE: If HSTS is disabled setting other HSTS options will not affect the app.**  
+
+## Single Page Application (SPA)
+Run & build the application as a Single Page Application. Uses HashRouter and is ideal for applications that does not require server support or SEO.   
+***Default: false***
 
 
 <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
