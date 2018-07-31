@@ -1,7 +1,11 @@
 {
   "docs": {
     "Getting Started": ["initial-setup", "configuration"],
-    "Plugins": ["plugin-redux", "plugin-image-optimization"],
+    "Plugins": [
+      "plugin-redux",
+      "plugin-image-optimization",
+      "plugin-sass"
+    ],
     "Deployments": ["deploying-to-heroku", "deploying-to-amazon-ec2", "deploying-to-digital-ocean"]
   },
   "features": {
