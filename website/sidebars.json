@@ -17,7 +17,8 @@
       "feature-isomorphic-universal-routing",
       "feature-ssr",
       "feature-seo",
-      "feature-hsts"
+      "feature-hsts",
+      "feature-hot-reloading"
     ]
   }
 }

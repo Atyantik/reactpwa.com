@@ -38,6 +38,9 @@ We know how important SEO is to an application.
 **Using HTTPS?**  
 HSTS is enabled default for your secure sites. Options to define maxAge and preload of HSTS, all with very simple configuration.
 
+## [Hot Reloading](features-hot-reloading.md)
+The idea behind hot reloading is to keep the app running and to inject new versions of the files that you edited at runtime.
+This way, you don't lose any of your state which is especially useful if you are tweaking the UI.
 
 <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 <ins class="adsbygoogle"

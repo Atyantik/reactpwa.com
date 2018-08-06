@@ -18,6 +18,8 @@
     "Offline Accessibility": "Offline Accessibility",
     "feature-code-splitting": "Code Splitting",
     "Code Splitting": "Code Splitting",
+    "feature-hot-reloading": "Hot Reloading",
+    "Hot Reloading": "Hot Reloading",
     "feature-hsts": "HTTP Strict Transport Security - HSTS",
     "HSTS": "HSTS",
     "feature-isomorphic-universal-routing": "Isomorphic/Universal Routing",
