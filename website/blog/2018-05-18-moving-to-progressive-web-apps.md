@@ -1,7 +1,7 @@
 ---
 title: Why move to progressive web apps?
 author: Yash Thakur
-authorURL: http://yashthakur.in
+authorURL: https://www.yashthakur.in
 authorFBID: 1472013489
 ---
 Progressive Web Apps is a term that is most discussed these days amongst the developers. So, you may have also come across this term, unless you stay in a cave and are cut off from the world. Let’s know more about it.  

@@ -1,7 +1,7 @@
 ---
 title: Setting up Amazon EC2 instance for PawJS
 author: Yash Thakur
-authorURL: http://yashthakur.in
+authorURL: https://www.yashthakur.in
 authorFBID: 1472013489
 ---
 
