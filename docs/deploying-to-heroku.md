@@ -97,7 +97,7 @@ updating 'refs/heads/master'
 
 Use this same command whenever you want to deploy the latest committed version of your code to Heroku.
 
-**Note: Make sure to build the app before committing and pushing the code to git. Heroku only deploys code that you push to the master branch of the heroku remote. 
+> **Note: Make sure to build the app before committing and pushing the code to git. Heroku only deploys code that you push to the master branch of the heroku remote. 
 Pushing code to another branch of the remote has no effect.**
 
 

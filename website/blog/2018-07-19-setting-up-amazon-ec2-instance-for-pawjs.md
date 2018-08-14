@@ -96,7 +96,7 @@ For **Ubuntu**, Nginx is available in Ubuntu's default repositories, so the inst
            proxy_set_header X-Forwarded-Proto $scheme;
            proxy_set_header X-Real-IP $remote_addr;
            proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
-           proxy_pass http://localhost:port_of_your_app;
+           proxy_pass http://127.0.0.1:port_of_your_app;
            proxy_connect_timeout 600;
            proxy_send_timeout 600;
            proxy_read_timeout 600;

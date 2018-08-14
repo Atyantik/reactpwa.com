@@ -68,7 +68,7 @@ the assets to the CDN before deploying the app.
 
 You can enable or disable **Service-Worker** by setting it to `true` or `false`. 
 
-**NOTE:** We highly discourage use of service-worker during development.
+> **NOTE:** We highly discourage use of service-worker during development.
 
 
 ## serverSideRender
@@ -99,7 +99,7 @@ Setting `hstsIncludeSubDomains` to `true` enables HSTS on all subdomains and dir
 HSTS preloading is browser's inbuilt function whereby a global list of hosts enfore their site to use HTTPS only. 
 Enabling it forces the user to access the site on `HTTPS` only.
 
-**NOTE: If HSTS is disabled setting other HSTS options will not affect the app.**  
+> **NOTE: If HSTS is disabled, setting other HSTS options will not affect the app.**  
 
 ## Single Page Application (SPA)
 Run & build the application as a Single Page Application. Uses HashRouter and is ideal for applications that does not require server support or SEO.   
