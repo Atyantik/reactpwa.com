@@ -1,6 +1,10 @@
 {
   "docs": {
-    "Getting Started": ["initial-setup", "configuration"],
+    "Getting Started": [
+      "initial-setup",
+      "configuration",
+      "web-app-manifest"
+    ],
     "Plugins": [
       "plugin-redux",
       "plugin-image-optimization",
