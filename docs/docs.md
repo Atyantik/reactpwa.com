@@ -14,6 +14,7 @@ We are improving the documentation continuously and you can find helpful docs to
 #### Getting Started
   - [Initial Setup](initial-setup.md)
   - [Configuration](configuration.md)
+  - [Web App Manifest](web-app-manifest.md)
   - [Load External Resources](load-external-resources.md)
   
 #### Plugins

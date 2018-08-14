@@ -13,6 +13,7 @@ where one can tap to events to easily extend the functionality
 #### List of officially supported plugins
   - [Redux](plugin-redux.md)
   - [Image Optimization](plugin-image-optimization.md)
+  - [SASS](plugin-sass.md)
 
 
 <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>

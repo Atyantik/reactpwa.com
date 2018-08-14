@@ -1,6 +1,11 @@
 {
   "docs": {
-    "Getting Started": ["initial-setup", "configuration", "load-external-resources"],
+    "Getting Started": [
+      "initial-setup",
+      "configuration",
+      "web-app-manifest",
+      "load-external-resources"
+    ],
     "Plugins": [
       "plugin-redux",
       "plugin-image-optimization",

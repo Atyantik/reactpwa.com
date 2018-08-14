@@ -91,23 +91,23 @@ const GettingStarted = function() {
             The command below will create a folder &quot;react-pwa&quot; relative to your current directory
           </small>
           <pre>
-                  <code className="hljs css languages- bash">
-                    git clone https://github.com/Atyantik/react-pwa.git
-                  </code>
-                </pre>
+            <code className="hljs css languages- bash">
+              git clone https://github.com/Atyantik/react-pwa.git
+            </code>
+          </pre>
         </li>
         <li>
           <strong>Moving to the repository &amp; installing dependencies:</strong>
           <pre>
-                  <code className="hljs css languages- bash">
-                    cd react-pwa &amp;&amp; npm install
-                  </code>
-                </pre>
+            <code className="hljs css languages- bash">
+              cd react-pwa &amp;&amp; npm install
+            </code>
+          </pre>
         </li>
         <li>
           <strong>Running the boilerplate:</strong>
           <pre>
-                  <code className="hljs css languages- bash">npm start</code>
+            <code className="hljs css languages- bash">npm start</code>
                 </pre>
         </li>
       </ol>
