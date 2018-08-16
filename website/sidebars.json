@@ -3,8 +3,15 @@
     "Getting Started": [
       "initial-setup",
       "configuration",
-      "web-app-manifest",
+      "web-app-manifest"
+    ],
+    "Guide" : [
       "load-external-resources"
+    ],
+    "Routing" : [
+      "add-new-route",
+      "async-routing",
+      "nested-routes"
     ],
     "Plugins": [
       "plugin-redux",

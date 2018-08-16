@@ -1,7 +1,7 @@
 ---
 id: load-external-resources
-title: Load External Resources
-sidebar_label: Load External Resources
+title: Load External resources
+sidebar_label: External resources
 ---
 
 ## Load External JS
