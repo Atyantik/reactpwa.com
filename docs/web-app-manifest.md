@@ -1,7 +1,7 @@
 ---
 id: web-app-manifest
-title: Web App Manifest
-sidebar_label: Web App Manifest
+title: Web App manifest
+sidebar_label: Web App manifest
 ---
 
 It is very simple to configure the `manifest.json` and thus making it your own progressive web application.

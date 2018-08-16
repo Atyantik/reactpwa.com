@@ -12,10 +12,17 @@ ReactPWA is very simple but extendable boilerplate built on top of [PawJS](https
 We are improving the documentation continuously and you can find helpful docs to get started below:
 
 #### Getting Started
-  - [Initial Setup](initial-setup.md)
+  - [Initial setup](initial-setup.md)
   - [Configuration](configuration.md)
-  - [Web App Manifest](web-app-manifest.md)
-  - [Load External Resources](load-external-resources.md)
+  - [Web App manifest](web-app-manifest.md)
+
+#### Guides
+  - [External resources](guides-load-external-resources.md)
+
+#### Routing
+  - [Add new route](routing-add-new-route.md)
+  - [Async routing](routing-async-routing.md)
+  - [Nested Routes](routing-nested-routes.md)    
   
 #### Plugins
   - [Redux](plugin-redux.md)

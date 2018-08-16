@@ -1,6 +1,6 @@
 ---
 id: load-external-resources
-title: Load External resources
+title: External resources
 sidebar_label: External resources
 ---
 

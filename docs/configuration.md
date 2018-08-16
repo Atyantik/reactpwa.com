@@ -1,7 +1,7 @@
 ---
 id: configuration
-title: Configuration
-sidebar_label: Configuration
+title: PawJS configuration
+sidebar_label: PawJS Configuration
 ---
 
 The configuration file is used to change the behaviour of the boilerplate. The config file used in this boilerplate belongs to **PawJS Framework**.
