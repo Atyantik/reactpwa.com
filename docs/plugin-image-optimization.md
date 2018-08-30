@@ -19,7 +19,7 @@ $ npm i @pawjs/image-optimizer --save-dev
 Edit/Create `/src/webpack.js`
 
 ```javascript
-import ImageOptimizer from "@pawjs/image-optmizer/webpack";
+import ImageOptimizer from "@pawjs/image-optimizer/webpack";
 
 // ... other imports if any
 
