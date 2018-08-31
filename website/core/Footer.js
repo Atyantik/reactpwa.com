@@ -78,6 +78,18 @@ class Footer extends React.Component {
             {this.props.config.copyright}
           </a>
         </section>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              // Check that service workers are registered
+              if ('serviceWorker' in navigator) {
+                window.addEventListener('load', () => {
+                  navigator.serviceWorker.register('/sw.js');
+                });
+              }
+            `
+          }}
+        />
       </footer>
     );
   }
