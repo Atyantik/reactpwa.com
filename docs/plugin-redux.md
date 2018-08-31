@@ -107,7 +107,7 @@ export default class Server {
     serverHandler
       .hooks
       .reduxInitialState
-      .tapPromise(async ({getInitialState, setInitialState}) => {
+      .tapPromise("AppInitialState", async ({getInitialState, setInitialState}) => {
         const initialState = Object.assign({}, getInitialState(), AppInitialState);
         // You can also wait for something async to happen
         // await fetch("/api/counter/details") and add it to the initial state if needed
