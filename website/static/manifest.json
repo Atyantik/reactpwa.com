@@ -1,0 +1,46 @@
+{
+  "name": "React PWA Docs",
+  "short_name": "React PWA",
+  "dir": "ltr",
+  "lang": "en-US",
+  "orientation": "any",
+  "start_url": "/",
+  "background_color": "#17a2b8",
+  "theme_color": "#17a2b8",
+  "display": "standalone",
+  "description": "ReactPWA & PawJS documentation. Easily write progressive web apps with ReactJS and ES6. Containerize your application without npm packages.",
+  "icons": [
+    {
+      "src": "/img/pwa/icon-72x72.png",
+      "sizes": "72x72"
+    },
+    {
+      "src": "/img/pwa/icon-96x96.png",
+      "sizes": "96x96"
+    },
+    {
+      "src": "/img/pwa/icon-128x128.png",
+      "sizes": "128x128"
+    },
+    {
+      "src": "/img/pwa/icon-144x144.png",
+      "sizes": "144x144"
+    },
+    {
+      "src": "/img/pwa/icon-152x152.png",
+      "sizes": "152x152"
+    },
+    {
+      "src": "/img/pwa/icon-192x192.png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "/img/pwa/icon-384x384.png",
+      "sizes": "384x384"
+    },
+    {
+      "src": "/img/pwa/icon-512x512.png",
+      "sizes": "512x512"
+    }
+  ]
+}

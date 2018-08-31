@@ -8,8 +8,6 @@
 const React = require("react");
 const siteConfig = require(process.cwd() + "/siteConfig.js");
 
-const Supporters = require(process.cwd() + "/core/Supporters.js");
-
 function imgUrl(img) {
   return siteConfig.baseUrl + "img/" + img;
 }
@@ -135,7 +133,6 @@ class Index extends React.Component {
         <HomeSplash language={language} />
         <div className="mainContainer">
           <GettingStarted />
-          <Supporters />
         </div>
       </div>
     );

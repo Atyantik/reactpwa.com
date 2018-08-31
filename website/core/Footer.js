@@ -27,8 +27,6 @@ class Footer extends React.Component {
               <img
                 src={this.props.config.baseUrl + this.props.config.footerIcon}
                 alt={this.props.config.title}
-                width="66"
-                height="58"
               />
             )}
           </a>
@@ -63,9 +61,7 @@ class Footer extends React.Component {
           </div>
         </section>
         <section className="text-center">
-          <a href="https://opencollective.com/react-pwa/donate" target="_blank" rel="nofollow noopener noreferrer">
-            <img src="https://opencollective.com/react-pwa/contribute/button@2x.png?color=blue" width="300" />
-          </a>
+          <a className={"btn btn-outline-pearl mr-2"} href={this.pageUrl("supporters.html", this.props.language)}>Support ReactPWA</a>
         </section>
         <br />
         <section className="copyright">
