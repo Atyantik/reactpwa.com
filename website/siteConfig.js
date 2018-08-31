@@ -91,8 +91,8 @@ const siteConfig = {
 
   // Add custom scripts here that would be placed in <script> tags
   scripts: [
-    "https://buttons.github.io/buttons.js",
-    "https://opencollective.com/react-pwa/contribute/button.js"
+    //"https://buttons.github.io/buttons.js",
+    //"https://opencollective.com/react-pwa/contribute/button.js"
   ],
 
   /* On page navigation for the current documentation page */
