@@ -34,6 +34,30 @@
 .text-center {
   text-align: center;
 }
+footer .supporter {
+  color: #fff;
+}
+footer .supporter a {
+  width: 186px;
+  height: 75px;
+  margin: 0 15px 20px 15px;
+  display: inline-block;
+  vertical-align: top;
+  display: inline-flex;
+  align-content: center;
+  justify-content: center;
+
+}
+footer .supporter a.w-75 {
+  width: 75px;
+}
+footer .supporter a.w-150 {
+  width: 150px;
+}
+footer .supporter img {
+  max-height: 75px;
+  max-width: 100%;
+}
 
 
 

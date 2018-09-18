@@ -60,6 +60,39 @@ class Footer extends React.Component {
             </a>
           </div>
         </section>
+        <section className="text-center supporter">
+          <h4>Giants supporting us</h4>
+          <a className="w-150" href="https://www.atyantik.com" rel="nofollow noopener noreferrer" target="_blank">
+            <img
+              src={this.props.config.baseUrl + "img/supporters/atyantik.svg"}
+              alt="Atyantik Technologies Private Limited"
+            />
+          </a>
+          <a className="w-75" href="https://www.digitalocean.com" rel="nofollow noopener noreferrer" target="_blank">
+            <img
+              src={this.props.config.baseUrl + "img/supporters/digitalocean.svg"}
+              alt="DigitalOcean"
+            />
+          </a>
+          <a href="https://www.eventerprise.com/" rel="nofollow noopener noreferrer" target="_blank">
+            <img
+              src={this.props.config.baseUrl + "img/supporters/eventerprise.svg"}
+              alt="Eventerprise"
+            />
+          </a>
+          <a href="https://www.browserstack.com/" rel="nofollow noopener noreferrer" target="_blank">
+            <img
+              src={this.props.config.baseUrl + "img/supporters/browserstack.svg"}
+              alt="BrowserStack"
+            />
+          </a>
+          <a href="https://www.navicat.com/" rel="nofollow noopener noreferrer" target="_blank">
+            <img
+              src={this.props.config.baseUrl + "img/supporters/navicat.png"}
+              alt="Navicat"
+            />
+          </a>
+        </section>
         <section className="text-center">
           <a className={"btn btn-outline-pearl mr-2"} href={this.pageUrl("supporters.html", this.props.language)}>Support ReactPWA</a>
         </section>
