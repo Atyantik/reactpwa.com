@@ -93,6 +93,33 @@ class Footer extends React.Component {
             />
           </a>
         </section>
+        <link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css" />
+        <style
+          dangerouslySetInnerHTML={{
+            __html: `
+            #mc_embed_signup{background:transparent; clear:left; color: #fff;width:100%;}
+            #mc_embed_signup input.email {
+              padding: 18px;
+              margin-right: 2px;
+              margin-bottom: 36px;
+            }
+            .btn-outline-pearl:hover {
+              color: #17a2b8;
+              cursor: pointer;
+            }
+            `
+          }}
+        />
+        <div id="mc_embed_signup">
+        <form action="https://atyantik.us17.list-manage.com/subscribe/post?u=06e9b0b8eb37d698885257f1b&amp;id=6fceb6ccf4" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" className="validate" target="_blank" noValidate>
+            <div id="mc_embed_signup_scroll">
+              <label htmlFor="mce-EMAIL">Subscribe to our mailing list</label>
+              <input type="email" name="EMAIL" className="email" id="mce-EMAIL" placeholder="email address" required />
+              <div style={{position: "absolute", left: "-5000px"}} aria-hidden="true"><input type="text" name="b_06e9b0b8eb37d698885257f1b_6fceb6ccf4" tabIndex="-1" /></div>
+              <div className="clear"> &nbsp;<input type="submit" defaultValue="Subscribe" name="subscribe" id="mc-embedded-subscribe" className="btn btn-outline-pearl ml-2" /></div>
+            </div>
+        </form>
+        </div>
         <section className="text-center">
           <a className={"btn btn-outline-pearl mr-2"} href={this.pageUrl("supporters.html", this.props.language)}>Support ReactPWA</a>
         </section>
@@ -116,6 +143,17 @@ class Footer extends React.Component {
                   navigator.serviceWorker.register('/sw.js');
                 });
               }
+            `
+          }}
+        />
+        <script 
+          src="//downloads.mailchimp.com/js/signup-forms/popup/unique-methods/embed.js" 
+          data-dojo-config="usePlainJson: true, isDebug: false" 
+        />
+        <script 
+          dangerouslySetInnerHTML={{
+            __html: `
+            window.dojoRequire(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us17.list-manage.com","uuid":"06e9b0b8eb37d698885257f1b","lid":"6fceb6ccf4","uniqueMethods":true}) })
             `
           }}
         />

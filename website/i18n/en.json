@@ -4,62 +4,122 @@
     "next": "Next",
     "previous": "Previous",
     "tagline": "An extendable boilerplate built on top of PawJS",
-    "configuration": "PawJS configuration",
-    "PawJS Configuration": "PawJS Configuration",
-    "deploying-to-amazon-ec2": "Deploying to Amazon EC2",
-    "Amazon EC2": "Amazon EC2",
-    "deploying-to-digital-ocean": "Deploying to Digital Ocean",
-    "Digital Ocean": "Digital Ocean",
-    "deploying-to-heroku": "Deploying to Heroku",
-    "Heroku": "Heroku",
-    "index": "Docs",
-    "Docs": "Docs",
-    "feature-access-offline": "Offline Accessibility",
-    "Offline Accessibility": "Offline Accessibility",
-    "feature-code-splitting": "Code Splitting",
-    "Code Splitting": "Code Splitting",
-    "feature-hot-reloading": "Hot Reloading",
-    "Hot Reloading": "Hot Reloading",
-    "feature-hsts": "HTTP Strict Transport Security - HSTS",
-    "HSTS": "HSTS",
-    "feature-isomorphic-universal-routing": "Isomorphic/Universal Routing",
-    "Isomorphic/Universal Routing": "Isomorphic/Universal Routing",
-    "feature-next-gen-js": "Next Generation Javascript",
-    "Next Gen JS": "Next Gen JS",
-    "feature-pwa": "PWA - Progressive Web Application",
-    "PWA": "PWA",
-    "feature-seo": "Search Engine Optimization",
-    "SEO": "SEO",
-    "feature-ssr": "Server Side Rendering",
-    "SSR": "SSR",
-    "features": "Features",
-    "Features": "Features",
-    "load-external-resources": "External resources",
-    "External resources": "External resources",
-    "initial-setup": "Initial setup",
-    "Initial setup": "Initial setup",
-    "plugin-image-optimization": "Image Optimization",
-    "Image Optimization": "Image Optimization",
-    "plugin-redux": "Redux",
-    "Redux": "Redux",
-    "plugin-sass": "Sass",
-    "Sass": "Sass",
-    "plugins": "Plugins",
-    "Plugins": "Plugins",
-    "add-new-route": "Add new route",
-    "Add new route": "Add new route",
-    "async-routing": "Async routing",
-    "Async routing": "Async routing",
-    "nested-routes": "Nested routes",
-    "Nested routes": "Nested routes",
-    "web-app-manifest": "Web App manifest",
-    "Web App manifest": "Web App manifest",
-    "Blog": "Blog",
-    "Help": "Help",
-    "Getting Started": "Getting Started",
-    "Guide": "Guide",
-    "Routing": "Routing",
-    "Deployments": "Deployments"
+    "docs": {
+      "configuration": {
+        "title": "PawJS configuration",
+        "sidebar_label": "PawJS Configuration"
+      },
+      "deploying-to-amazon-ec2": {
+        "title": "Deploying to Amazon EC2",
+        "sidebar_label": "Amazon EC2"
+      },
+      "deploying-to-digital-ocean": {
+        "title": "Deploying to Digital Ocean",
+        "sidebar_label": "Digital Ocean"
+      },
+      "deploying-to-heroku": {
+        "title": "Deploying to Heroku",
+        "sidebar_label": "Heroku"
+      },
+      "index": {
+        "title": "Docs",
+        "sidebar_label": "Docs"
+      },
+      "feature-access-offline": {
+        "title": "Offline Accessibility",
+        "sidebar_label": "Offline Accessibility"
+      },
+      "feature-code-splitting": {
+        "title": "Code Splitting",
+        "sidebar_label": "Code Splitting"
+      },
+      "feature-hot-reloading": {
+        "title": "Hot Reloading",
+        "sidebar_label": "Hot Reloading"
+      },
+      "feature-hsts": {
+        "title": "HTTP Strict Transport Security - HSTS",
+        "sidebar_label": "HSTS"
+      },
+      "feature-isomorphic-universal-routing": {
+        "title": "Isomorphic/Universal Routing",
+        "sidebar_label": "Isomorphic/Universal Routing"
+      },
+      "feature-next-gen-js": {
+        "title": "Next Generation Javascript",
+        "sidebar_label": "Next Gen JS"
+      },
+      "feature-pwa": {
+        "title": "PWA - Progressive Web Application",
+        "sidebar_label": "PWA"
+      },
+      "feature-seo": {
+        "title": "Search Engine Optimization",
+        "sidebar_label": "SEO"
+      },
+      "feature-ssr": {
+        "title": "Server Side Rendering",
+        "sidebar_label": "SSR"
+      },
+      "features": {
+        "title": "Features",
+        "sidebar_label": "Features"
+      },
+      "load-external-resources": {
+        "title": "External resources",
+        "sidebar_label": "External resources"
+      },
+      "initial-setup": {
+        "title": "Initial setup",
+        "sidebar_label": "Initial setup"
+      },
+      "plugin-image-optimization": {
+        "title": "Image Optimization",
+        "sidebar_label": "Image Optimization"
+      },
+      "plugin-redux": {
+        "title": "Redux",
+        "sidebar_label": "Redux"
+      },
+      "plugin-sass": {
+        "title": "Sass",
+        "sidebar_label": "Sass"
+      },
+      "plugins": {
+        "title": "Plugins",
+        "sidebar_label": "Plugins"
+      },
+      "add-new-route": {
+        "title": "Add new route",
+        "sidebar_label": "Add new route"
+      },
+      "async-routing": {
+        "title": "Async routing",
+        "sidebar_label": "Async routing"
+      },
+      "nested-routes": {
+        "title": "Nested routes",
+        "sidebar_label": "Nested routes"
+      },
+      "web-app-manifest": {
+        "title": "Web App manifest",
+        "sidebar_label": "Web App manifest"
+      }
+    },
+    "links": {
+      "Docs": "Docs",
+      "Features": "Features",
+      "Blog": "Blog",
+      "Help": "Help"
+    },
+    "categories": {
+      "Getting Started": "Getting Started",
+      "Guide": "Guide",
+      "Routing": "Routing",
+      "Plugins": "Plugins",
+      "Deployments": "Deployments",
+      "Features": "Features"
+    }
   },
   "pages-strings": {
     "Learn more using the [documentation on this site.](/test-site/docs/en/doc1.html)|no description given": "Learn more using the [documentation on this site.](/test-site/docs/en/doc1.html)",
