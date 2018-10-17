@@ -21,7 +21,4 @@ it's possible to do better thanks to code splitting. It allows to load code lazi
      data-ad-format="auto"></ins>
 <script>
 (adsbygoogle = window.adsbygoogle || []).push({});
-</script>  
-
-<script src="https://codefund.io/scripts/fefc6de5-a0ce-46e8-a15d-f43733b5b454/embed.js"></script>
-<div id="codefund_ad"></div>
+</script>

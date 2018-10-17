@@ -16,8 +16,16 @@ Thus everyone are now targeting SSR compatible universal applications.
 
 <!-- truncate -->
 
-<script src="https://codefund.io/scripts/fefc6de5-a0ce-46e8-a15d-f43733b5b454/embed.js"></script>
-<div id="codefund_ad"></div>
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"	
+     data-ad-layout="in-article"	
+     data-ad-format="fluid"	
+     data-ad-client="ca-pub-7586505628408924"	
+     data-ad-slot="9476337873"></ins>	
+<script>	
+     (adsbygoogle = window.adsbygoogle || []).push({});	
+</script>
 
 Single page applications has many pros when compared to Universal Applications.
 1. It is fast, once the assets are loaded and cached you get a blazing fast UX. Only transmission back and forth is of API.

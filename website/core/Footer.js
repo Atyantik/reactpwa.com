@@ -146,14 +146,31 @@ class Footer extends React.Component {
             `
           }}
         />
-        <script 
-          src="//downloads.mailchimp.com/js/signup-forms/popup/unique-methods/embed.js" 
-          data-dojo-config="usePlainJson: true, isDebug: false" 
+        <script
+          src="//downloads.mailchimp.com/js/signup-forms/popup/unique-methods/embed.js"
+          data-dojo-config="usePlainJson: true, isDebug: false"
         />
-        <script 
+        <script
           dangerouslySetInnerHTML={{
             __html: `
             window.dojoRequire(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us17.list-manage.com","uuid":"06e9b0b8eb37d698885257f1b","lid":"6fceb6ccf4","uniqueMethods":true}) })
+            `
+          }}
+        />
+        <script src="https://codefund.io/scripts/fefc6de5-a0ce-46e8-a15d-f43733b5b454/embed.js" />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+            const codeFundDiv = document.createElement("div");
+            codeFundDiv.id = "codefund_ad";
+            codeFundDiv.style = "max-width: 100%;float: left;padding: 10px 10px 10px 0px;"
+            const navElement = document.querySelector("#docsNav .toc");
+            if (navElement) {
+               navElement.appendChild(codeFundDiv);
+            }
+            if (typeof _codefund !== 'undefined' && _codefund.serve) {
+					    _codefund.serve();
+				    }
             `
           }}
         />
