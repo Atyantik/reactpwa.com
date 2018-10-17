@@ -30,6 +30,9 @@ PWA’s have a lot of potentials. Some of the benefits hold an important place o
 - PWA is installable thus it gives the best of both the worlds without the need for an App Store.
 - PWA’s are easily shareable using URLs.
 
+<script src="https://codefund.io/scripts/fefc6de5-a0ce-46e8-a15d-f43733b5b454/embed.js"></script>
+<div id="codefund_ad"></div>
+
 ## Why are Businesses moving to Progressive Web Apps?
 Let us consider this scenario where a client wants to launch his/her E-Commerce platform to sell products online.  
 What are things the client will need to reach out to the customers so that the customers can order online?  

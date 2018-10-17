@@ -84,16 +84,8 @@ export default class ProjectWebpack {
 In the above code we checked each config for  HardSourceWebpackPlugin && HardSourceWebpackPlugin.ExcludeModulePlugin, and added them to the plugin list if they do not already exists.  
   
 As we are using `mini-css-extract-plugin` with PawJS we have excluded if from being cached.  
-<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<ins class="adsbygoogle"
-     style="display:block; text-align:center;"
-     data-ad-layout="in-article"
-     data-ad-format="fluid"
-     data-ad-client="ca-pub-7586505628408924"
-     data-ad-slot="9476337873"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>  
+<script src="https://codefund.io/scripts/fefc6de5-a0ce-46e8-a15d-f43733b5b454/embed.js"></script>
+<div id="codefund_ad"></div>
 
 ## Performance Improvements
 
