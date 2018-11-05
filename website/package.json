@@ -9,8 +9,8 @@
     "rename-version": "docusaurus-rename-version"
   },
   "devDependencies": {
-    "docusaurus": "^1.5.0",
-    "eslint": "^5.7.0",
+    "docusaurus": "^1.5.1",
+    "eslint": "^5.8.0",
     "eslint-plugin-react": "^7.11.1",
     "react": "^16.6.0",
     "remarkable-extlink": "^1.1.0",

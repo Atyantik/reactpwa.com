@@ -14,6 +14,7 @@ where one can tap to events to easily extend the functionality
   - [Redux](plugin-redux.md)
   - [Image Optimization](plugin-image-optimization.md)
   - [SASS](plugin-sass.md)
+  - [LESS](plugin-less.md)
 
 
 <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>

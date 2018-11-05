@@ -58,4 +58,6 @@ class Help extends React.Component {
   }
 }
 
+Help.title = "Get Help with ReactPWA";
+
 module.exports = Help;

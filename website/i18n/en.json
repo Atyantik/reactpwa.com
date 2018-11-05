@@ -77,6 +77,10 @@
         "title": "Image Optimization",
         "sidebar_label": "Image Optimization"
       },
+      "plugin-less": {
+        "title": "LESS",
+        "sidebar_label": "LESS"
+      },
       "plugin-redux": {
         "title": "Redux",
         "sidebar_label": "Redux"

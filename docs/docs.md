@@ -28,6 +28,7 @@ We are improving the documentation continuously and you can find helpful docs to
   - [Redux](plugin-redux.md)
   - [Image Optimization](plugin-image-optimization.md)
   - [Sass](plugin-sass.md)
+  - [LESS](plugin-less.md)
 
 #### Deployments
   - [Heroku](deploying-to-heroku.md)
