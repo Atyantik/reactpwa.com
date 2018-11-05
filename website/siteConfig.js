@@ -46,6 +46,7 @@ const siteConfig = {
     {doc: "index", label: "Docs"},
     {doc: "features", label: "Features"},
     {blog: true, label: "Blog"},
+    {page: "examples", label: "Examples"},
     {page: "help", label: "Help"},
     // { search: true },
     // Determines language drop down position among links
