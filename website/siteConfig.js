@@ -118,9 +118,7 @@ const siteConfig = {
   algolia: {
     apiKey: "47e9fd29dcff1c57cb8300322797fe74",
     indexName: "reactpwa",
-    algoliaOptions: {
-      facetFilters: [ "language:LANGUAGE", "version:VERSION" ]
-    } // Optional, if provided by Algolia
+    algoliaOptions: {} // Optional, if provided by Algolia
   }
   // algolia: {
   //   apiKey: "626e03f900a93b0dc06a820f11bdb98c",
