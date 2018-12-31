@@ -16,8 +16,8 @@ The content will be delivered faster to the user if the server is closer to the 
 
 <!--truncate-->
 
-<script src="https://codefund.io/scripts/fefc6de5-a0ce-46e8-a15d-f43733b5b454/embed.js"></script>
-<div id="codefund_ad"></div>
+<div id="codefund"></div>
+<script src="https://codefund.app/properties/108/funder.js" async="async"></script>
 
 ## Types of CDN
 

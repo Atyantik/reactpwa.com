@@ -160,20 +160,25 @@ class Footer extends React.Component {
             `
           }}
         />
-        <script src="https://codefund.io/scripts/fefc6de5-a0ce-46e8-a15d-f43733b5b454/embed.js" />
+        <script id="js-codefund" data-src="https://codefund.app/properties/108/funder.js" async="async" />
         <script
           dangerouslySetInnerHTML={{
             __html: `
-            const codeFundDiv = document.createElement("div");
-            codeFundDiv.id = "codefund_ad";
-            codeFundDiv.style = "max-width: 100%;float: left;padding: 10px 10px 10px 0px;"
-            const navElement = document.querySelector("#docsNav .toc");
+            var navElement = document.querySelector("#docsNav .toc .navWrapper .navGroups");
             if (navElement) {
-               navElement.appendChild(codeFundDiv);
+               var codeFundDiv = document.createElement("div");
+               codeFundDiv.id = "codefund";
+               codeFundDiv.style = "max-width: 100%;float: left;padding: 10px 10px 10px 0px;"
+               var navGroup = document.createElement("div");
+               navGroup.style = "display:inline-block";
+               navGroup.setAttribute("class", "navGroup");
+               navGroup.appendChild(codeFundDiv);
+               navElement.appendChild(navGroup);
+               var jsScript = document.getElementById("js-codefund");
+               if (jsScript) {
+                 jsScript.src = jsScript.getAttribute("data-src");
+               }
             }
-            if (typeof _codefund !== 'undefined' && _codefund.serve) {
-					    _codefund.serve();
-				    }
             `
           }}
         />
