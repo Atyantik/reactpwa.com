@@ -113,7 +113,7 @@
     margin-bottom: 0;
     padding: 8px 20px;
     text-align: left;
-    max-width: calc(100% - 130px - 3em);
+    max-width: calc(100% - 90px - 3em);
   }
   .carbon-poweredby {
     left: 130px;

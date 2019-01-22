@@ -100,7 +100,7 @@ class Footer extends React.Component {
         <style
           dangerouslySetInnerHTML={{
             __html: `
-            #mc_embed_signup{background:transparent; clear:left; color: #fff;width:100%;}
+            #mc_embed_signup{background:transparent; clear:left; color: #fff;width:100%; padding: 10px;}
             #mc_embed_signup input.email {
               padding: 18px;
               margin-right: 2px;
@@ -117,7 +117,7 @@ class Footer extends React.Component {
         <form action="https://atyantik.us17.list-manage.com/subscribe/post?u=06e9b0b8eb37d698885257f1b&amp;id=6fceb6ccf4" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" className="validate" target="_blank" noValidate>
             <div id="mc_embed_signup_scroll">
               <label htmlFor="mce-EMAIL">Subscribe to our mailing list</label>
-              <input type="email" name="EMAIL" className="email" id="mce-EMAIL" placeholder="email address" required />
+              <input type="email" name="EMAIL" className="email" id="mce-EMAIL" placeholder="enter your email address" required />
               <div style={{position: "absolute", left: "-5000px"}} aria-hidden="true"><input type="text" name="b_06e9b0b8eb37d698885257f1b_6fceb6ccf4" tabIndex="-1" /></div>
               <div className="clear"> &nbsp;<input type="submit" defaultValue="Subscribe" name="subscribe" id="mc-embedded-subscribe" className="btn btn-outline-pearl ml-2" /></div>
             </div>
