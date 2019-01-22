@@ -161,7 +161,7 @@ class Footer extends React.Component {
           }}
         />
         <script id="js-codefund" data-src="https://codefund.app/properties/108/funder.js" async="async" />
-        <script async type="text/javascript" data-src="//cdn.carbonads.com/carbon.js?serve=CK7DL2QN&placement=wwwreactpwacom" id="_carbonads_js" />
+        <script async type="text/javascript" data-src="//cdn.carbonads.com/carbon.js?serve=CK7DL2QN&placement=wwwreactpwacom" id="_carbonads_js_pre_clone" />
         <script
           dangerouslySetInnerHTML={{
             __html: `
@@ -171,25 +171,24 @@ class Footer extends React.Component {
                codeFundDiv.id = "codefund";
                codeFundDiv.style = "max-width: 100%;float: left;padding: 10px 10px 10px 0px;"
                
-               var carbonAdsDiv = document.createElement("div");
-               carbonAdsDiv.id = "carbonads";
-               carbonAdsDiv.style = "max-width: 100%;float: left;padding: 10px 10px 10px 0px;"
-               
                var navGroup = document.createElement("div");
                navGroup.style = "display:inline-block";
                navGroup.setAttribute("class", "navGroup");
                
-               navGroup.appendChild(carbonAdsDiv);
-               navGroup.appendChild(codeFundDiv);
+               var carbonAdsScriptBkp = document.getElementById("_carbonads_js_pre_clone");
+               if (carbonAdsScriptBkp) {
+                 var carbonAdsScript = carbonAdsScriptBkp.cloneNode(true);
+                 carbonAdsScript.id = "_carbonads_js";
+                 carbonAdsScript.src = carbonAdsScript.getAttribute("data-src");
+                 navGroup.appendChild(carbonAdsScript);
+               }
                
+               navGroup.appendChild(codeFundDiv);
                navElement.appendChild(navGroup);
+               
                var jsScript = document.getElementById("js-codefund");
                if (jsScript) {
                  jsScript.src = jsScript.getAttribute("data-src");
-               }
-               var carbonAdsScript = document.getElementById("_carbonads_js");
-               if (carbonAdsScript) {
-                 carbonAdsScript.src = carbonAdsScript.getAttribute("data-src");
                }
             }
             `
