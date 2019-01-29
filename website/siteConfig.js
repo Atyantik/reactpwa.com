@@ -21,6 +21,13 @@ const users = [
     image: "/img/users/email-extractor.png",
     infoLink: "https://www.emailextractor.online",
     pinned: true,
+  },
+  {
+    caption: "RentHobo",
+    // You will need to prepend the image path with your baseUrl
+    image: "https://cdn.adinfraheight.com/renthobo/logo/logo.png",
+    infoLink: "https://www.renthobo.com",
+    pinned: true,
   }
 ];
 
