@@ -25,7 +25,7 @@ const users = [
   {
     caption: "RentHobo",
     // You will need to prepend the image path with your baseUrl
-    image: "https://cdn.adinfraheight.com/renthobo/logo/logo.png",
+    image: "/img/users/renthobo.png",
     infoLink: "https://www.renthobo.com",
     pinned: true,
   }
