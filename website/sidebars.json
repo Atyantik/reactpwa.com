@@ -6,7 +6,8 @@
       "web-app-manifest"
     ],
     "Guide" : [
-      "load-external-resources"
+      "load-external-resources",
+      "internal-api-with-expressjs"
     ],
     "Routing" : [
       "add-new-route",

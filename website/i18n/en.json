@@ -65,6 +65,10 @@
         "title": "Features",
         "sidebar_label": "Features"
       },
+      "internal-api-with-expressjs": {
+        "title": "Internal API with ExpressJS",
+        "sidebar_label": "Internal APIs"
+      },
       "load-external-resources": {
         "title": "External resources",
         "sidebar_label": "External resources"
