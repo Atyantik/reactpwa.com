@@ -73,6 +73,10 @@
         "title": "External resources",
         "sidebar_label": "External resources"
       },
+      "working-with-environment-variables": {
+        "title": "Environment Variables",
+        "sidebar_label": "Environment Variables"
+      },
       "initial-setup": {
         "title": "Initial setup",
         "sidebar_label": "Initial setup"

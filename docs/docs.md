@@ -19,6 +19,7 @@ We are improving the documentation continuously and you can find helpful docs to
 #### Guides
   - [External resources](guides-load-external-resources.md)
   - [Internal APIs with ExpressJS](guides-internal-api-with-express.md)
+  - [Working with environment variables](guides-working-with-environment-variables.md)
 
 #### Routing
   - [Add new route](routing-add-new-route.md)

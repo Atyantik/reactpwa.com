@@ -7,7 +7,8 @@
     ],
     "Guide" : [
       "load-external-resources",
-      "internal-api-with-expressjs"
+      "internal-api-with-expressjs",
+      "working-with-environment-variables"
     ],
     "Routing" : [
       "add-new-route",
