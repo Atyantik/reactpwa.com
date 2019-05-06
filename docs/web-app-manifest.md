@@ -116,7 +116,7 @@ icons is an array of image objects, each object should include the src, a sizes 
 
 ### start_url
 The start_url tells the browser where your application should start when it is launched, and prevents the app from starting on whatever page the user was on when they added your app to their home screen.  
-Your start_url should direct the user straight into your app, rather than a product landing page. Think about the what the user will want to do once they open your app, and place them there.
+Your start_url should direct the user straight into your app, rather than a product landing page. Think about what the user will want to do once they open your app, and place them there.
 ```
 "start_url": "/?utm_source=pwa"
 ```
