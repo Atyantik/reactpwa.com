@@ -137,12 +137,4 @@ ENV_CONFIG_PATH=${secure/path/to/home/dir/.env} npm run build
 ```
 
 
-<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-7586505628408924"
-     data-ad-slot="5652642939"
-     data-ad-format="auto"></ins>
-<script>
-(adsbygoogle = window.adsbygoogle || []).push({});
-</script>
+<div class="custom-slant"></div>  

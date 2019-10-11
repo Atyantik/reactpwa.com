@@ -122,12 +122,4 @@ As you can see above having a common reducer file like `app/reducer.js` is good 
 As initial state may depend on many server parameters it is inevitable to ignore the initialization of 
 reduxInitialState in both `client.js` & `server.js`
 
-<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-7586505628408924"
-     data-ad-slot="5652642939"
-     data-ad-format="auto"></ins>
-<script>
-(adsbygoogle = window.adsbygoogle || []).push({});
-</script>
+<div class="custom-slant"></div>  

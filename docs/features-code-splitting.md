@@ -13,12 +13,4 @@ and you can still end up having to download a lot of data. Fortunately,
 it's possible to do better thanks to code splitting. It allows to load code lazily as you need it.
 
 
-<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-7586505628408924"
-     data-ad-slot="5652642939"
-     data-ad-format="auto"></ins>
-<script>
-(adsbygoogle = window.adsbygoogle || []).push({});
-</script>
+<div class="custom-slant"></div>  

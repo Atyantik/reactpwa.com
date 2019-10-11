@@ -42,12 +42,4 @@ HSTS is enabled default for your secure sites. Options to define maxAge and prel
 The idea behind hot reloading is to keep the app running and to inject new versions of the files that you edited at runtime.
 This way, you don't lose any of your state which is especially useful if you are tweaking the UI.
 
-<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-7586505628408924"
-     data-ad-slot="5652642939"
-     data-ad-format="auto"></ins>
-<script>
-(adsbygoogle = window.adsbygoogle || []).push({});
-</script>
+<div class="custom-slant"></div>  

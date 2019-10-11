@@ -160,6 +160,37 @@ class Footer extends React.Component {
             `
           }}
         />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `(function() {
+if (typeof _bsa !== 'undefined' && _bsa) {
+  _bsa.init('custom', 'CE7DVKQ7', 'placement:reactpwacom',
+  {
+    target: '.custom-slant',
+    template: \`
+<a href="##link##" class="native-banner">
+  <div class="native-sponsor-container">
+    <div class="native-sponsor">
+      <div class="native-label">Sponsor</div>
+      <div class="native-company">##company##</div>
+    </div>
+  </div>
+  <div class="native-main">
+    <img class="native-logo" src="##logo##" style="background-color: ##backgroundColor##">
+    <div class="native-text">
+      <div class="native-tagline">##tagline##</div>
+      <div class="native-description">##description##</div>
+      <div class="native-cta">##callToAction##</div>
+    </div>
+  </div>
+</a>
+    \`
+      }
+    );
+}
+})();`
+          }}
+        />
         <script id="js-codefund" data-src="https://codefund.app/properties/108/funder.js" async="async" />
         <script async type="text/javascript" data-src="//cdn.carbonads.com/carbon.js?serve=CK7DL2QN&placement=wwwreactpwacom" id="_carbonads_js_pre_clone" />
         <script

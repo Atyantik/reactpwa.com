@@ -28,16 +28,7 @@ does not have to worry about preserving the class name and class method names th
 ### Faster rendering
 We saw improved rendering in DOM as there is reduction in the nested DOM structure which is great!
 
-<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<ins class="adsbygoogle"
-     style="display:block; text-align:center;"	
-     data-ad-layout="in-article"	
-     data-ad-format="fluid"	
-     data-ad-client="ca-pub-7586505628408924"	
-     data-ad-slot="9476337873"></ins>	
-<script>	
-     (adsbygoogle = window.adsbygoogle || []).push({});	
-</script>  
+<div class="custom-slant"></div>  
 
 ## Upgrading to latest version
 if you are already using ReactPWA all you need to do is as below:
@@ -63,15 +54,6 @@ With stable release of @pawjs/pawjsv2.3.0 we are now supporting TypeScript in Re
 We are enjoying typescript and are planning to upgrade PawJS fully with React v16.8 hooks and TypeScript, because it is awesome.
   
 
-
-<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<ins class="adsbygoogle"
-     style="display:block; text-align:center;"
-     data-ad-layout="in-article"
-     data-ad-format="fluid"
-     data-ad-client="ca-pub-7586505628408924"
-     data-ad-slot="9476337873"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
+  
+<div class="custom-slant"></div>  
 

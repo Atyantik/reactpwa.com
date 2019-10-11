@@ -16,16 +16,7 @@ Thus everyone are now targeting SSR compatible universal applications.
 
 <!-- truncate -->
 
-<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<ins class="adsbygoogle"
-     style="display:block; text-align:center;"	
-     data-ad-layout="in-article"	
-     data-ad-format="fluid"	
-     data-ad-client="ca-pub-7586505628408924"	
-     data-ad-slot="9476337873"></ins>	
-<script>	
-     (adsbygoogle = window.adsbygoogle || []).push({});	
-</script>
+<div class="custom-slant"></div>
 
 Single page applications has many pros when compared to Universal Applications.
 1. It is fast, once the assets are loaded and cached you get a blazing fast UX. Only transmission back and forth is of API.
@@ -58,7 +49,7 @@ Open file `pawconfig.json` in the root folder
 Add/Update the option as below:
 ```json
 {
-  //... other options
+  // ...other options
   "singlePageApplication": true
 }
 ```
@@ -68,16 +59,7 @@ and the url routing will be updated to use `HashRouter`
 
 Urls will now be `/#/docs`, `/#/contact` etc.
 
-<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<ins class="adsbygoogle"
-     style="display:block; text-align:center;"
-     data-ad-layout="in-article"
-     data-ad-format="fluid"
-     data-ad-client="ca-pub-7586505628408924"
-     data-ad-slot="9476337873"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
+<div class="custom-slant"></div>  
 
 ## Why use ReactPWA for SPA?
 Well, we offer great set of [features](/docs/en/features.html) and [plugins](/docs/en/plugins.html) with infinite possibility of extendability, so WHY NOT!  

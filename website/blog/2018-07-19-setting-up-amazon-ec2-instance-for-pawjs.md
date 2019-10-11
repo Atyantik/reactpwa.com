@@ -35,16 +35,7 @@ authorFBID: 1472013489
       ```
 A more detailed guide of **Getting Started with Amazon EC2** can be found [here](https://aws.amazon.com/ec2/getting-started/).
 
-<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<ins class="adsbygoogle"
-     style="display:block; text-align:center;"
-     data-ad-layout="in-article"
-     data-ad-format="fluid"
-     data-ad-client="ca-pub-7586505628408924"
-     data-ad-slot="9476337873"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
+<div class="custom-slant"></div>
 
 ## Install NodeJS
 
@@ -121,16 +112,7 @@ For **Ubuntu**, Nginx is available in Ubuntu's default repositories, so the inst
     ```bash
     $ sudo service nginx restart
     ```
-<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<ins class="adsbygoogle"
-     style="display:block; text-align:center;"
-     data-ad-layout="in-article"
-     data-ad-format="fluid"
-     data-ad-client="ca-pub-7586505628408924"
-     data-ad-slot="9476337873"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
+<div class="custom-slant"></div>  
 
 ## Install Process Manager
 

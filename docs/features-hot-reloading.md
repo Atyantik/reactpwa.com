@@ -19,3 +19,5 @@ In a nutshell, the HMR update contains the new code of the JS modules that chang
 receives them, it replaces the old modules' code with the new one:
 
 ![Hot Reloading](/img/features/hot-reloading.png)
+
+<div class="custom-slant"></div>

@@ -57,12 +57,4 @@ Here is a very simple timeline diagram(super simple) to showcase the difference 
     - The main scripts is small and loads fast. In that case, the app loads the main scripts quickly, and the 
     extra request that asks for dynamic data gets sent sooner.
 
-<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-7586505628408924"
-     data-ad-slot="5652642939"
-     data-ad-format="auto"></ins>
-<script>
-(adsbygoogle = window.adsbygoogle || []).push({});
-</script>
+<div class="custom-slant"></div>  

@@ -85,16 +85,7 @@ In the above code we checked each config for  HardSourceWebpackPlugin && HardSou
   
 As we are using `mini-css-extract-plugin` with PawJS we have excluded if from being cached.  
   
-<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<ins class="adsbygoogle"
-     style="display:block; text-align:center;"	
-     data-ad-layout="in-article"	
-     data-ad-format="fluid"	
-     data-ad-client="ca-pub-7586505628408924"	
-     data-ad-slot="9476337873"></ins>	
-<script>	
-     (adsbygoogle = window.adsbygoogle || []).push({});	
-</script>  
+<div class="custom-slant"></div>  
 
 ## Performance Improvements
 
@@ -154,17 +145,7 @@ The compilation was completed in `5122 ms` i.e. around 5.12 seconds, not bad ;)
   
 
 
-<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<ins class="adsbygoogle"
-     style="display:block; text-align:center;"
-     data-ad-layout="in-article"
-     data-ad-format="fluid"
-     data-ad-client="ca-pub-7586505628408924"
-     data-ad-slot="9476337873"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-  
+<div class="custom-slant"></div>  
   
 ### First build with `HardSourceWebpackPlugin`
 ```bash
@@ -235,13 +216,5 @@ HardSourceWebpackPlugin plugin can reduce the rebuild time by more than 300% if 
 Go through the documentation of `HardSourceWebpackPlugin` and use it properly and wisely. 
  
 
-<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<ins class="adsbygoogle"
-     style="display:block; text-align:center;"
-     data-ad-layout="in-article"
-     data-ad-format="fluid"
-     data-ad-client="ca-pub-7586505628408924"
-     data-ad-slot="9476337873"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
+<div class="custom-slant"></div>  
+  

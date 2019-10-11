@@ -65,12 +65,4 @@ starts accessing the server through HTTP unless the user specifies HTTPS.
  security of a certificate can’t be confirmed. Plus, users can’t click through self-signed certificates.
 
 
-<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-7586505628408924"
-     data-ad-slot="5652642939"
-     data-ad-format="auto"></ins>
-<script>
-(adsbygoogle = window.adsbygoogle || []).push({});
-</script>
+<div class="custom-slant"></div>  
