@@ -14,10 +14,7 @@ the user, the origin of the webpage and the location of CDN server.
 CDN service is effective for websites that have high traffic and global reach of users.
 The content will be delivered faster to the user if the server is closer to the user 
 
-<!--truncate-->
-
-<div id="codefund"></div>
-<script src="https://codefund.app/properties/108/funder.js" async="async"></script>
+<!--truncate-->  
 
 ## Types of CDN
 

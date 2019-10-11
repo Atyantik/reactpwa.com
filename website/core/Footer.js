@@ -191,16 +191,12 @@ if (typeof _bsa !== 'undefined' && _bsa) {
 })();`
           }}
         />
-        <script id="js-codefund" data-src="https://codefund.app/properties/108/funder.js" async="async" />
         <script async type="text/javascript" data-src="//cdn.carbonads.com/carbon.js?serve=CK7DL2QN&placement=wwwreactpwacom" id="_carbonads_js_pre_clone" />
         <script
           dangerouslySetInnerHTML={{
             __html: `
             var navElement = document.querySelector("#docsNav .toc .navWrapper .navGroups");
             if (navElement) {
-               var codeFundDiv = document.createElement("div");
-               codeFundDiv.id = "codefund";
-               codeFundDiv.style = "max-width: 100%;float: left;padding: 10px 10px 10px 0px;"
                
                var navGroup = document.createElement("div");
                navGroup.style = "display:inline-block";
@@ -213,14 +209,7 @@ if (typeof _bsa !== 'undefined' && _bsa) {
                  carbonAdsScript.src = carbonAdsScript.getAttribute("data-src");
                  navGroup.appendChild(carbonAdsScript);
                }
-               
-               navGroup.appendChild(codeFundDiv);
                navElement.appendChild(navGroup);
-               
-               var jsScript = document.getElementById("js-codefund");
-               if (jsScript) {
-                 jsScript.src = jsScript.getAttribute("data-src");
-               }
             }
             `
           }}
