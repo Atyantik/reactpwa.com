@@ -19,7 +19,7 @@ RUN cd /app/website && \
  npm install && \
  npm run build
 
-RUN mv /app/website/build/react-pwa /usr/share/nginx/html
+RUN rm -rf /usr/share/nginx/html && mv /app/website/build/react-pwa /usr/share/nginx/html
 
 RUN npm cache clean --force
 
