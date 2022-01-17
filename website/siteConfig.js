@@ -7,7 +7,7 @@
 // site configuration options.
 const extLink = require("remarkable-extlink");
 
-/* List of projects/orgs using your project for the users page */
+//* List of projects/orgs using your project for the users page */
 const users = [
   {
     caption: "Eventerprise",
